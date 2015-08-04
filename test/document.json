@@ -1,0 +1,1599 @@
+{
+    "version": "1.3.0",
+    "timeStamp": 1438689760.652,
+    "count": 126,
+    "id": 1486,
+    "file": "C:\\Users\\Raphael\\SkyDrive\\Documents\\affenbande\\affenbande_scenes.psd",
+    "bounds": {
+        "top": 0,
+        "left": 0,
+        "bottom": 3232,
+        "right": 2266
+    },
+    "selection": [
+        43
+    ],
+    "resolution": 72,
+    "globalLight": {
+        "angle": 90,
+        "altitude": 30
+    },
+    "generatorSettings": false,
+    "layers": [
+        {
+            "id": 5,
+            "index": 43,
+            "type": "layerSection",
+            "name": "start_screen",
+            "bounds": {
+                "top": 966,
+                "left": 876,
+                "bottom": 3174,
+                "right": 2118
+            },
+            "visible": true,
+            "clipped": false,
+            "blendOptions": {
+                "mode": "passThrough"
+            },
+            "generatorSettings": false,
+            "artboard": {
+                "artboardRect": {
+                    "top": 966,
+                    "left": 876,
+                    "bottom": 3174,
+                    "right": 2118
+                }
+            },
+            "layers": [
+                {
+                    "id": 246,
+                    "index": 42,
+                    "type": "layerSection",
+                    "name": "layer3",
+                    "bounds": {
+                        "top": 1734,
+                        "left": 1045,
+                        "bottom": 2647,
+                        "right": 1517
+                    },
+                    "visible": true,
+                    "clipped": false,
+                    "blendOptions": {
+                        "mode": "passThrough"
+                    },
+                    "generatorSettings": false,
+                    "layers": [
+                        {
+                            "id": 65,
+                            "index": 41,
+                            "type": "layerSection",
+                            "name": "monks #group position:relativeToSize",
+                            "bounds": {
+                                "top": 1734,
+                                "left": 1045,
+                                "bottom": 2647,
+                                "right": 1517
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "blendOptions": {
+                                "mode": "passThrough"
+                            },
+                            "generatorSettings": false,
+                            "layers": [
+                                {
+                                    "id": 63,
+                                    "index": 40,
+                                    "type": "layer",
+                                    "name": "monkey_head.png",
+                                    "bounds": {
+                                        "top": 1734,
+                                        "left": 1265,
+                                        "bottom": 1986,
+                                        "right": 1517
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "smartObject": {
+                                        "ID": "ee9a9d3f-3797-11e5-9e1f-b518e4b988a5",
+                                        "placed": "ee9a0103-3797-11e5-9e1f-b518e4b988a5",
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            1265,
+                                            1733,
+                                            1518,
+                                            1733,
+                                            1518,
+                                            1992,
+                                            1265,
+                                            1992
+                                        ],
+                                        "comp": -1
+                                    }
+                                },
+                                {
+                                    "id": 21,
+                                    "index": 39,
+                                    "type": "layer",
+                                    "name": "monkey.png",
+                                    "bounds": {
+                                        "top": 1734,
+                                        "left": 1045,
+                                        "bottom": 1986,
+                                        "right": 1297
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "smartObject": {
+                                        "ID": "ee9a9d3e-3797-11e5-9e1f-b518e4b988a5",
+                                        "placed": "ee9a00fe-3797-11e5-9e1f-b518e4b988a5",
+                                        "frameStep": {
+                                            "numerator": 20,
+                                            "denominator": 600
+                                        },
+                                        "duration": {
+                                            "numerator": 3400,
+                                            "denominator": 600
+                                        },
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            1045,
+                                            1733,
+                                            1298,
+                                            1733,
+                                            1298,
+                                            1992,
+                                            1045,
+                                            1992
+                                        ],
+                                        "comp": -1
+                                    }
+                                },
+                                {
+                                    "id": 61,
+                                    "index": 38,
+                                    "type": "layer",
+                                    "name": "monkey.png",
+                                    "bounds": {
+                                        "top": 1954,
+                                        "left": 1045,
+                                        "bottom": 2206,
+                                        "right": 1297
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "smartObject": {
+                                        "ID": "ee9a9d3e-3797-11e5-9e1f-b518e4b988a5",
+                                        "placed": "ee9a00f9-3797-11e5-9e1f-b518e4b988a5",
+                                        "frameStep": {
+                                            "numerator": 20,
+                                            "denominator": 600
+                                        },
+                                        "duration": {
+                                            "numerator": 3400,
+                                            "denominator": 600
+                                        },
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            1045,
+                                            1953,
+                                            1298,
+                                            1953,
+                                            1298,
+                                            2212,
+                                            1045,
+                                            2212
+                                        ],
+                                        "comp": -1
+                                    }
+                                },
+                                {
+                                    "id": 62,
+                                    "index": 37,
+                                    "type": "layer",
+                                    "name": "monkey.png",
+                                    "bounds": {
+                                        "top": 2174,
+                                        "left": 1045,
+                                        "bottom": 2426,
+                                        "right": 1297
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "smartObject": {
+                                        "ID": "ee9a9d3e-3797-11e5-9e1f-b518e4b988a5",
+                                        "placed": "ee9a00f4-3797-11e5-9e1f-b518e4b988a5",
+                                        "frameStep": {
+                                            "numerator": 20,
+                                            "denominator": 600
+                                        },
+                                        "duration": {
+                                            "numerator": 3400,
+                                            "denominator": 600
+                                        },
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            1045,
+                                            2173,
+                                            1298,
+                                            2173,
+                                            1298,
+                                            2432,
+                                            1045,
+                                            2432
+                                        ],
+                                        "comp": -1
+                                    }
+                                },
+                                {
+                                    "id": 64,
+                                    "index": 36,
+                                    "type": "layer",
+                                    "name": "monkey_head.png",
+                                    "bounds": {
+                                        "top": 2395,
+                                        "left": 1045,
+                                        "bottom": 2647,
+                                        "right": 1297
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "smartObject": {
+                                        "ID": "ee9a9d3d-3797-11e5-9e1f-b518e4b988a5",
+                                        "placed": "ee99b2e6-3797-11e5-9e1f-b518e4b988a5",
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            1045,
+                                            2394,
+                                            1298,
+                                            2394,
+                                            1298,
+                                            2653,
+                                            1045,
+                                            2653
+                                        ],
+                                        "comp": -1
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 244,
+                    "index": 33,
+                    "type": "layerSection",
+                    "name": "layer2",
+                    "bounds": {
+                        "top": 1215,
+                        "left": 1021,
+                        "bottom": 2197,
+                        "right": 1973
+                    },
+                    "visible": true,
+                    "clipped": false,
+                    "blendOptions": {
+                        "mode": "passThrough"
+                    },
+                    "generatorSettings": false,
+                    "layers": [
+                        {
+                            "id": 150,
+                            "index": 32,
+                            "type": "layerSection",
+                            "name": "logo.png",
+                            "bounds": {
+                                "top": 1215,
+                                "left": 1021,
+                                "bottom": 1372,
+                                "right": 1973
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "blendOptions": {
+                                "mode": "passThrough"
+                            },
+                            "generatorSettings": false,
+                            "layers": [
+                                {
+                                    "id": 171,
+                                    "index": 31,
+                                    "type": "textLayer",
+                                    "name": "Monkey Gang highlight",
+                                    "bounds": {
+                                        "top": 1313,
+                                        "left": 1027,
+                                        "bottom": 1333,
+                                        "right": 1034
+                                    },
+                                    "boundsWithFX": {
+                                        "top": 1313,
+                                        "left": 1027,
+                                        "bottom": 1333,
+                                        "right": 1034
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "mask": {
+                                        "bounds": {
+                                            "top": 0,
+                                            "left": -227,
+                                            "bottom": 3232,
+                                            "right": 2266
+                                        },
+                                        "extendWithWhite": true
+                                    },
+                                    "generatorSettings": false,
+                                    "text": {
+                                        "textKey": "Monkey Gang",
+                                        "textClickPoint": {
+                                            "horizontal": {
+                                                "value": 45.2339,
+                                                "units": "percentUnit"
+                                            },
+                                            "vertical": {
+                                                "value": 41.1859,
+                                                "units": "percentUnit"
+                                            }
+                                        },
+                                        "boundingBox": {
+                                            "left": {
+                                                "value": 2.64063,
+                                                "units": "pointsUnit"
+                                            },
+                                            "top": {
+                                                "value": -112.141,
+                                                "units": "pointsUnit"
+                                            },
+                                            "right": {
+                                                "value": 941.48,
+                                                "units": "pointsUnit"
+                                            },
+                                            "bottom": {
+                                                "value": 29.875,
+                                                "units": "pointsUnit"
+                                            }
+                                        },
+                                        "bounds": {
+                                            "left": {
+                                                "value": 0,
+                                                "units": "pointsUnit"
+                                            },
+                                            "top": {
+                                                "value": -126.27,
+                                                "units": "pointsUnit"
+                                            },
+                                            "right": {
+                                                "value": 945.41,
+                                                "units": "pointsUnit"
+                                            },
+                                            "bottom": {
+                                                "value": 64.3066,
+                                                "units": "pointsUnit"
+                                            }
+                                        },
+                                        "textShape": [
+                                            {
+                                                "char": "paint",
+                                                "orientation": "horizontal",
+                                                "transform": {
+                                                    "xx": 1,
+                                                    "xy": 0,
+                                                    "yx": 0,
+                                                    "yy": 1,
+                                                    "tx": 0,
+                                                    "ty": 0
+                                                },
+                                                "rowCount": 1,
+                                                "columnCount": 1,
+                                                "rowMajorOrder": true,
+                                                "rowGutter": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "columnGutter": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "spacing": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "frameBaselineAlignment": "alignByAscent",
+                                                "firstBaselineMinimum": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "base": {
+                                                    "horizontal": 0,
+                                                    "vertical": 0
+                                                }
+                                            }
+                                        ],
+                                        "textStyleRange": [
+                                            {
+                                                "from": 0,
+                                                "to": 12,
+                                                "textStyle": {
+                                                    "fontName": "Janda Silly Monkey",
+                                                    "fontStyleName": "Regular",
+                                                    "size": {
+                                                        "value": 150,
+                                                        "units": "pointsUnit"
+                                                    },
+                                                    "color": {
+                                                        "red": 254.832,
+                                                        "green": 255,
+                                                        "blue": 254
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "paragraphStyleRange": [
+                                            {
+                                                "from": 0,
+                                                "to": 12,
+                                                "paragraphStyle": {
+                                                    "align": "left"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": 23,
+                                    "index": 30,
+                                    "type": "textLayer",
+                                    "name": "Monkey Gang",
+                                    "bounds": {
+                                        "top": 1218,
+                                        "left": 1027,
+                                        "bottom": 1362,
+                                        "right": 1966
+                                    },
+                                    "boundsWithFX": {
+                                        "top": 1215,
+                                        "left": 1021,
+                                        "bottom": 1372,
+                                        "right": 1973
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "layerEffects": {
+                                        "dropShadow": {
+                                            "enabled": true
+                                        },
+                                        "innerGlow": {
+                                            "enabled": true
+                                        },
+                                        "bevelEmboss": {
+                                            "enabled": true
+                                        }
+                                    },
+                                    "text": {
+                                        "textKey": "Monkey Gang",
+                                        "textClickPoint": {
+                                            "horizontal": {
+                                                "value": 45.2339,
+                                                "units": "percentUnit"
+                                            },
+                                            "vertical": {
+                                                "value": 41.1859,
+                                                "units": "percentUnit"
+                                            }
+                                        },
+                                        "boundingBox": {
+                                            "left": {
+                                                "value": 2.64063,
+                                                "units": "pointsUnit"
+                                            },
+                                            "top": {
+                                                "value": -112.141,
+                                                "units": "pointsUnit"
+                                            },
+                                            "right": {
+                                                "value": 941.48,
+                                                "units": "pointsUnit"
+                                            },
+                                            "bottom": {
+                                                "value": 29.875,
+                                                "units": "pointsUnit"
+                                            }
+                                        },
+                                        "bounds": {
+                                            "left": {
+                                                "value": 0,
+                                                "units": "pointsUnit"
+                                            },
+                                            "top": {
+                                                "value": -126.27,
+                                                "units": "pointsUnit"
+                                            },
+                                            "right": {
+                                                "value": 945.41,
+                                                "units": "pointsUnit"
+                                            },
+                                            "bottom": {
+                                                "value": 64.3066,
+                                                "units": "pointsUnit"
+                                            }
+                                        },
+                                        "textShape": [
+                                            {
+                                                "char": "paint",
+                                                "orientation": "horizontal",
+                                                "transform": {
+                                                    "xx": 1,
+                                                    "xy": 0,
+                                                    "yx": 0,
+                                                    "yy": 1,
+                                                    "tx": 0,
+                                                    "ty": 0
+                                                },
+                                                "rowCount": 1,
+                                                "columnCount": 1,
+                                                "rowMajorOrder": true,
+                                                "rowGutter": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "columnGutter": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "spacing": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "frameBaselineAlignment": "alignByAscent",
+                                                "firstBaselineMinimum": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "base": {
+                                                    "horizontal": 0,
+                                                    "vertical": 0
+                                                }
+                                            }
+                                        ],
+                                        "textStyleRange": [
+                                            {
+                                                "from": 0,
+                                                "to": 12,
+                                                "textStyle": {
+                                                    "fontName": "Janda Silly Monkey",
+                                                    "fontStyleName": "Regular",
+                                                    "size": {
+                                                        "value": 150,
+                                                        "units": "pointsUnit"
+                                                    },
+                                                    "color": {
+                                                        "red": 81.3934,
+                                                        "green": 82.8954,
+                                                        "blue": 74.0265
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "paragraphStyleRange": [
+                                            {
+                                                "from": 0,
+                                                "to": 12,
+                                                "paragraphStyle": {
+                                                    "align": "left"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 68,
+                            "index": 28,
+                            "type": "layerSection",
+                            "name": "leavs #group position:relativeToSize",
+                            "bounds": {
+                                "top": 1523,
+                                "left": 1272,
+                                "bottom": 2197,
+                                "right": 1949
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "blendOptions": {
+                                "mode": "passThrough"
+                            },
+                            "generatorSettings": false,
+                            "layers": [
+                                {
+                                    "id": 59,
+                                    "index": 27,
+                                    "type": "layer",
+                                    "name": "leave.png",
+                                    "bounds": {
+                                        "top": 1742,
+                                        "left": 1712,
+                                        "bottom": 1977,
+                                        "right": 1949
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "smartObject": {
+                                        "ID": "ee9a9d3c-3797-11e5-9e1f-b518e4b988a5",
+                                        "placed": "ee99b2e1-3797-11e5-9e1f-b518e4b988a5",
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            1711,
+                                            1741,
+                                            1951,
+                                            1741,
+                                            1951,
+                                            1978,
+                                            1711,
+                                            1978
+                                        ],
+                                        "comp": -1
+                                    }
+                                },
+                                {
+                                    "id": 58,
+                                    "index": 26,
+                                    "type": "layer",
+                                    "name": "leave.png",
+                                    "bounds": {
+                                        "top": 1523,
+                                        "left": 1492,
+                                        "bottom": 1758,
+                                        "right": 1729
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "smartObject": {
+                                        "ID": "ee9a9d3b-3797-11e5-9e1f-b518e4b988a5",
+                                        "placed": "ee99b2dc-3797-11e5-9e1f-b518e4b988a5",
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            1491,
+                                            1522,
+                                            1731,
+                                            1522,
+                                            1731,
+                                            1759,
+                                            1491,
+                                            1759
+                                        ],
+                                        "comp": -1
+                                    }
+                                },
+                                {
+                                    "id": 56,
+                                    "index": 25,
+                                    "type": "layer",
+                                    "name": "leave.png",
+                                    "bounds": {
+                                        "top": 1962,
+                                        "left": 1272,
+                                        "bottom": 2197,
+                                        "right": 1509
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "smartObject": {
+                                        "ID": "ee9a9d3a-3797-11e5-9e1f-b518e4b988a5",
+                                        "placed": "ee9768df-3797-11e5-9e1f-b518e4b988a5",
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            1271,
+                                            1961,
+                                            1511,
+                                            1961,
+                                            1511,
+                                            2198,
+                                            1271,
+                                            2198
+                                        ],
+                                        "comp": -1
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 242,
+                    "index": 22,
+                    "type": "layerSection",
+                    "name": "layer1",
+                    "bounds": {
+                        "top": 2484,
+                        "left": 1158,
+                        "bottom": 2892,
+                        "right": 1837
+                    },
+                    "visible": true,
+                    "clipped": false,
+                    "blendOptions": {
+                        "mode": "passThrough"
+                    },
+                    "generatorSettings": false,
+                    "layers": [
+                        {
+                            "id": 38,
+                            "index": 21,
+                            "type": "layerSection",
+                            "name": "play_button #button",
+                            "bounds": {
+                                "top": 2484,
+                                "left": 1158,
+                                "bottom": 2666,
+                                "right": 1837
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "blendOptions": {
+                                "mode": "passThrough"
+                            },
+                            "generatorSettings": false,
+                            "layers": [
+                                {
+                                    "id": 24,
+                                    "index": 20,
+                                    "type": "textLayer",
+                                    "name": "play",
+                                    "bounds": {
+                                        "top": 2534,
+                                        "left": 1420,
+                                        "bottom": 2610,
+                                        "right": 1574
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "text": {
+                                        "textKey": "play",
+                                        "textClickPoint": {
+                                            "horizontal": {
+                                                "value": 62.5772,
+                                                "units": "percentUnit"
+                                            },
+                                            "vertical": {
+                                                "value": 80.432,
+                                                "units": "percentUnit"
+                                            }
+                                        },
+                                        "boundingBox": {
+                                            "left": {
+                                                "value": 2.89063,
+                                                "units": "pointsUnit"
+                                            },
+                                            "top": {
+                                                "value": -65.8906,
+                                                "units": "pointsUnit"
+                                            },
+                                            "right": {
+                                                "value": 155.915,
+                                                "units": "pointsUnit"
+                                            },
+                                            "bottom": {
+                                                "value": 10,
+                                                "units": "pointsUnit"
+                                            }
+                                        },
+                                        "bounds": {
+                                            "left": {
+                                                "value": 0,
+                                                "units": "pointsUnit"
+                                            },
+                                            "top": {
+                                                "value": -71.5527,
+                                                "units": "pointsUnit"
+                                            },
+                                            "right": {
+                                                "value": 157.3,
+                                                "units": "pointsUnit"
+                                            },
+                                            "bottom": {
+                                                "value": 36.4404,
+                                                "units": "pointsUnit"
+                                            }
+                                        },
+                                        "textShape": [
+                                            {
+                                                "char": "paint",
+                                                "orientation": "horizontal",
+                                                "transform": {
+                                                    "xx": 1,
+                                                    "xy": 0,
+                                                    "yx": 0,
+                                                    "yy": 1,
+                                                    "tx": 0,
+                                                    "ty": 0
+                                                },
+                                                "rowCount": 1,
+                                                "columnCount": 1,
+                                                "rowMajorOrder": true,
+                                                "rowGutter": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "columnGutter": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "spacing": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "frameBaselineAlignment": "alignByAscent",
+                                                "firstBaselineMinimum": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "base": {
+                                                    "horizontal": 0,
+                                                    "vertical": 0
+                                                }
+                                            }
+                                        ],
+                                        "textStyleRange": [
+                                            {
+                                                "from": 0,
+                                                "to": 5,
+                                                "textStyle": {
+                                                    "fontName": "Janda Silly Monkey",
+                                                    "fontStyleName": "Regular",
+                                                    "size": {
+                                                        "value": 85,
+                                                        "units": "pointsUnit"
+                                                    },
+                                                    "color": {
+                                                        "red": 81.0033,
+                                                        "green": 83.0025,
+                                                        "blue": 73.9985
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "paragraphStyleRange": [
+                                            {
+                                                "from": 0,
+                                                "to": 5,
+                                                "paragraphStyle": {
+                                                    "align": "left"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": 249,
+                                    "index": 19,
+                                    "type": "shapeLayer",
+                                    "name": "#input",
+                                    "bounds": {
+                                        "top": 2233,
+                                        "left": 902,
+                                        "bottom": 2686,
+                                        "right": 2093
+                                    },
+                                    "visible": false,
+                                    "clipped": false,
+                                    "fill": {
+                                        "color": {
+                                            "red": 0,
+                                            "green": 0,
+                                            "blue": 0
+                                        },
+                                        "class": "solidColorLayer"
+                                    },
+                                    "strokeStyle": {
+                                        "strokeStyleVersion": 2,
+                                        "strokeEnabled": true,
+                                        "fillEnabled": false,
+                                        "strokeStyleLineWidth": 1,
+                                        "strokeStyleLineDashOffset": {
+                                            "value": 0,
+                                            "units": "pointsUnit"
+                                        },
+                                        "strokeStyleMiterLimit": 100,
+                                        "strokeStyleLineCapType": "strokeStyleButtCap",
+                                        "strokeStyleLineJoinType": "strokeStyleMiterJoin",
+                                        "strokeStyleLineAlignment": "strokeStyleAlignInside",
+                                        "strokeStyleScaleLock": false,
+                                        "strokeStyleStrokeAdjust": false,
+                                        "strokeStyleBlendMode": "normal",
+                                        "strokeStyleOpacity": {
+                                            "value": 100,
+                                            "units": "percentUnit"
+                                        },
+                                        "strokeStyleContent": {
+                                            "color": {
+                                                "red": 0,
+                                                "green": 0,
+                                                "blue": 0
+                                            }
+                                        },
+                                        "strokeStyleResolution": 72
+                                    },
+                                    "generatorSettings": false,
+                                    "path": {
+                                        "pathComponents": [
+                                            {
+                                                "origin": {
+                                                    "type": "rect",
+                                                    "bounds": {
+                                                        "top": 2233,
+                                                        "left": 902,
+                                                        "bottom": 2686,
+                                                        "right": 2093
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "bounds": {
+                                            "top": 2233,
+                                            "left": 902,
+                                            "bottom": 2686,
+                                            "right": 2093
+                                        },
+                                        "defaultFill": false
+                                    }
+                                },
+                                {
+                                    "id": 47,
+                                    "index": 18,
+                                    "type": "shapeLayer",
+                                    "name": "#background",
+                                    "bounds": {
+                                        "top": 2487,
+                                        "left": 1164,
+                                        "bottom": 2656,
+                                        "right": 1830
+                                    },
+                                    "boundsWithFX": {
+                                        "top": 2484,
+                                        "left": 1158,
+                                        "bottom": 2666,
+                                        "right": 1837
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "blendOptions": {
+                                        "opacity": {
+                                            "value": 50,
+                                            "units": "percentUnit"
+                                        }
+                                    },
+                                    "fill": {
+                                        "color": {
+                                            "red": 255,
+                                            "green": 255,
+                                            "blue": 255
+                                        },
+                                        "class": "solidColorLayer"
+                                    },
+                                    "generatorSettings": false,
+                                    "layerEffects": {
+                                        "dropShadow": {
+                                            "enabled": true
+                                        },
+                                        "innerGlow": {
+                                            "enabled": true
+                                        },
+                                        "bevelEmboss": {
+                                            "enabled": true
+                                        }
+                                    },
+                                    "path": {
+                                        "pathComponents": [
+                                            {
+                                                "origin": {
+                                                    "type": "rect",
+                                                    "bounds": {
+                                                        "top": 2487,
+                                                        "left": 1164,
+                                                        "bottom": 2656,
+                                                        "right": 1830
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "bounds": {
+                                            "top": 2487,
+                                            "left": 1164,
+                                            "bottom": 2656,
+                                            "right": 1830
+                                        },
+                                        "defaultFill": false
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 40,
+                            "index": 16,
+                            "type": "layerSection",
+                            "name": "more_games_button #button",
+                            "bounds": {
+                                "top": 2710,
+                                "left": 1158,
+                                "bottom": 2892,
+                                "right": 1837
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "blendOptions": {
+                                "mode": "passThrough"
+                            },
+                            "generatorSettings": false,
+                            "layers": [
+                                {
+                                    "id": 36,
+                                    "index": 15,
+                                    "type": "textLayer",
+                                    "name": "more games",
+                                    "bounds": {
+                                        "top": 2756,
+                                        "left": 1263,
+                                        "bottom": 2837,
+                                        "right": 1730
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "text": {
+                                        "textKey": "more games",
+                                        "textClickPoint": {
+                                            "horizontal": {
+                                                "value": 55.5605,
+                                                "units": "percentUnit"
+                                            },
+                                            "vertical": {
+                                                "value": 87.262,
+                                                "units": "percentUnit"
+                                            }
+                                        },
+                                        "boundingBox": {
+                                            "left": {
+                                                "value": 3.98438,
+                                                "units": "pointsUnit"
+                                            },
+                                            "top": {
+                                                "value": -63.5469,
+                                                "units": "pointsUnit"
+                                            },
+                                            "right": {
+                                                "value": 471.063,
+                                                "units": "pointsUnit"
+                                            },
+                                            "bottom": {
+                                                "value": 16.9375,
+                                                "units": "pointsUnit"
+                                            }
+                                        },
+                                        "bounds": {
+                                            "left": {
+                                                "value": 0,
+                                                "units": "pointsUnit"
+                                            },
+                                            "top": {
+                                                "value": -71.5527,
+                                                "units": "pointsUnit"
+                                            },
+                                            "right": {
+                                                "value": 473.477,
+                                                "units": "pointsUnit"
+                                            },
+                                            "bottom": {
+                                                "value": 36.4404,
+                                                "units": "pointsUnit"
+                                            }
+                                        },
+                                        "textShape": [
+                                            {
+                                                "char": "paint",
+                                                "orientation": "horizontal",
+                                                "transform": {
+                                                    "xx": 1,
+                                                    "xy": 0,
+                                                    "yx": 0,
+                                                    "yy": 1,
+                                                    "tx": 0,
+                                                    "ty": 0
+                                                },
+                                                "rowCount": 1,
+                                                "columnCount": 1,
+                                                "rowMajorOrder": true,
+                                                "rowGutter": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "columnGutter": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "spacing": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "frameBaselineAlignment": "alignByAscent",
+                                                "firstBaselineMinimum": {
+                                                    "value": 0,
+                                                    "units": "pointsUnit"
+                                                },
+                                                "base": {
+                                                    "horizontal": 0,
+                                                    "vertical": 0
+                                                }
+                                            }
+                                        ],
+                                        "textStyleRange": [
+                                            {
+                                                "from": 0,
+                                                "to": 11,
+                                                "textStyle": {
+                                                    "fontName": "Janda Silly Monkey",
+                                                    "fontStyleName": "Regular",
+                                                    "size": {
+                                                        "value": 85,
+                                                        "units": "pointsUnit"
+                                                    },
+                                                    "color": {
+                                                        "red": 81.0033,
+                                                        "green": 83.0025,
+                                                        "blue": 73.9985
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "paragraphStyleRange": [
+                                            {
+                                                "from": 0,
+                                                "to": 11,
+                                                "paragraphStyle": {
+                                                    "align": "left"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": 251,
+                                    "index": 14,
+                                    "type": "shapeLayer",
+                                    "name": "#input",
+                                    "bounds": {
+                                        "top": 2692,
+                                        "left": 902,
+                                        "bottom": 2993,
+                                        "right": 2093
+                                    },
+                                    "visible": false,
+                                    "clipped": false,
+                                    "fill": {
+                                        "color": {
+                                            "red": 0,
+                                            "green": 0,
+                                            "blue": 0
+                                        },
+                                        "class": "solidColorLayer"
+                                    },
+                                    "strokeStyle": {
+                                        "strokeStyleVersion": 2,
+                                        "strokeEnabled": true,
+                                        "fillEnabled": false,
+                                        "strokeStyleLineWidth": 1,
+                                        "strokeStyleLineDashOffset": {
+                                            "value": 0,
+                                            "units": "pointsUnit"
+                                        },
+                                        "strokeStyleMiterLimit": 100,
+                                        "strokeStyleLineCapType": "strokeStyleButtCap",
+                                        "strokeStyleLineJoinType": "strokeStyleMiterJoin",
+                                        "strokeStyleLineAlignment": "strokeStyleAlignInside",
+                                        "strokeStyleScaleLock": false,
+                                        "strokeStyleStrokeAdjust": false,
+                                        "strokeStyleBlendMode": "normal",
+                                        "strokeStyleOpacity": {
+                                            "value": 100,
+                                            "units": "percentUnit"
+                                        },
+                                        "strokeStyleContent": {
+                                            "color": {
+                                                "red": 0,
+                                                "green": 0,
+                                                "blue": 0
+                                            }
+                                        },
+                                        "strokeStyleResolution": 72
+                                    },
+                                    "generatorSettings": false,
+                                    "path": {
+                                        "pathComponents": [
+                                            {
+                                                "origin": {
+                                                    "type": "rect",
+                                                    "bounds": {
+                                                        "top": 2692,
+                                                        "left": 902,
+                                                        "bottom": 2993,
+                                                        "right": 2093
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "bounds": {
+                                            "top": 2692,
+                                            "left": 902,
+                                            "bottom": 2993,
+                                            "right": 2093
+                                        },
+                                        "defaultFill": false
+                                    }
+                                },
+                                {
+                                    "id": 44,
+                                    "index": 13,
+                                    "type": "shapeLayer",
+                                    "name": "#background",
+                                    "bounds": {
+                                        "top": 2713,
+                                        "left": 1164,
+                                        "bottom": 2882,
+                                        "right": 1830
+                                    },
+                                    "boundsWithFX": {
+                                        "top": 2710,
+                                        "left": 1158,
+                                        "bottom": 2892,
+                                        "right": 1837
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "blendOptions": {
+                                        "opacity": {
+                                            "value": 50,
+                                            "units": "percentUnit"
+                                        }
+                                    },
+                                    "fill": {
+                                        "color": {
+                                            "red": 255,
+                                            "green": 255,
+                                            "blue": 255
+                                        },
+                                        "class": "solidColorLayer"
+                                    },
+                                    "generatorSettings": false,
+                                    "layerEffects": {
+                                        "dropShadow": {
+                                            "enabled": true
+                                        },
+                                        "innerGlow": {
+                                            "enabled": true
+                                        },
+                                        "bevelEmboss": {
+                                            "enabled": true
+                                        }
+                                    },
+                                    "path": {
+                                        "pathComponents": [
+                                            {
+                                                "origin": {
+                                                    "type": "rect",
+                                                    "bounds": {
+                                                        "top": 2713,
+                                                        "left": 1164,
+                                                        "bottom": 2882,
+                                                        "right": 1830
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "bounds": {
+                                            "top": 2713,
+                                            "left": 1164,
+                                            "bottom": 2882,
+                                            "right": 1830
+                                        },
+                                        "defaultFill": false
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 240,
+                    "index": 10,
+                    "type": "layerSection",
+                    "name": "layer0",
+                    "bounds": {
+                        "top": 1066,
+                        "left": 488,
+                        "bottom": 3118,
+                        "right": 889
+                    },
+                    "visible": true,
+                    "clipped": false,
+                    "blendOptions": {
+                        "mode": "passThrough"
+                    },
+                    "generatorSettings": false,
+                    "layers": [
+                        {
+                            "id": 34,
+                            "index": 9,
+                            "type": "layerSection",
+                            "name": "clouds",
+                            "bounds": {
+                                "top": 1066,
+                                "left": 488,
+                                "bottom": 3118,
+                                "right": 889
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "blendOptions": {
+                                "mode": "passThrough"
+                            },
+                            "generatorSettings": false,
+                            "layers": [
+                                {
+                                    "id": 33,
+                                    "index": 8,
+                                    "type": "layer",
+                                    "name": "cloud_1.png",
+                                    "bounds": {
+                                        "top": 2903,
+                                        "left": 560,
+                                        "bottom": 3118,
+                                        "right": 889
+                                    },
+                                    "boundsWithFX": {
+                                        "top": 2903,
+                                        "left": 560,
+                                        "bottom": 3118,
+                                        "right": 889
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "layerEffects": {
+                                        "gradientFill": {
+                                            "enabled": true
+                                        }
+                                    },
+                                    "smartObject": {
+                                        "ID": "ee9a9d39-3797-11e5-9e1f-b518e4b988a5",
+                                        "placed": "ee9768da-3797-11e5-9e1f-b518e4b988a5",
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            560, // left
+                                            2903, // top
+                                            889, // right
+                                            2903, // top
+                                            889, // right
+                                            3118, // botton
+                                            560, // left
+                                            3118 // bottom
+                                        ],
+                                        "comp": -1
+                                    }
+                                },
+                                {
+                                    "id": 32,
+                                    "index": 7,
+                                    "type": "layer",
+                                    "name": "cloud_4.png",
+                                    "bounds": {
+                                        "top": 2317,
+                                        "left": 646,
+                                        "bottom": 2461,
+                                        "right": 883
+                                    },
+                                    "boundsWithFX": {
+                                        "top": 2317,
+                                        "left": 646,
+                                        "bottom": 2461,
+                                        "right": 883
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "layerEffects": {
+                                        "gradientFill": {
+                                            "enabled": true
+                                        }
+                                    },
+                                    "smartObject": {
+                                        "ID": "ee9a9d38-3797-11e5-9e1f-b518e4b988a5",
+                                        "placed": "ee9768d5-3797-11e5-9e1f-b518e4b988a5",
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            646,
+                                            2317,
+                                            883,
+                                            2317,
+                                            883,
+                                            2461,
+                                            646,
+                                            2461
+                                        ],
+                                        "comp": -1
+                                    }
+                                },
+                                {
+                                    "id": 31,
+                                    "index": 6,
+                                    "type": "layer",
+                                    "name": "cloud_3.png",
+                                    "bounds": {
+                                        "top": 2163,
+                                        "left": 627,
+                                        "bottom": 2305,
+                                        "right": 878
+                                    },
+                                    "boundsWithFX": {
+                                        "top": 2163,
+                                        "left": 627,
+                                        "bottom": 2305,
+                                        "right": 878
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "layerEffects": {
+                                        "gradientFill": {
+                                            "enabled": true
+                                        }
+                                    },
+                                    "smartObject": {
+                                        "ID": "ee9a9d37-3797-11e5-9e1f-b518e4b988a5",
+                                        "placed": "ee9719b2-3797-11e5-9e1f-b518e4b988a5",
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            627,
+                                            2163,
+                                            878,
+                                            2163,
+                                            878,
+                                            2305,
+                                            627,
+                                            2305
+                                        ],
+                                        "comp": -1
+                                    }
+                                },
+                                {
+                                    "id": 30,
+                                    "index": 5,
+                                    "type": "layer",
+                                    "name": "cloud_2.png",
+                                    "bounds": {
+                                        "top": 1677,
+                                        "left": 488,
+                                        "bottom": 1915,
+                                        "right": 878
+                                    },
+                                    "boundsWithFX": {
+                                        "top": 1677,
+                                        "left": 488,
+                                        "bottom": 1915,
+                                        "right": 878
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "layerEffects": {
+                                        "gradientFill": {
+                                            "enabled": true
+                                        }
+                                    },
+                                    "smartObject": {
+                                        "ID": "ee9a9d36-3797-11e5-9e1f-b518e4b988a5",
+                                        "placed": "ee9719ad-3797-11e5-9e1f-b518e4b988a5",
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            488,
+                                            1677,
+                                            878,
+                                            1677,
+                                            878,
+                                            1915,
+                                            488,
+                                            1915
+                                        ],
+                                        "comp": -1
+                                    }
+                                },
+                                {
+                                    "id": 29,
+                                    "index": 4,
+                                    "type": "layer",
+                                    "name": "cloud_1.png",
+                                    "bounds": {
+                                        "top": 1066,
+                                        "left": 550,
+                                        "bottom": 1281,
+                                        "right": 879
+                                    },
+                                    "boundsWithFX": {
+                                        "top": 1066,
+                                        "left": 550,
+                                        "bottom": 1281,
+                                        "right": 879
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "layerEffects": {
+                                        "gradientFill": {
+                                            "enabled": true
+                                        }
+                                    },
+                                    "smartObject": {
+                                        "ID": "ee9a9d35-3797-11e5-9e1f-b518e4b988a5",
+                                        "placed": "ee96cca8-3797-11e5-9e1f-b518e4b988a5",
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            550,
+                                            1066,
+                                            879,
+                                            1066,
+                                            879,
+                                            1281,
+                                            550,
+                                            1281
+                                        ],
+                                        "comp": -1
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 22,
+                    "index": 1,
+                    "type": "layer",
+                    "name": "background_color",
+                    "bounds": {
+                        "top": 0,
+                        "left": -2462,
+                        "bottom": 3232,
+                        "right": 11068
+                    },
+                    "visible": true,
+                    "clipped": false,
+                    "pixels": true,
+                    "generatorSettings": false
+                }
+            ]
+        }
+    ]
+}
