@@ -8,7 +8,6 @@ function writeJSONFile(fileName, data) {
     });
 }
 
-var DocumentParser = require('./../lib/DocumentParser');
-var parser = new DocumentParser();
+var transformPSDocumentToH5Scenes = require('./../lib/transformPSDocumentToH5Scenes');
 
-writeJSONFile('out.json', ps_document);
+writeJSONFile('out.json', transformPSDocumentToH5Scenes(ps_document));
