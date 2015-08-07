@@ -73,7 +73,7 @@
                             "id": 65,
                             "index": 41,
                             "type": "layerSection",
-                            "name": "monks #group position:relativeToSize",
+                            "name": "monks #position:centerRelativeToSize",
                             "bounds": {
                                 "top": 1734,
                                 "left": 1045,
@@ -609,7 +609,7 @@
                             "id": 68,
                             "index": 28,
                             "type": "layerSection",
-                            "name": "leavs #group #position:relativeToSize",
+                            "name": "leavs #position:centerRelativeToSize",
                             "bounds": {
                                 "top": 1523,
                                 "left": 1272,
