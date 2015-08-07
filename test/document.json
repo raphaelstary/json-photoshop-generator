@@ -1,8 +1,8 @@
 {
     "version": "1.3.0",
-    "timeStamp": 1438777198.817,
-    "count": 3,
-    "id": 1635,
+    "timeStamp": 1438958513.346,
+    "count": 56,
+    "id": 1484,
     "file": "C:\\Users\\Raphael\\SkyDrive\\Documents\\affenbande\\affenbande_scenes.psd",
     "bounds": {
         "top": 0,
@@ -11,14 +11,19 @@
         "right": 2266
     },
     "selection": [
-        43
+        21
     ],
     "resolution": 72,
     "globalLight": {
         "angle": 90,
         "altitude": 30
     },
-    "generatorSettings": false,
+    "generatorSettings": {
+        "generator_45_assets": {
+            "json": "{\"enabled\":true}"
+        },
+        "layerTime": 1438960000
+    },
     "layers": [
         {
             "id": 5,
@@ -86,7 +91,7 @@
                                     "id": 63,
                                     "index": 40,
                                     "type": "layer",
-                                    "name": "monkey_head.png",
+                                    "name": "monkey_head.png #id:monkey1",
                                     "bounds": {
                                         "top": 1734,
                                         "left": 1265,
@@ -98,7 +103,7 @@
                                     "generatorSettings": false,
                                     "smartObject": {
                                         "ID": "f0cb1cb4-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "5763ce11-3b6c-11e5-8fde-d6aa4ecf977f",
+                                        "placed": "2619ad69-3d11-11e5-bddd-d058a4864f8c",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -118,7 +123,7 @@
                                     "id": 21,
                                     "index": 39,
                                     "type": "layer",
-                                    "name": "monkey.png",
+                                    "name": "monkey.png #id:monkey2",
                                     "bounds": {
                                         "top": 1734,
                                         "left": 1045,
@@ -130,7 +135,7 @@
                                     "generatorSettings": false,
                                     "smartObject": {
                                         "ID": "f0cb1cb3-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "5763ce0e-3b6c-11e5-8fde-d6aa4ecf977f",
+                                        "placed": "1453339a-3d11-11e5-bddd-d058a4864f8c",
                                         "frameStep": {
                                             "numerator": 20,
                                             "denominator": 600
@@ -158,7 +163,7 @@
                                     "id": 61,
                                     "index": 38,
                                     "type": "layer",
-                                    "name": "monkey.png",
+                                    "name": "monkey.png #id:monkey3",
                                     "bounds": {
                                         "top": 1954,
                                         "left": 1045,
@@ -170,7 +175,7 @@
                                     "generatorSettings": false,
                                     "smartObject": {
                                         "ID": "f0cb1cb3-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "5761f950-3b6c-11e5-8fde-d6aa4ecf977f",
+                                        "placed": "0d76907d-3d11-11e5-bddd-d058a4864f8c",
                                         "frameStep": {
                                             "numerator": 20,
                                             "denominator": 600
@@ -198,7 +203,7 @@
                                     "id": 62,
                                     "index": 37,
                                     "type": "layer",
-                                    "name": "monkey.png",
+                                    "name": "monkey.png #id:monkey4",
                                     "bounds": {
                                         "top": 2174,
                                         "left": 1045,
@@ -210,7 +215,7 @@
                                     "generatorSettings": false,
                                     "smartObject": {
                                         "ID": "f0cb1cb3-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "57607291-3b6c-11e5-8fde-d6aa4ecf977f",
+                                        "placed": "14618b7a-3d11-11e5-bddd-d058a4864f8c",
                                         "frameStep": {
                                             "numerator": 20,
                                             "denominator": 600
@@ -238,7 +243,7 @@
                                     "id": 64,
                                     "index": 36,
                                     "type": "layer",
-                                    "name": "monkey_head.png",
+                                    "name": "monkey_head.png #id:monkey5",
                                     "bounds": {
                                         "top": 2395,
                                         "left": 1045,
@@ -250,7 +255,7 @@
                                     "generatorSettings": false,
                                     "smartObject": {
                                         "ID": "f0cb1cb2-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "575e9dbf-3b6c-11e5-8fde-d6aa4ecf977f",
+                                        "placed": "2607abfe-3d11-11e5-bddd-d058a4864f8c",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -276,10 +281,10 @@
                     "type": "layerSection",
                     "name": "layer2",
                     "bounds": {
-                        "top": 1215,
-                        "left": 1021,
+                        "top": 1212,
+                        "left": 1018,
                         "bottom": 2197,
-                        "right": 1973
+                        "right": 1970
                     },
                     "visible": true,
                     "clipped": false,
@@ -294,10 +299,10 @@
                             "type": "layerSection",
                             "name": "logo.png",
                             "bounds": {
-                                "top": 1215,
-                                "left": 1021,
-                                "bottom": 1372,
-                                "right": 1973
+                                "top": 1212,
+                                "left": 1018,
+                                "bottom": 1369,
+                                "right": 1970
                             },
                             "visible": true,
                             "clipped": false,
@@ -463,10 +468,10 @@
                                         "right": 1966
                                     },
                                     "boundsWithFX": {
-                                        "top": 1215,
-                                        "left": 1021,
-                                        "bottom": 1372,
-                                        "right": 1973
+                                        "top": 1212,
+                                        "left": 1018,
+                                        "bottom": 1369,
+                                        "right": 1970
                                     },
                                     "visible": true,
                                     "clipped": false,
@@ -604,7 +609,7 @@
                             "id": 68,
                             "index": 28,
                             "type": "layerSection",
-                            "name": "leavs #group position:relativeToSize",
+                            "name": "leavs #group #position:relativeToSize",
                             "bounds": {
                                 "top": 1523,
                                 "left": 1272,
@@ -724,10 +729,10 @@
                     "type": "layerSection",
                     "name": "layer1",
                     "bounds": {
-                        "top": 2484,
-                        "left": 1158,
-                        "bottom": 2892,
-                        "right": 1837
+                        "top": 2481,
+                        "left": 1155,
+                        "bottom": 2889,
+                        "right": 1834
                     },
                     "visible": true,
                     "clipped": false,
@@ -740,12 +745,12 @@
                             "id": 38,
                             "index": 21,
                             "type": "layerSection",
-                            "name": "play_button #button",
+                            "name": "play_button #button #id:playBtn",
                             "bounds": {
-                                "top": 2484,
-                                "left": 1158,
-                                "bottom": 2666,
-                                "right": 1837
+                                "top": 2481,
+                                "left": 1155,
+                                "bottom": 2663,
+                                "right": 1834
                             },
                             "visible": true,
                             "clipped": false,
@@ -970,10 +975,10 @@
                                         "right": 1830
                                     },
                                     "boundsWithFX": {
-                                        "top": 2484,
-                                        "left": 1158,
-                                        "bottom": 2666,
-                                        "right": 1837
+                                        "top": 2481,
+                                        "left": 1155,
+                                        "bottom": 2663,
+                                        "right": 1834
                                     },
                                     "visible": true,
                                     "clipped": false,
@@ -1032,12 +1037,12 @@
                             "id": 40,
                             "index": 16,
                             "type": "layerSection",
-                            "name": "more_games_button #button",
+                            "name": "more_games_button #button #id:moreBtn",
                             "bounds": {
-                                "top": 2710,
-                                "left": 1158,
-                                "bottom": 2892,
-                                "right": 1837
+                                "top": 2707,
+                                "left": 1155,
+                                "bottom": 2889,
+                                "right": 1834
                             },
                             "visible": true,
                             "clipped": false,
@@ -1262,10 +1267,10 @@
                                         "right": 1830
                                     },
                                     "boundsWithFX": {
-                                        "top": 2710,
-                                        "left": 1158,
-                                        "bottom": 2892,
-                                        "right": 1837
+                                        "top": 2707,
+                                        "left": 1155,
+                                        "bottom": 2889,
+                                        "right": 1834
                                     },
                                     "visible": true,
                                     "clipped": false,
@@ -1362,7 +1367,7 @@
                                     "id": 33,
                                     "index": 8,
                                     "type": "layer",
-                                    "name": "cloud_1.png",
+                                    "name": "cloud_1.png #id:cloud1",
                                     "bounds": {
                                         "top": 2903,
                                         "left": 560,
@@ -1385,7 +1390,7 @@
                                     },
                                     "smartObject": {
                                         "ID": "f0cb1cae-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "575e9dbc-3b6c-11e5-8fde-d6aa4ecf977f",
+                                        "placed": "70486b84-3d11-11e5-bddd-d058a4864f8c",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -1405,7 +1410,7 @@
                                     "id": 32,
                                     "index": 7,
                                     "type": "layer",
-                                    "name": "cloud_4.png",
+                                    "name": "cloud_4.png #id:cloud2",
                                     "bounds": {
                                         "top": 2317,
                                         "left": 646,
@@ -1428,7 +1433,7 @@
                                     },
                                     "smartObject": {
                                         "ID": "f0cb1cad-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "575e9dbb-3b6c-11e5-8fde-d6aa4ecf977f",
+                                        "placed": "7679cac5-3d11-11e5-bddd-d058a4864f8c",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -1448,7 +1453,7 @@
                                     "id": 31,
                                     "index": 6,
                                     "type": "layer",
-                                    "name": "cloud_3.png",
+                                    "name": "cloud_3.png #id:cloud3",
                                     "bounds": {
                                         "top": 2163,
                                         "left": 627,
@@ -1471,7 +1476,7 @@
                                     },
                                     "smartObject": {
                                         "ID": "f0cb1cac-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "570c0fdd-3b6c-11e5-8fde-d6aa4ecf977f",
+                                        "placed": "7cc3af6f-3d11-11e5-bddd-d058a4864f8c",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -1491,7 +1496,7 @@
                                     "id": 30,
                                     "index": 5,
                                     "type": "layer",
-                                    "name": "cloud_2.png",
+                                    "name": "cloud_2.png #id:cloud4",
                                     "bounds": {
                                         "top": 1677,
                                         "left": 488,
@@ -1514,7 +1519,7 @@
                                     },
                                     "smartObject": {
                                         "ID": "f0cb1cab-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "570c0fdc-3b6c-11e5-8fde-d6aa4ecf977f",
+                                        "placed": "8b331c0f-3d11-11e5-bddd-d058a4864f8c",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -1534,7 +1539,7 @@
                                     "id": 29,
                                     "index": 4,
                                     "type": "layer",
-                                    "name": "cloud_1.png",
+                                    "name": "cloud_1.png #id:cloud5",
                                     "bounds": {
                                         "top": 1066,
                                         "left": 550,
@@ -1557,7 +1562,7 @@
                                     },
                                     "smartObject": {
                                         "ID": "f0cb1caa-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "570c0fdb-3b6c-11e5-8fde-d6aa4ecf977f",
+                                        "placed": "8b389a73-3d11-11e5-bddd-d058a4864f8c",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -1603,7 +1608,7 @@
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 2263,
+            "id": 1963,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\f5a1c7d0-a111-4e4e-93f0-df2304819757.psd",
             "bounds": {
                 "top": 0,
@@ -1650,7 +1655,7 @@
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 2260,
+            "id": 1960,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\a258b1b1-4e1f-4399-8043-7e9c45c72395.psd",
             "bounds": {
                 "top": 0,
@@ -1697,7 +1702,7 @@
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 2257,
+            "id": 1957,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\2f2448b6-ba0f-4acb-9d61-c283f368afc1.psd",
             "bounds": {
                 "top": 0,
@@ -1744,7 +1749,7 @@
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 2254,
+            "id": 1954,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\8fc75de9-9daf-4ae4-88cf-a955008c164e.psd",
             "bounds": {
                 "top": 0,
@@ -1791,7 +1796,7 @@
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 2251,
+            "id": 1951,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\f5a1c7d0-a111-4e4e-93f0-df2304819757.psd",
             "bounds": {
                 "top": 0,
@@ -1838,7 +1843,7 @@
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 2244,
+            "id": 1944,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\6c70545e-62a3-4a8f-93c2-38f6e7c69697.psd",
             "bounds": {
                 "top": 0,
@@ -1902,7 +1907,7 @@
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 2237,
+            "id": 1937,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\6c70545e-62a3-4a8f-93c2-38f6e7c69697.psd",
             "bounds": {
                 "top": 0,
@@ -1966,7 +1971,7 @@
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 2230,
+            "id": 1930,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\6c70545e-62a3-4a8f-93c2-38f6e7c69697.psd",
             "bounds": {
                 "top": 0,
@@ -2030,7 +2035,7 @@
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 2223,
+            "id": 1923,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\0c16179b-c939-489d-b001-da08f92a1de5.psd",
             "bounds": {
                 "top": 0,
@@ -2390,7 +2395,7 @@
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 1660,
+            "id": 1510,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\f70ff23c-239a-47f1-9767-bc940239e4d6.psd",
             "bounds": {
                 "top": 0,
@@ -2464,7 +2469,7 @@
                             "generatorSettings": false,
                             "smartObject": {
                                 "ID": "82db702d-3515-11e5-a1b2-ec2f0337e91e",
-                                "placed": "575fd652-3b6c-11e5-8fde-d6aa4ecf977f",
+                                "placed": "82db702c-3515-11e5-a1b2-ec2f0337e91e",
                                 "frameStep": {
                                     "numerator": 20,
                                     "denominator": 600
@@ -2476,13 +2481,13 @@
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
-                                    -2.84217e-14,
+                                    -1.42109e-14,
                                     0,
                                     253,
                                     0,
                                     253,
                                     259,
-                                    -2.84217e-14,
+                                    -1.42109e-14,
                                     259
                                 ],
                                 "comp": -1
@@ -2594,7 +2599,7 @@
                     "fileType": 943870035,
                     "fileCreator": 538976288,
                     "size": 0,
-                    "id": 1667,
+                    "id": 1517,
                     "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\67f6ebe2-8793-418f-9986-579ab0cff888.psd",
                     "bounds": {
                         "top": 0,
@@ -2699,7 +2704,7 @@
                                     "generatorSettings": false,
                                     "smartObject": {
                                         "ID": "3fd5f579-3514-11e5-a1b2-ec2f0337e91e",
-                                        "placed": "575fd649-3b6c-11e5-8fde-d6aa4ecf977f",
+                                        "placed": "3fd5f578-3514-11e5-a1b2-ec2f0337e91e",
                                         "frameStep": {
                                             "numerator": 20,
                                             "denominator": 600
@@ -2845,7 +2850,7 @@
                             "fileType": 943870035,
                             "fileCreator": 538976288,
                             "size": 0,
-                            "id": 1674,
+                            "id": 1524,
                             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\f01559d7-a63c-4e5d-9426-e91f7ba72ced.psd",
                             "bounds": {
                                 "top": 0,
@@ -2902,7 +2907,7 @@
                                             "generatorSettings": false,
                                             "smartObject": {
                                                 "ID": "2b9dba0e-3514-11e5-a1b2-ec2f0337e91e",
-                                                "placed": "56389022-3b6c-11e5-8fde-d6aa4ecf977f",
+                                                "placed": "2b9dba0d-3514-11e5-a1b2-ec2f0337e91e",
                                                 "antiAliasType": 16,
                                                 "type": 2,
                                                 "transform": [
@@ -2934,7 +2939,7 @@
                                             "generatorSettings": false,
                                             "smartObject": {
                                                 "ID": "2b9dba0f-3514-11e5-a1b2-ec2f0337e91e",
-                                                "placed": "56bd2b5f-3b6c-11e5-8fde-d6aa4ecf977f",
+                                                "placed": "2b9d6c26-3514-11e5-a1b2-ec2f0337e91e",
                                                 "antiAliasType": 16,
                                                 "type": 2,
                                                 "transform": [
@@ -2966,7 +2971,7 @@
                                             "generatorSettings": false,
                                             "smartObject": {
                                                 "ID": "2b9dba0e-3514-11e5-a1b2-ec2f0337e91e",
-                                                "placed": "56e26727-3b6c-11e5-8fde-d6aa4ecf977f",
+                                                "placed": "2b9d6c21-3514-11e5-a1b2-ec2f0337e91e",
                                                 "antiAliasType": 16,
                                                 "type": 2,
                                                 "transform": [
@@ -2992,7 +2997,7 @@
                                     "fileType": 943870018,
                                     "fileCreator": 943868237,
                                     "size": 1048576,
-                                    "id": 2266,
+                                    "id": 1966,
                                     "file": "Layer 7.psb",
                                     "bounds": {
                                         "top": 0,
@@ -3039,7 +3044,7 @@
                                     "fileType": 943870018,
                                     "fileCreator": 943868237,
                                     "size": 1048576,
-                                    "id": 2273,
+                                    "id": 1973,
                                     "file": "Layer 14.psb",
                                     "bounds": {
                                         "top": 0,
@@ -3092,7 +3097,7 @@
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 2216,
+            "id": 1916,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\0c16179b-c939-489d-b001-da08f92a1de5.psd",
             "bounds": {
                 "top": 0,
