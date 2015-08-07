@@ -1,4 +1,4 @@
-var ps_document = require('./document4');
+var ps_document = require('./document');
 var fs = require('fs');
 
 function writeJSONFile(fileName, data) {
