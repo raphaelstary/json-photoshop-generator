@@ -55,31 +55,32 @@ function getLayerData(layer) {
     return {
         bounds: {
             left: layer.bounds[0].value,
-                top: layer.bounds[1].value,
-                right: layer.bounds[2].value,
-                bottom: layer.bounds[3].value
+            top: layer.bounds[1].value,
+            right: layer.bounds[2].value,
+            bottom: layer.bounds[3].value
         },
         opacity: layer.opacity,
-            blendMode: layer.blendMode.toString()
+        blendMode: layer.blendMode.toString()
     };
 }
 
-function collectKeyframeData(layer, dataDict) {
+function collectKeyframeData(layer, dataDict, maxFrames) {
     var keyFrames = [];
     dataDict[layer.name] = keyFrames;
     keyFrames.push(getLayerData(layer));
 
-    var i = 0;
-    while (i < 50) {
-        i++;
-        try {
-            jumpToNextKeyframe();
+    var last;
+    var next;
+    for(var i = 0; i < maxFrames; i++) {
+        jumpToNextKeyframe();
 
-            keyFrames.push(getLayerData(layer));
-
-        } catch (error) {
+        next = getLayerData(layer);
+        if (last && next.bounds.left == last.bounds.left && next.bounds.top == last.bounds.top &&
+            next.bounds.right == last.bounds.right && next.bounds.bottom == last.bounds.bottom) {
             return;
         }
+        keyFrames.push(next);
+        last = next;
     }
 }
 
@@ -106,7 +107,7 @@ function run() {
 
         var layer = selectLayer(anim.id);
 
-        collectKeyframeData(layer, drawables);
+        collectKeyframeData(layer, drawables, 50);
     }
 
     saveFile(JSON.stringify(drawables, null, "    "));
