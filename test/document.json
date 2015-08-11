@@ -1,7 +1,7 @@
 {
     "version": "1.3.0",
-    "timeStamp": 1438958513.346,
-    "count": 56,
+    "timeStamp": 1439224944.21,
+    "count": 67,
     "id": 1484,
     "file": "C:\\Users\\Raphael\\SkyDrive\\Documents\\affenbande\\affenbande_scenes.psd",
     "bounds": {
@@ -11,7 +11,7 @@
         "right": 2266
     },
     "selection": [
-        21
+        10
     ],
     "resolution": 72,
     "globalLight": {
@@ -20,14 +20,14 @@
     },
     "generatorSettings": {
         "generator_45_assets": {
-            "json": "{\"enabled\":true}"
+            "json": "{\"enabled\":false}"
         },
         "layerTime": 1438960000
     },
     "layers": [
         {
             "id": 5,
-            "index": 43,
+            "index": 54,
             "type": "layerSection",
             "name": "start_screen",
             "bounds": {
@@ -52,8 +52,168 @@
             },
             "layers": [
                 {
+                    "id": 331,
+                    "index": 53,
+                    "type": "layerSection",
+                    "name": "just for generator",
+                    "bounds": {
+                        "top": 1734,
+                        "left": 1045,
+                        "bottom": 2665,
+                        "right": 1837
+                    },
+                    "visible": false,
+                    "clipped": false,
+                    "blendOptions": {
+                        "mode": "passThrough"
+                    },
+                    "generatorSettings": false,
+                    "layers": [
+                        {
+                            "id": 334,
+                            "index": 52,
+                            "type": "layer",
+                            "name": "monkey_head.png",
+                            "bounds": {
+                                "top": 1734,
+                                "left": 1265,
+                                "bottom": 1986,
+                                "right": 1517
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "generatorSettings": false,
+                            "smartObject": {
+                                "ID": "b5358453-3f71-11e5-af00-bc6ea7c2a3bd",
+                                "placed": "2c346072-3f7e-11e5-9bf6-9e5e69bf1d65",
+                                "antiAliasType": 16,
+                                "type": 2,
+                                "transform": [
+                                    1265,
+                                    1733,
+                                    1518,
+                                    1733,
+                                    1518,
+                                    1992,
+                                    1265,
+                                    1992
+                                ],
+                                "comp": -1
+                            }
+                        },
+                        {
+                            "id": 335,
+                            "index": 51,
+                            "type": "layer",
+                            "name": "monkey.png",
+                            "bounds": {
+                                "top": 1734,
+                                "left": 1045,
+                                "bottom": 1986,
+                                "right": 1297
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "generatorSettings": false,
+                            "smartObject": {
+                                "ID": "b5358452-3f71-11e5-af00-bc6ea7c2a3bd",
+                                "placed": "38f96780-3f7e-11e5-9bf6-9e5e69bf1d65",
+                                "frameStep": {
+                                    "numerator": 20,
+                                    "denominator": 600
+                                },
+                                "duration": {
+                                    "numerator": 3400,
+                                    "denominator": 600
+                                },
+                                "antiAliasType": 16,
+                                "type": 2,
+                                "transform": [
+                                    1045,
+                                    1733,
+                                    1298,
+                                    1733,
+                                    1298,
+                                    1992,
+                                    1045,
+                                    1992
+                                ],
+                                "comp": -1
+                            }
+                        },
+                        {
+                            "id": 333,
+                            "index": 50,
+                            "type": "shapeLayer",
+                            "name": "button.png",
+                            "bounds": {
+                                "top": 2486,
+                                "left": 1164,
+                                "bottom": 2655,
+                                "right": 1830
+                            },
+                            "boundsWithFX": {
+                                "top": 2483,
+                                "left": 1158,
+                                "bottom": 2665,
+                                "right": 1837
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "blendOptions": {
+                                "opacity": {
+                                    "value": 50,
+                                    "units": "percentUnit"
+                                }
+                            },
+                            "fill": {
+                                "color": {
+                                    "red": 255,
+                                    "green": 255,
+                                    "blue": 255
+                                },
+                                "class": "solidColorLayer"
+                            },
+                            "generatorSettings": false,
+                            "layerEffects": {
+                                "dropShadow": {
+                                    "enabled": true
+                                },
+                                "innerGlow": {
+                                    "enabled": true
+                                },
+                                "bevelEmboss": {
+                                    "enabled": true
+                                }
+                            },
+                            "path": {
+                                "pathComponents": [
+                                    {
+                                        "origin": {
+                                            "type": "rect",
+                                            "bounds": {
+                                                "top": 2486,
+                                                "left": 1164,
+                                                "bottom": 2655,
+                                                "right": 1830
+                                            }
+                                        }
+                                    }
+                                ],
+                                "bounds": {
+                                    "top": 2486,
+                                    "left": 1164,
+                                    "bottom": 2655,
+                                    "right": 1830
+                                },
+                                "defaultFill": false
+                            }
+                        }
+                    ]
+                },
+                {
                     "id": 246,
-                    "index": 42,
+                    "index": 48,
                     "type": "layerSection",
                     "name": "layer3",
                     "bounds": {
@@ -71,7 +231,7 @@
                     "layers": [
                         {
                             "id": 65,
-                            "index": 41,
+                            "index": 47,
                             "type": "layerSection",
                             "name": "monks #position:relativeToSize #anchor:widthHalf",
                             "bounds": {
@@ -89,7 +249,7 @@
                             "layers": [
                                 {
                                     "id": 63,
-                                    "index": 40,
+                                    "index": 46,
                                     "type": "layer",
                                     "name": "monkey_head.png #id:monkey1",
                                     "bounds": {
@@ -102,8 +262,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "f0cb1cb4-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "2619ad69-3d11-11e5-bddd-d058a4864f8c",
+                                        "ID": "b5358453-3f71-11e5-af00-bc6ea7c2a3bd",
+                                        "placed": "b5355d48-3f71-11e5-af00-bc6ea7c2a3bd",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -121,7 +281,7 @@
                                 },
                                 {
                                     "id": 21,
-                                    "index": 39,
+                                    "index": 45,
                                     "type": "layer",
                                     "name": "monkey.png #id:monkey2",
                                     "bounds": {
@@ -134,8 +294,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "f0cb1cb3-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "1453339a-3d11-11e5-bddd-d058a4864f8c",
+                                        "ID": "b5358452-3f71-11e5-af00-bc6ea7c2a3bd",
+                                        "placed": "b5355d43-3f71-11e5-af00-bc6ea7c2a3bd",
                                         "frameStep": {
                                             "numerator": 20,
                                             "denominator": 600
@@ -161,7 +321,7 @@
                                 },
                                 {
                                     "id": 61,
-                                    "index": 38,
+                                    "index": 44,
                                     "type": "layer",
                                     "name": "monkey.png #id:monkey3",
                                     "bounds": {
@@ -174,8 +334,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "f0cb1cb3-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "0d76907d-3d11-11e5-bddd-d058a4864f8c",
+                                        "ID": "b5358452-3f71-11e5-af00-bc6ea7c2a3bd",
+                                        "placed": "b5355d3e-3f71-11e5-af00-bc6ea7c2a3bd",
                                         "frameStep": {
                                             "numerator": 20,
                                             "denominator": 600
@@ -201,7 +361,7 @@
                                 },
                                 {
                                     "id": 62,
-                                    "index": 37,
+                                    "index": 43,
                                     "type": "layer",
                                     "name": "monkey.png #id:monkey4",
                                     "bounds": {
@@ -214,8 +374,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "f0cb1cb3-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "14618b7a-3d11-11e5-bddd-d058a4864f8c",
+                                        "ID": "b5358452-3f71-11e5-af00-bc6ea7c2a3bd",
+                                        "placed": "b5353633-3f71-11e5-af00-bc6ea7c2a3bd",
                                         "frameStep": {
                                             "numerator": 20,
                                             "denominator": 600
@@ -241,7 +401,7 @@
                                 },
                                 {
                                     "id": 64,
-                                    "index": 36,
+                                    "index": 42,
                                     "type": "layer",
                                     "name": "monkey_head.png #id:monkey5",
                                     "bounds": {
@@ -254,8 +414,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "f0cb1cb2-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "2607abfe-3d11-11e5-bddd-d058a4864f8c",
+                                        "ID": "b5358451-3f71-11e5-af00-bc6ea7c2a3bd",
+                                        "placed": "b535362e-3f71-11e5-af00-bc6ea7c2a3bd",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -277,14 +437,14 @@
                 },
                 {
                     "id": 244,
-                    "index": 33,
+                    "index": 39,
                     "type": "layerSection",
                     "name": "layer2",
                     "bounds": {
-                        "top": 1212,
-                        "left": 1018,
+                        "top": 1031,
+                        "left": 949,
                         "bottom": 2197,
-                        "right": 1970
+                        "right": 1973
                     },
                     "visible": true,
                     "clipped": false,
@@ -294,15 +454,232 @@
                     "generatorSettings": false,
                     "layers": [
                         {
+                            "id": 328,
+                            "index": 38,
+                            "type": "layerSection",
+                            "name": "settings.png",
+                            "bounds": {
+                                "top": 1031,
+                                "left": 949,
+                                "bottom": 1184,
+                                "right": 1102
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "blendOptions": {
+                                "mode": "passThrough"
+                            },
+                            "generatorSettings": false,
+                            "layers": [
+                                {
+                                    "id": 327,
+                                    "index": 37,
+                                    "type": "layer",
+                                    "name": "Layer 1",
+                                    "bounds": {
+                                        "top": 0,
+                                        "left": 0,
+                                        "bottom": 3232,
+                                        "right": 2266
+                                    },
+                                    "visible": true,
+                                    "clipped": true,
+                                    "pixels": true,
+                                    "generatorSettings": false
+                                },
+                                {
+                                    "id": 324,
+                                    "index": 36,
+                                    "type": "layer",
+                                    "name": "Layer 0",
+                                    "bounds": {
+                                        "top": 1072,
+                                        "left": 993,
+                                        "bottom": 1136,
+                                        "right": 1057
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "generatorSettings": false,
+                                    "smartObject": {
+                                        "ID": "2a126ac1-3f79-11e5-9bf6-9e5e69bf1d65",
+                                        "placed": "cc0b5a13-3f79-11e5-9bf6-9e5e69bf1d65",
+                                        "antiAliasType": 16,
+                                        "type": 2,
+                                        "transform": [
+                                            993,
+                                            1072,
+                                            1057,
+                                            1072,
+                                            1057,
+                                            1136,
+                                            993,
+                                            1136
+                                        ],
+                                        "comp": -1
+                                    }
+                                },
+                                {
+                                    "id": 326,
+                                    "index": 35,
+                                    "type": "shapeLayer",
+                                    "name": "Rectangle 1",
+                                    "bounds": {
+                                        "top": 1034,
+                                        "left": 955,
+                                        "bottom": 1174,
+                                        "right": 1095
+                                    },
+                                    "boundsWithFX": {
+                                        "top": 1031,
+                                        "left": 949,
+                                        "bottom": 1184,
+                                        "right": 1102
+                                    },
+                                    "visible": true,
+                                    "clipped": false,
+                                    "blendOptions": {
+                                        "opacity": {
+                                            "value": 50,
+                                            "units": "percentUnit"
+                                        }
+                                    },
+                                    "fill": {
+                                        "color": {
+                                            "red": 255,
+                                            "green": 255,
+                                            "blue": 255
+                                        },
+                                        "class": "solidColorLayer"
+                                    },
+                                    "generatorSettings": false,
+                                    "layerEffects": {
+                                        "dropShadow": {
+                                            "enabled": true
+                                        },
+                                        "innerGlow": {
+                                            "enabled": true
+                                        },
+                                        "bevelEmboss": {
+                                            "enabled": true,
+                                            "pattern": {
+                                                "name": "$$$/Patterns/Defaults/Watercolor=Watercolor",
+                                                "ID": "e4efcefe-3f79-11e5-9bf6-9e5e69bf1d65"
+                                            }
+                                        }
+                                    },
+                                    "path": {
+                                        "pathComponents": [
+                                            {
+                                                "origin": {
+                                                    "type": "rect",
+                                                    "bounds": {
+                                                        "top": 1034,
+                                                        "left": 955,
+                                                        "bottom": 1174,
+                                                        "right": 1095
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "bounds": {
+                                            "top": 1034,
+                                            "left": 955,
+                                            "bottom": 1174,
+                                            "right": 1095
+                                        },
+                                        "defaultFill": false
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 330,
+                            "index": 33,
+                            "type": "shapeLayer",
+                            "name": "#input #tap:goSettings",
+                            "bounds": {
+                                "top": 966,
+                                "left": 876,
+                                "bottom": 1351,
+                                "right": 1278
+                            },
+                            "visible": false,
+                            "clipped": false,
+                            "fill": {
+                                "color": {
+                                    "red": 0,
+                                    "green": 0,
+                                    "blue": 0
+                                },
+                                "class": "solidColorLayer"
+                            },
+                            "strokeStyle": {
+                                "strokeStyleVersion": 2,
+                                "strokeEnabled": true,
+                                "fillEnabled": false,
+                                "strokeStyleLineWidth": {
+                                    "value": 1,
+                                    "units": "pointsUnit"
+                                },
+                                "strokeStyleLineDashOffset": {
+                                    "value": 0,
+                                    "units": "pointsUnit"
+                                },
+                                "strokeStyleMiterLimit": 100,
+                                "strokeStyleLineCapType": "strokeStyleButtCap",
+                                "strokeStyleLineJoinType": "strokeStyleMiterJoin",
+                                "strokeStyleLineAlignment": "strokeStyleAlignInside",
+                                "strokeStyleScaleLock": false,
+                                "strokeStyleStrokeAdjust": false,
+                                "strokeStyleBlendMode": "normal",
+                                "strokeStyleOpacity": {
+                                    "value": 100,
+                                    "units": "percentUnit"
+                                },
+                                "strokeStyleContent": {
+                                    "color": {
+                                        "red": 0,
+                                        "green": 0,
+                                        "blue": 0
+                                    }
+                                },
+                                "strokeStyleResolution": 72
+                            },
+                            "generatorSettings": false,
+                            "path": {
+                                "pathComponents": [
+                                    {
+                                        "origin": {
+                                            "type": "rect",
+                                            "bounds": {
+                                                "top": 966,
+                                                "left": 876,
+                                                "bottom": 1351,
+                                                "right": 1278
+                                            }
+                                        }
+                                    }
+                                ],
+                                "bounds": {
+                                    "top": 966,
+                                    "left": 876,
+                                    "bottom": 1351,
+                                    "right": 1278
+                                },
+                                "defaultFill": false
+                            }
+                        },
+                        {
                             "id": 150,
                             "index": 32,
                             "type": "layerSection",
                             "name": "logo.png",
                             "bounds": {
-                                "top": 1212,
-                                "left": 1018,
-                                "bottom": 1369,
-                                "right": 1970
+                                "top": 1215,
+                                "left": 1021,
+                                "bottom": 1372,
+                                "right": 1973
                             },
                             "visible": true,
                             "clipped": false,
@@ -468,10 +845,10 @@
                                         "right": 1966
                                     },
                                     "boundsWithFX": {
-                                        "top": 1212,
-                                        "left": 1018,
-                                        "bottom": 1369,
-                                        "right": 1970
+                                        "top": 1215,
+                                        "left": 1021,
+                                        "bottom": 1372,
+                                        "right": 1973
                                     },
                                     "visible": true,
                                     "clipped": false,
@@ -638,8 +1015,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "f0cb1cb1-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "f0cace9c-3aa1-11e5-995a-a75ffbfad9d1",
+                                        "ID": "b5358450-3f71-11e5-af00-bc6ea7c2a3bd",
+                                        "placed": "b534e81a-3f71-11e5-af00-bc6ea7c2a3bd",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -670,8 +1047,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "f0cb1cb0-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "f0cace97-3aa1-11e5-995a-a75ffbfad9d1",
+                                        "ID": "b535844f-3f71-11e5-af00-bc6ea7c2a3bd",
+                                        "placed": "b534e815-3f71-11e5-af00-bc6ea7c2a3bd",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -702,8 +1079,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "f0cb1caf-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "f0cace92-3aa1-11e5-995a-a75ffbfad9d1",
+                                        "ID": "b535844e-3f71-11e5-af00-bc6ea7c2a3bd",
+                                        "placed": "b534e810-3f71-11e5-af00-bc6ea7c2a3bd",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -729,10 +1106,10 @@
                     "type": "layerSection",
                     "name": "layer1",
                     "bounds": {
-                        "top": 2481,
-                        "left": 1155,
-                        "bottom": 2889,
-                        "right": 1834
+                        "top": 2483,
+                        "left": 1158,
+                        "bottom": 2891,
+                        "right": 1837
                     },
                     "visible": true,
                     "clipped": false,
@@ -747,10 +1124,10 @@
                             "type": "layerSection",
                             "name": "play_button #button #id:playBtn",
                             "bounds": {
-                                "top": 2481,
-                                "left": 1155,
-                                "bottom": 2663,
-                                "right": 1834
+                                "top": 2483,
+                                "left": 1158,
+                                "bottom": 2665,
+                                "right": 1837
                             },
                             "visible": true,
                             "clipped": false,
@@ -765,9 +1142,9 @@
                                     "type": "textLayer",
                                     "name": "play",
                                     "bounds": {
-                                        "top": 2534,
+                                        "top": 2533,
                                         "left": 1420,
-                                        "bottom": 2610,
+                                        "bottom": 2609,
                                         "right": 1574
                                     },
                                     "visible": true,
@@ -781,7 +1158,7 @@
                                                 "units": "percentUnit"
                                             },
                                             "vertical": {
-                                                "value": 80.432,
+                                                "value": 80.4011,
                                                 "units": "percentUnit"
                                             }
                                         },
@@ -893,11 +1270,11 @@
                                     "id": 249,
                                     "index": 19,
                                     "type": "shapeLayer",
-                                    "name": "#input",
+                                    "name": "#input #tap:pressPlay",
                                     "bounds": {
-                                        "top": 2233,
+                                        "top": 2232,
                                         "left": 902,
-                                        "bottom": 2686,
+                                        "bottom": 2685,
                                         "right": 2093
                                     },
                                     "visible": false,
@@ -946,18 +1323,18 @@
                                                 "origin": {
                                                     "type": "rect",
                                                     "bounds": {
-                                                        "top": 2233,
+                                                        "top": 2232,
                                                         "left": 902,
-                                                        "bottom": 2686,
+                                                        "bottom": 2685,
                                                         "right": 2093
                                                     }
                                                 }
                                             }
                                         ],
                                         "bounds": {
-                                            "top": 2233,
+                                            "top": 2232,
                                             "left": 902,
-                                            "bottom": 2686,
+                                            "bottom": 2685,
                                             "right": 2093
                                         },
                                         "defaultFill": false
@@ -967,18 +1344,18 @@
                                     "id": 47,
                                     "index": 18,
                                     "type": "shapeLayer",
-                                    "name": "#background",
+                                    "name": "button.png #background",
                                     "bounds": {
-                                        "top": 2487,
+                                        "top": 2486,
                                         "left": 1164,
-                                        "bottom": 2656,
+                                        "bottom": 2655,
                                         "right": 1830
                                     },
                                     "boundsWithFX": {
-                                        "top": 2481,
-                                        "left": 1155,
-                                        "bottom": 2663,
-                                        "right": 1834
+                                        "top": 2483,
+                                        "left": 1158,
+                                        "bottom": 2665,
+                                        "right": 1837
                                     },
                                     "visible": true,
                                     "clipped": false,
@@ -1014,18 +1391,18 @@
                                                 "origin": {
                                                     "type": "rect",
                                                     "bounds": {
-                                                        "top": 2487,
+                                                        "top": 2486,
                                                         "left": 1164,
-                                                        "bottom": 2656,
+                                                        "bottom": 2655,
                                                         "right": 1830
                                                     }
                                                 }
                                             }
                                         ],
                                         "bounds": {
-                                            "top": 2487,
+                                            "top": 2486,
                                             "left": 1164,
-                                            "bottom": 2656,
+                                            "bottom": 2655,
                                             "right": 1830
                                         },
                                         "defaultFill": false
@@ -1039,10 +1416,10 @@
                             "type": "layerSection",
                             "name": "more_games_button #button #id:moreBtn",
                             "bounds": {
-                                "top": 2707,
-                                "left": 1155,
-                                "bottom": 2889,
-                                "right": 1834
+                                "top": 2709,
+                                "left": 1158,
+                                "bottom": 2891,
+                                "right": 1837
                             },
                             "visible": true,
                             "clipped": false,
@@ -1057,9 +1434,9 @@
                                     "type": "textLayer",
                                     "name": "more games",
                                     "bounds": {
-                                        "top": 2756,
+                                        "top": 2755,
                                         "left": 1263,
-                                        "bottom": 2837,
+                                        "bottom": 2836,
                                         "right": 1730
                                     },
                                     "visible": true,
@@ -1073,7 +1450,7 @@
                                                 "units": "percentUnit"
                                             },
                                             "vertical": {
-                                                "value": 87.262,
+                                                "value": 87.2311,
                                                 "units": "percentUnit"
                                             }
                                         },
@@ -1185,11 +1562,11 @@
                                     "id": 251,
                                     "index": 14,
                                     "type": "shapeLayer",
-                                    "name": "#input",
+                                    "name": "#input #tap:pressMore",
                                     "bounds": {
-                                        "top": 2692,
+                                        "top": 2691,
                                         "left": 902,
-                                        "bottom": 2993,
+                                        "bottom": 2992,
                                         "right": 2093
                                     },
                                     "visible": false,
@@ -1238,18 +1615,18 @@
                                                 "origin": {
                                                     "type": "rect",
                                                     "bounds": {
-                                                        "top": 2692,
+                                                        "top": 2691,
                                                         "left": 902,
-                                                        "bottom": 2993,
+                                                        "bottom": 2992,
                                                         "right": 2093
                                                     }
                                                 }
                                             }
                                         ],
                                         "bounds": {
-                                            "top": 2692,
+                                            "top": 2691,
                                             "left": 902,
-                                            "bottom": 2993,
+                                            "bottom": 2992,
                                             "right": 2093
                                         },
                                         "defaultFill": false
@@ -1259,18 +1636,18 @@
                                     "id": 44,
                                     "index": 13,
                                     "type": "shapeLayer",
-                                    "name": "#background",
+                                    "name": "button.png #background",
                                     "bounds": {
-                                        "top": 2713,
+                                        "top": 2712,
                                         "left": 1164,
-                                        "bottom": 2882,
+                                        "bottom": 2881,
                                         "right": 1830
                                     },
                                     "boundsWithFX": {
-                                        "top": 2707,
-                                        "left": 1155,
-                                        "bottom": 2889,
-                                        "right": 1834
+                                        "top": 2709,
+                                        "left": 1158,
+                                        "bottom": 2891,
+                                        "right": 1837
                                     },
                                     "visible": true,
                                     "clipped": false,
@@ -1306,18 +1683,18 @@
                                                 "origin": {
                                                     "type": "rect",
                                                     "bounds": {
-                                                        "top": 2713,
+                                                        "top": 2712,
                                                         "left": 1164,
-                                                        "bottom": 2882,
+                                                        "bottom": 2881,
                                                         "right": 1830
                                                     }
                                                 }
                                             }
                                         ],
                                         "bounds": {
-                                            "top": 2713,
+                                            "top": 2712,
                                             "left": 1164,
-                                            "bottom": 2882,
+                                            "bottom": 2881,
                                             "right": 1830
                                         },
                                         "defaultFill": false
@@ -1367,7 +1744,7 @@
                                     "id": 33,
                                     "index": 8,
                                     "type": "layer",
-                                    "name": "cloud_1.png #id:cloud1",
+                                    "name": "cloud_1.png",
                                     "bounds": {
                                         "top": 2903,
                                         "left": 560,
@@ -1389,8 +1766,8 @@
                                         }
                                     },
                                     "smartObject": {
-                                        "ID": "f0cb1cae-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "70486b84-3d11-11e5-bddd-d058a4864f8c",
+                                        "ID": "b5355d4d-3f71-11e5-af00-bc6ea7c2a3bd",
+                                        "placed": "5d20986f-3f7e-11e5-9bf6-9e5e69bf1d65",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -1410,7 +1787,7 @@
                                     "id": 32,
                                     "index": 7,
                                     "type": "layer",
-                                    "name": "cloud_4.png #id:cloud2",
+                                    "name": "cloud_4.png",
                                     "bounds": {
                                         "top": 2317,
                                         "left": 646,
@@ -1432,8 +1809,8 @@
                                         }
                                     },
                                     "smartObject": {
-                                        "ID": "f0cb1cad-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "7679cac5-3d11-11e5-bddd-d058a4864f8c",
+                                        "ID": "b5355d4c-3f71-11e5-af00-bc6ea7c2a3bd",
+                                        "placed": "62430e61-3f7e-11e5-9bf6-9e5e69bf1d65",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -1453,7 +1830,7 @@
                                     "id": 31,
                                     "index": 6,
                                     "type": "layer",
-                                    "name": "cloud_3.png #id:cloud3",
+                                    "name": "cloud_3.png",
                                     "bounds": {
                                         "top": 2163,
                                         "left": 627,
@@ -1475,8 +1852,8 @@
                                         }
                                     },
                                     "smartObject": {
-                                        "ID": "f0cb1cac-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "7cc3af6f-3d11-11e5-bddd-d058a4864f8c",
+                                        "ID": "b5355d4b-3f71-11e5-af00-bc6ea7c2a3bd",
+                                        "placed": "6c009cf5-3f7e-11e5-9bf6-9e5e69bf1d65",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -1496,7 +1873,7 @@
                                     "id": 30,
                                     "index": 5,
                                     "type": "layer",
-                                    "name": "cloud_2.png #id:cloud4",
+                                    "name": "cloud_2.png",
                                     "bounds": {
                                         "top": 1677,
                                         "left": 488,
@@ -1518,8 +1895,8 @@
                                         }
                                     },
                                     "smartObject": {
-                                        "ID": "f0cb1cab-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "8b331c0f-3d11-11e5-bddd-d058a4864f8c",
+                                        "ID": "b5355d4a-3f71-11e5-af00-bc6ea7c2a3bd",
+                                        "placed": "6f05acc3-3f7e-11e5-9bf6-9e5e69bf1d65",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -1539,7 +1916,7 @@
                                     "id": 29,
                                     "index": 4,
                                     "type": "layer",
-                                    "name": "cloud_1.png #id:cloud5",
+                                    "name": "cloud_1.png",
                                     "bounds": {
                                         "top": 1066,
                                         "left": 550,
@@ -1561,8 +1938,8 @@
                                         }
                                     },
                                     "smartObject": {
-                                        "ID": "f0cb1caa-3aa1-11e5-995a-a75ffbfad9d1",
-                                        "placed": "8b389a73-3d11-11e5-bddd-d058a4864f8c",
+                                        "ID": "b5355d49-3f71-11e5-af00-bc6ea7c2a3bd",
+                                        "placed": "74b3a23b-3f7e-11e5-9bf6-9e5e69bf1d65",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -1603,12 +1980,54 @@
     ],
     "placed": [
         {
-            "placedID": "f0cb1caa-3aa1-11e5-995a-a75ffbfad9d1",
+            "placedID": "2a126ac1-3f79-11e5-9bf6-9e5e69bf1d65",
+            "name": "Layer 0.psd",
+            "fileType": 943870035,
+            "fileCreator": 538976288,
+            "size": 1213720099576348700,
+            "id": 2497,
+            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\fb572e7b-3f5b-4ac8-93b6-f0cf4c49aec2.psd",
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "bottom": 64,
+                "right": 64
+            },
+            "selection": [
+                0
+            ],
+            "resolution": 72,
+            "globalLight": {
+                "angle": 30,
+                "altitude": 30
+            },
+            "generatorSettings": false,
+            "layers": [
+                {
+                    "id": 5,
+                    "index": 0,
+                    "type": "layer",
+                    "name": "Layer 0",
+                    "bounds": {
+                        "top": 0,
+                        "left": 0,
+                        "bottom": 64,
+                        "right": 64
+                    },
+                    "visible": true,
+                    "clipped": false,
+                    "pixels": true,
+                    "generatorSettings": false
+                }
+            ]
+        },
+        {
+            "placedID": "b5355d49-3f71-11e5-af00-bc6ea7c2a3bd",
             "name": "cloud_1.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 1963,
+            "id": 2533,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\f5a1c7d0-a111-4e4e-93f0-df2304819757.psd",
             "bounds": {
                 "top": 0,
@@ -1650,12 +2069,12 @@
             ]
         },
         {
-            "placedID": "f0cb1cab-3aa1-11e5-995a-a75ffbfad9d1",
+            "placedID": "b5355d4a-3f71-11e5-af00-bc6ea7c2a3bd",
             "name": "cloud_2.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 1960,
+            "id": 2530,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\a258b1b1-4e1f-4399-8043-7e9c45c72395.psd",
             "bounds": {
                 "top": 0,
@@ -1697,12 +2116,12 @@
             ]
         },
         {
-            "placedID": "f0cb1cac-3aa1-11e5-995a-a75ffbfad9d1",
+            "placedID": "b5355d4b-3f71-11e5-af00-bc6ea7c2a3bd",
             "name": "cloud_3.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 1957,
+            "id": 2527,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\2f2448b6-ba0f-4acb-9d61-c283f368afc1.psd",
             "bounds": {
                 "top": 0,
@@ -1744,12 +2163,12 @@
             ]
         },
         {
-            "placedID": "f0cb1cad-3aa1-11e5-995a-a75ffbfad9d1",
+            "placedID": "b5355d4c-3f71-11e5-af00-bc6ea7c2a3bd",
             "name": "cloud_4.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 1954,
+            "id": 2524,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\8fc75de9-9daf-4ae4-88cf-a955008c164e.psd",
             "bounds": {
                 "top": 0,
@@ -1791,12 +2210,12 @@
             ]
         },
         {
-            "placedID": "f0cb1cae-3aa1-11e5-995a-a75ffbfad9d1",
+            "placedID": "b5355d4d-3f71-11e5-af00-bc6ea7c2a3bd",
             "name": "cloud_1.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 1951,
+            "id": 2521,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\f5a1c7d0-a111-4e4e-93f0-df2304819757.psd",
             "bounds": {
                 "top": 0,
@@ -1838,12 +2257,12 @@
             ]
         },
         {
-            "placedID": "f0cb1caf-3aa1-11e5-995a-a75ffbfad9d1",
+            "placedID": "b535844e-3f71-11e5-af00-bc6ea7c2a3bd",
             "name": "leave.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 1944,
+            "id": 2514,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\6c70545e-62a3-4a8f-93c2-38f6e7c69697.psd",
             "bounds": {
                 "top": 0,
@@ -1902,12 +2321,12 @@
             ]
         },
         {
-            "placedID": "f0cb1cb0-3aa1-11e5-995a-a75ffbfad9d1",
+            "placedID": "b535844f-3f71-11e5-af00-bc6ea7c2a3bd",
             "name": "leave.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 1937,
+            "id": 2507,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\6c70545e-62a3-4a8f-93c2-38f6e7c69697.psd",
             "bounds": {
                 "top": 0,
@@ -1966,12 +2385,12 @@
             ]
         },
         {
-            "placedID": "f0cb1cb1-3aa1-11e5-995a-a75ffbfad9d1",
+            "placedID": "b5358450-3f71-11e5-af00-bc6ea7c2a3bd",
             "name": "leave.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 1930,
+            "id": 2500,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\6c70545e-62a3-4a8f-93c2-38f6e7c69697.psd",
             "bounds": {
                 "top": 0,
@@ -2030,12 +2449,12 @@
             ]
         },
         {
-            "placedID": "f0cb1cb2-3aa1-11e5-995a-a75ffbfad9d1",
+            "placedID": "b5358451-3f71-11e5-af00-bc6ea7c2a3bd",
             "name": "monkey_head.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 1923,
+            "id": 2490,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\0c16179b-c939-489d-b001-da08f92a1de5.psd",
             "bounds": {
                 "top": 0,
@@ -2390,12 +2809,12 @@
             ]
         },
         {
-            "placedID": "f0cb1cb3-3aa1-11e5-995a-a75ffbfad9d1",
+            "placedID": "b5358452-3f71-11e5-af00-bc6ea7c2a3bd",
             "name": "monkey.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 1510,
+            "id": 2224,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\f70ff23c-239a-47f1-9767-bc940239e4d6.psd",
             "bounds": {
                 "top": 0,
@@ -2469,7 +2888,7 @@
                             "generatorSettings": false,
                             "smartObject": {
                                 "ID": "82db702d-3515-11e5-a1b2-ec2f0337e91e",
-                                "placed": "82db702c-3515-11e5-a1b2-ec2f0337e91e",
+                                "placed": "16dc2ebd-3f7e-11e5-9bf6-9e5e69bf1d65",
                                 "frameStep": {
                                     "numerator": 20,
                                     "denominator": 600
@@ -2599,7 +3018,7 @@
                     "fileType": 943870035,
                     "fileCreator": 538976288,
                     "size": 0,
-                    "id": 1517,
+                    "id": 2231,
                     "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\67f6ebe2-8793-418f-9986-579ab0cff888.psd",
                     "bounds": {
                         "top": 0,
@@ -2704,7 +3123,7 @@
                                     "generatorSettings": false,
                                     "smartObject": {
                                         "ID": "3fd5f579-3514-11e5-a1b2-ec2f0337e91e",
-                                        "placed": "3fd5f578-3514-11e5-a1b2-ec2f0337e91e",
+                                        "placed": "16dc2eb4-3f7e-11e5-9bf6-9e5e69bf1d65",
                                         "frameStep": {
                                             "numerator": 20,
                                             "denominator": 600
@@ -2850,7 +3269,7 @@
                             "fileType": 943870035,
                             "fileCreator": 538976288,
                             "size": 0,
-                            "id": 1524,
+                            "id": 2238,
                             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\f01559d7-a63c-4e5d-9426-e91f7ba72ced.psd",
                             "bounds": {
                                 "top": 0,
@@ -2997,7 +3416,7 @@
                                     "fileType": 943870018,
                                     "fileCreator": 943868237,
                                     "size": 1048576,
-                                    "id": 1966,
+                                    "id": 2536,
                                     "file": "Layer 7.psb",
                                     "bounds": {
                                         "top": 0,
@@ -3044,7 +3463,7 @@
                                     "fileType": 943870018,
                                     "fileCreator": 943868237,
                                     "size": 1048576,
-                                    "id": 1973,
+                                    "id": 2543,
                                     "file": "Layer 14.psb",
                                     "bounds": {
                                         "top": 0,
@@ -3092,12 +3511,12 @@
             ]
         },
         {
-            "placedID": "f0cb1cb4-3aa1-11e5-995a-a75ffbfad9d1",
+            "placedID": "b5358453-3f71-11e5-af00-bc6ea7c2a3bd",
             "name": "monkey_head.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 1916,
+            "id": 2483,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\0c16179b-c939-489d-b001-da08f92a1de5.psd",
             "bounds": {
                 "top": 0,
