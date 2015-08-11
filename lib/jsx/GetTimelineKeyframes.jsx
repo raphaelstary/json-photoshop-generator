@@ -92,7 +92,7 @@ function saveFile(str) {
     file.open('w');
     file.write(str);
     file.close();
-    alert("Style saved to " + fullPath);
+    alert("file saved to " + fullPath);
 }
 
 
