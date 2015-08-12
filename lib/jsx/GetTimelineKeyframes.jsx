@@ -1,13 +1,40 @@
 #target photoshop
 #include "utils/json2.js"
 
-var animationLayers = [
-    {id: 63, name: "monkey_head.png #id:monkey1"},
-    {id: 21, name: "monkey.png #id:monkey2"},
-    {id: 61, name: "monkey.png #id:monkey3"},
-    {id: 62, name: "monkey.png #id:monkey4"},
-    {id: 64, name: "monkey_head.png #id:monkey5"}
-];
+var animationLayers = [63, 21, 61, 62, 64];
+
+function getCurrentFrame() {
+    var ref = new ActionReference();
+    ref.putProperty(charIDToTypeID('Prpr'), stringIDToTypeID("currentFrame"));
+    ref.putClass(stringIDToTypeID("timeline"));
+    var desc = new ActionDescriptor();
+    desc.putReference(charIDToTypeID('null'), ref);
+    var resultDesc = executeAction(charIDToTypeID('getd'), desc, DialogModes.NO);
+
+    return resultDesc.getInteger(stringIDToTypeID("currentFrame"));
+}
+
+function getFrameCount() {
+    var ref = new ActionReference();
+    ref.putProperty(charIDToTypeID('Prpr'), stringIDToTypeID("frameCount"));
+    ref.putClass(stringIDToTypeID("timeline"));
+    var desc = new ActionDescriptor();
+    desc.putReference(charIDToTypeID('null'), ref);
+    var resultDesc = executeAction(charIDToTypeID('getd'), desc, DialogModes.NO);
+
+    return resultDesc.getInteger(stringIDToTypeID("frameCount"));
+}
+
+function getFrameRate() {
+    var ref = new ActionReference();
+    ref.putProperty(charIDToTypeID('Prpr'), stringIDToTypeID("documentTimelineSettings"));
+    ref.putClass(stringIDToTypeID("timeline"));
+    var desc = new ActionDescriptor();
+    desc.putReference(charIDToTypeID('null'), ref);
+    var resultDesc = executeAction(charIDToTypeID('getd'), desc, DialogModes.NO);
+
+    return resultDesc.getDouble(stringIDToTypeID('frameRate'));
+}
 
 function jumpToFrame0() {
     var ref6 = new ActionReference();
@@ -26,6 +53,36 @@ function jumpToFrame0() {
     executeAction(charIDToTypeID("setd"), desc18, DialogModes.NO);
 }
 
+function __jumpToNextKeyframe(track) {
+    var transDesc = new ActionDescriptor();
+    transDesc.putEnumerated(stringIDToTypeID("trackID"), stringIDToTypeID("stdTrackID"), stringIDToTypeID(track));
+
+    var animDesc = new ActionDescriptor();
+    animDesc.putObject(stringIDToTypeID("trackID"), stringIDToTypeID("animationTrack"), transDesc);
+
+    executeAction(stringIDToTypeID("nextKeyframe"), animDesc, DialogModes.NO);
+}
+
+function jumpToNextKeyframeOfTransformTrack() {
+    __jumpToNextKeyframe("sheetTransformTrack");
+}
+
+function jumpToNextKeyframeOfOpacityTrack() {
+    __jumpToNextKeyframe("opacityTrack");
+}
+
+function jumpToNextKeyframeOfStyleTrack() {
+    __jumpToNextKeyframe("styleTrack");
+}
+
+function jumpToNextKeyframeOfPositionTrack() {
+    __jumpToNextKeyframe("sheetPositionTrack");
+}
+
+function jumpToNextKeyframeOfMaskTrack() {
+    __jumpToNextKeyframe("userMaskPositionTrack");
+}
+
 function selectLayer(id) {
     var ref = new ActionReference();
     ref.putIdentifier(charIDToTypeID("Lyr "), id);
@@ -39,19 +96,63 @@ function selectLayer(id) {
     return app.activeDocument.activeLayer;
 }
 
-function jumpToNextKeyframe() {
-    var idtrackID = stringIDToTypeID("trackID");
+function isSmartObject() {
+    var ref = new ActionReference();
+    ref.putProperty(stringIDToTypeID("property"), stringIDToTypeID("smartObject"));
+    ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
 
-    var desc1 = new ActionDescriptor();
-    desc1.putEnumerated(idtrackID, stringIDToTypeID("stdTrackID"), stringIDToTypeID("sheetTransformTrack"));
+    var layerDesc = executeActionGet(ref);
 
-    var desc2 = new ActionDescriptor();
-    desc2.putObject(idtrackID, stringIDToTypeID("animationTrack"), desc1);
-
-    executeAction(stringIDToTypeID("nextKeyframe"), desc2, DialogModes.NO);
+    return layerDesc.hasKey(stringIDToTypeID('smartObject'));
 }
 
-function getLayerData(layer) {
+function isText() {
+    var ref = new ActionReference();
+    ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
+
+    var layerDesc = executeActionGet(ref);
+
+    return layerDesc.hasKey(stringIDToTypeID('textKey'));
+}
+
+function collectKeyframes(layer, nextKeyframe, hasNext, getData, maxFrames, transformFrames) {
+    var keyFrames = [];
+
+    jumpToFrame0();
+
+    var last = getData(layer);
+    var next;
+    keyFrames.push(last);
+
+    for(var i = 0; i < maxFrames; i++) {
+        nextKeyframe();
+
+        next = getData(layer);
+        if (hasNext(last, next)) {
+            if (keyFrames.length == 1) {
+                // in case there are no keyframes remove the 1st
+                keyFrames = [];
+            }
+            return keyFrames;
+        }
+        if (transformFrames) {
+            if (transformFrames[next.time]) {
+                transformFrames[next.time].push(layer.id);
+            } else {
+                transformFrames[next.time] = [layer.id];
+            }
+        }
+        keyFrames.push(next);
+        last = next;
+    }
+}
+
+function hasNextTransformKeyframe(last, next) {
+    return last && next.bounds.left == last.bounds.left && next.bounds.top == last.bounds.top &&
+        next.bounds.right == last.bounds.right && next.bounds.bottom == last.bounds.bottom;
+}
+
+function getBounds(layer) {
     return {
         bounds: {
             left: layer.bounds[0].value,
@@ -59,29 +160,57 @@ function getLayerData(layer) {
             right: layer.bounds[2].value,
             bottom: layer.bounds[3].value
         },
-        opacity: layer.opacity,
-        blendMode: layer.blendMode.toString()
+        time: getCurrentFrame()
     };
 }
 
-function collectKeyframeData(layer, dataDict, maxFrames) {
-    var keyFrames = [];
-    dataDict[layer.name] = keyFrames;
-    keyFrames.push(getLayerData(layer));
+function getOpacity(layer) {
+    return {
+        opacity: layer.opacity,
+        time: getCurrentFrame()
+    };
+}
 
-    var last;
-    var next;
-    for(var i = 0; i < maxFrames; i++) {
-        jumpToNextKeyframe();
+function hasNextOpacityKeyframe(last, next) {
+    return last && next.opacity == last.opacity;
+}
 
-        next = getLayerData(layer);
-        if (last && next.bounds.left == last.bounds.left && next.bounds.top == last.bounds.top &&
-            next.bounds.right == last.bounds.right && next.bounds.bottom == last.bounds.bottom) {
-            return;
+function hasNextStyleKeyframe(last, next) {
+    return last && next.blendMode == last.blendMode;
+}
+
+function getStyle(layer) {
+    return {
+        blendMode: layer.blendMode.toString(),
+        time: getCurrentFrame()
+    };
+}
+
+function collectKeyframeData(layer, transformFrames) {
+    var current = {};
+    var frames;
+
+    if (isSmartObject()) {
+
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, hasNextTransformKeyframe, getBounds, 50,
+            transformFrames);
+        if (frames.length > 1) {
+            current.transform = frames;
         }
-        keyFrames.push(next);
-        last = next;
+
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfOpacityTrack, hasNextOpacityKeyframe, getOpacity, 50);
+        if (frames.length > 1) {
+            current.opacity = frames;
+        }
+
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfStyleTrack, hasNextStyleKeyframe, getStyle, 50);
+        if (frames.length > 1) {
+            current.style = frames;
+        }
+
     }
+
+    return current;
 }
 
 function saveFile(str) {
@@ -95,22 +224,21 @@ function saveFile(str) {
     alert("file saved to " + fullPath);
 }
 
-
-
 function run() {
-    var drawables = {};
+    var animationData = {
+        frameRate: getFrameRate(),
+        frameCount: getFrameCount(),
+        transformFrames: {},
+        animations: {}
+    };
 
     for (var i = 0; i < animationLayers.length; i++) {
-        var anim = animationLayers[i];
+        var animId = animationLayers[i];
+        var layer = selectLayer(animId);
 
-        jumpToFrame0();
-
-        var layer = selectLayer(anim.id);
-
-        collectKeyframeData(layer, drawables, 50);
+        animationData.animations[layer.id] = collectKeyframeData(layer, animationData.transformFrames);
     }
-
-    saveFile(JSON.stringify(drawables, null, "    "));
+    saveFile(JSON.stringify(animationData, null, "    "));
 
     return true;
 }
