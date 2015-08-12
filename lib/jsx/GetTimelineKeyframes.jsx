@@ -1,7 +1,18 @@
 #target photoshop
 #include "utils/json2.js"
 
-var animationLayers = [63, 21, 61, 62, 64];
+var animationLayers = [
+    63,
+    21,
+    61,
+    62,
+    64,
+    33,
+    32,
+    31,
+    30,
+    29
+];
 
 function getCurrentFrame() {
     var ref = new ActionReference();
@@ -115,7 +126,7 @@ function isText() {
     return layerDesc.hasKey(stringIDToTypeID('textKey'));
 }
 
-function collectKeyframes(layer, nextKeyframe, hasNext, getData, maxFrames, transformFrames) {
+function collectKeyframes(layer, nextKeyframe, equals, getData, maxFrames, transformFrames) {
     var keyFrames = [];
 
     jumpToFrame0();
@@ -128,13 +139,17 @@ function collectKeyframes(layer, nextKeyframe, hasNext, getData, maxFrames, tran
         nextKeyframe();
 
         next = getData(layer);
-        if (hasNext(last, next)) {
+        if (last.time == next.time) {
             if (keyFrames.length == 1) {
                 // in case there are no keyframes remove the 1st
-                keyFrames = [];
+                keyFrames.pop();
             }
             return keyFrames;
         }
+        if (last.time == 0 && equals(last, next)) {
+            keyFrames.pop();
+        }
+
         if (transformFrames) {
             if (transformFrames[next.time]) {
                 transformFrames[next.time].push(layer.id);
@@ -147,7 +162,7 @@ function collectKeyframes(layer, nextKeyframe, hasNext, getData, maxFrames, tran
     }
 }
 
-function hasNextTransformKeyframe(last, next) {
+function equalsTransformKeyframe(last, next) {
     return last && next.bounds.left == last.bounds.left && next.bounds.top == last.bounds.top &&
         next.bounds.right == last.bounds.right && next.bounds.bottom == last.bounds.bottom;
 }
@@ -171,11 +186,11 @@ function getOpacity(layer) {
     };
 }
 
-function hasNextOpacityKeyframe(last, next) {
+function equalsOpacityKeyframe(last, next) {
     return last && next.opacity == last.opacity;
 }
 
-function hasNextStyleKeyframe(last, next) {
+function equalsStyleKeyframe(last, next) {
     return last && next.blendMode == last.blendMode;
 }
 
@@ -192,18 +207,18 @@ function collectKeyframeData(layer, transformFrames) {
 
     if (isSmartObject()) {
 
-        frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, hasNextTransformKeyframe, getBounds, 50,
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, equalsTransformKeyframe, getBounds, 50,
             transformFrames);
         if (frames.length > 1) {
             current.transform = frames;
         }
 
-        frames = collectKeyframes(layer, jumpToNextKeyframeOfOpacityTrack, hasNextOpacityKeyframe, getOpacity, 50);
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfOpacityTrack, equalsOpacityKeyframe, getOpacity, 50);
         if (frames.length > 1) {
             current.opacity = frames;
         }
 
-        frames = collectKeyframes(layer, jumpToNextKeyframeOfStyleTrack, hasNextStyleKeyframe, getStyle, 50);
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfStyleTrack, equalsStyleKeyframe, getStyle, 50);
         if (frames.length > 1) {
             current.style = frames;
         }
