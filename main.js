@@ -47,14 +47,27 @@ var fs = require('fs');
         _generator.getDocumentInfo(undefined, {expandSmartObjects: true}).then(function (document) {
             var h5Document = transformPSDocumentToH5Scenes(document);
             var fileName = document.file.substring(0, document.file.lastIndexOf('.')) + '.json';
-            fs.writeFile(fileName, JSON.stringify(h5Document), 'utf8', function (err) {
-                if (err) throw err;
-                console.log('success task: write ' + fileName);
+
+            var keyFramesJSX = __dirname + '\\lib\\jsx\\GetTimelineKeyframes.jsx';
+
+            _generator.evaluateJSXFile(keyFramesJSX, {ids: h5Document.start_screen.animations}).then(function (result) {
+                h5Document.start_screen.animations = result;
+                writeJSONFile(fileName, h5Document);
+
+            }, function (error) {
+                console.error("Error in evaluate JSX file:", error);
             });
 
         }, function (err) {
             console.error("Error in getDocumentInfo:", err);
         }).done();
+    }
+
+    function writeJSONFile(name, objectData) {
+        fs.writeFile(name, JSON.stringify(objectData), function (err) {
+            if (err) throw err;
+            console.log('file saved to: ' + name);
+        });
     }
 
     exports.init = init;

@@ -2,7 +2,7 @@ var ps_document = require('./document');
 var fs = require('fs');
 
 function writeJSONFile(fileName, data) {
-    fs.writeFile(fileName, JSON.stringify(data, null, 4), 'utf8', function (err) {
+    fs.writeFile(fileName, JSON.stringify(data, null, 4), function (err) {
         if (err) throw err;
         console.log('success task: write ' + fileName);
     });
