@@ -1,24 +1,15 @@
 /*global stringIDToTypeID, charIDToTypeID, ActionDescriptor, ActionReference, executeAction, executeActionGet, DialogModes, params, app */
 
-
 var JSON = {};
-
 /* cloned from https://github.com/douglascrockford/JSON-js */
 (function () {
     'use strict';
 
-    var rx_one = /^[\],:{}\s]*$/,
-        rx_two = /\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g,
-        rx_three = /"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g,
-        rx_four = /(?:^|:|,)(?:\s*\[)+/g,
-        rx_escapable = /[\\\"\u0000-\u001f\u007f-\u009f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,
-        rx_dangerous = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
+    var rx_one = /^[\],:{}\s]*$/, rx_two = /\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g, rx_three = /"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g, rx_four = /(?:^|:|,)(?:\s*\[)+/g, rx_escapable = /[\\\"\u0000-\u001f\u007f-\u009f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g, rx_dangerous = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
 
     function f(n) {
         // Format integers to have at least two digits.
-        return n < 10
-            ? '0' + n
-            : n;
+        return n < 10 ? '0' + n : n;
     }
 
     function this_value() {
@@ -29,14 +20,9 @@ var JSON = {};
 
         Date.prototype.toJSON = function () {
 
-            return isFinite(this.valueOf())
-                ? this.getUTCFullYear() + '-' +
-            f(this.getUTCMonth() + 1) + '-' +
-            f(this.getUTCDate()) + 'T' +
-            f(this.getUTCHours()) + ':' +
-            f(this.getUTCMinutes()) + ':' +
-            f(this.getUTCSeconds()) + 'Z'
-                : null;
+            return isFinite(this.valueOf()) ?
+            this.getUTCFullYear() + '-' + f(this.getUTCMonth() + 1) + '-' + f(this.getUTCDate()) + 'T' +
+            f(this.getUTCHours()) + ':' + f(this.getUTCMinutes()) + ':' + f(this.getUTCSeconds()) + 'Z' : null;
         };
 
         Boolean.prototype.toJSON = this_value;
@@ -44,11 +30,7 @@ var JSON = {};
         String.prototype.toJSON = this_value;
     }
 
-    var gap,
-        indent,
-        meta,
-        rep;
-
+    var gap, indent, meta, rep;
 
     function quote(string) {
 
@@ -58,16 +40,11 @@ var JSON = {};
         // sequences.
 
         rx_escapable.lastIndex = 0;
-        return rx_escapable.test(string)
-            ? '"' + string.replace(rx_escapable, function (a) {
+        return rx_escapable.test(string) ? '"' + string.replace(rx_escapable, function (a) {
             var c = meta[a];
-            return typeof c === 'string'
-                ? c
-                : '\\u' + ('0000' + a.charCodeAt(0).toString(16)).slice(-4);
-        }) + '"'
-            : '"' + string + '"';
+            return typeof c === 'string' ? c : '\\u' + ('0000' + a.charCodeAt(0).toString(16)).slice(-4);
+        }) + '"' : '"' + string + '"';
     }
-
 
     function str(key, holder) {
 
@@ -76,15 +53,11 @@ var JSON = {};
         var i,          // The loop counter.
             k,          // The member key.
             v,          // The member value.
-            length,
-            mind = gap,
-            partial,
-            value = holder[key];
+            length, mind = gap, partial, value = holder[key];
 
         // If the value has a toJSON method, call it to obtain a replacement value.
 
-        if (value && typeof value === 'object' &&
-            typeof value.toJSON === 'function') {
+        if (value && typeof value === 'object' && typeof value.toJSON === 'function') {
             value = value.toJSON(key);
         }
 
@@ -105,9 +78,7 @@ var JSON = {};
 
                 // JSON numbers must be finite. Encode non-finite numbers as null.
 
-                return isFinite(value)
-                    ? String(value)
-                    : 'null';
+                return isFinite(value) ? String(value) : 'null';
 
             case 'boolean':
             case 'null':
@@ -150,11 +121,9 @@ var JSON = {};
                     // Join all of the elements together, separated with commas, and wrap them in
                     // brackets.
 
-                    v = partial.length === 0
-                        ? '[]'
-                        : gap
-                        ? '[\n' + gap + partial.join(',\n' + gap) + '\n' + mind + ']'
-                        : '[' + partial.join(',') + ']';
+                    v = partial.length === 0 ? '[]' :
+                        gap ? '[\n' + gap + partial.join(',\n' + gap) + '\n' + mind + ']' :
+                        '[' + partial.join(',') + ']';
                     gap = mind;
                     return v;
                 }
@@ -169,9 +138,7 @@ var JSON = {};
                             v = str(k, value);
                             if (v) {
                                 partial.push(quote(k) + (
-                                        gap
-                                            ? ': '
-                                            : ':'
+                                        gap ? ': ' : ':'
                                     ) + v);
                             }
                         }
@@ -185,9 +152,7 @@ var JSON = {};
                             v = str(k, value);
                             if (v) {
                                 partial.push(quote(k) + (
-                                        gap
-                                            ? ': '
-                                            : ':'
+                                        gap ? ': ' : ':'
                                     ) + v);
                             }
                         }
@@ -197,11 +162,8 @@ var JSON = {};
                 // Join all of the member texts together, separated with commas,
                 // and wrap them in braces.
 
-                v = partial.length === 0
-                    ? '{}'
-                    : gap
-                    ? '{\n' + gap + partial.join(',\n' + gap) + '\n' + mind + '}'
-                    : '{' + partial.join(',') + '}';
+                v = partial.length === 0 ? '{}' :
+                    gap ? '{\n' + gap + partial.join(',\n' + gap) + '\n' + mind + '}' : '{' + partial.join(',') + '}';
                 gap = mind;
                 return v;
         }
@@ -250,8 +212,7 @@ var JSON = {};
 
             rep = replacer;
             if (replacer && typeof replacer !== 'function' &&
-                (typeof replacer !== 'object' ||
-                typeof replacer.length !== 'number')) {
+                (typeof replacer !== 'object' || typeof replacer.length !== 'number')) {
                 throw new Error('JSON.stringify');
             }
 
@@ -261,7 +222,6 @@ var JSON = {};
             return str('', {'': value});
         };
     }
-
 
     // If the JSON object does not yet have a parse method, give it one.
 
@@ -294,7 +254,6 @@ var JSON = {};
                 return reviver.call(holder, key, value);
             }
 
-
             // Parsing happens in four stages. In the first stage, we replace certain
             // Unicode characters with escape sequences. JavaScript handles many characters
             // incorrectly, either silently deleting them, or treating them as line endings.
@@ -303,8 +262,7 @@ var JSON = {};
             rx_dangerous.lastIndex = 0;
             if (rx_dangerous.test(text)) {
                 text = text.replace(rx_dangerous, function (a) {
-                    return '\\u' +
-                        ('0000' + a.charCodeAt(0).toString(16)).slice(-4);
+                    return '\\u' + ('0000' + a.charCodeAt(0).toString(16)).slice(-4);
                 });
             }
 
@@ -321,14 +279,7 @@ var JSON = {};
             // we look to see that the remaining characters are only whitespace or ']' or
             // ',' or ':' or '{' or '}'. If that is so, then the text is safe for eval.
 
-            if (
-                rx_one.test(
-                    text
-                        .replace(rx_two, '@')
-                        .replace(rx_three, ']')
-                        .replace(rx_four, '')
-                )
-            ) {
+            if (rx_one.test(text.replace(rx_two, '@').replace(rx_three, ']').replace(rx_four, ''))) {
 
                 // In the third stage we use the eval function to compile the text into a
                 // JavaScript structure. The '{' operator is subject to a syntactic ambiguity
@@ -340,9 +291,7 @@ var JSON = {};
                 // In the optional fourth stage, we recursively walk the new structure, passing
                 // each name/value pair to a reviver function for possible transformation.
 
-                return typeof reviver === 'function'
-                    ? walk({'': j}, '')
-                    : j;
+                return typeof reviver === 'function' ? walk({'': j}, '') : j;
             }
 
             // If the text is not JSON parseable, then a SyntaxError is thrown.
@@ -438,7 +387,7 @@ function selectLayer(id) {
 
     var desc = new ActionDescriptor();
     desc.putReference(charIDToTypeID("null"), ref);
-    desc.putBoolean( charIDToTypeID("MkVs"), false);
+    desc.putBoolean(charIDToTypeID("MkVs"), false);
 
     executeAction(charIDToTypeID("slct"), desc, DialogModes.NO);
 
@@ -473,7 +422,7 @@ function collectKeyframes(layer, nextKeyframe, equals, getData, maxFrames, trans
     var next;
     keyFrames.push(last);
 
-    for(var i = 0; i < maxFrames; i++) {
+    for (var i = 0; i < maxFrames; i++) {
         nextKeyframe();
 
         next = getData(layer);
@@ -501,18 +450,24 @@ function collectKeyframes(layer, nextKeyframe, equals, getData, maxFrames, trans
 }
 
 function equalsTransformKeyframe(last, next) {
-    return last && next.bounds.left == last.bounds.left && next.bounds.top == last.bounds.top &&
-        next.bounds.right == last.bounds.right && next.bounds.bottom == last.bounds.bottom;
+    return last && next.x == last.x && next.y == last.y && next.width == last.width && next.height == last.height;
 }
 
 function getBounds(layer) {
+    var bounds = {
+        left: layer.bounds[0].value,
+        top: layer.bounds[1].value,
+        right: layer.bounds[2].value,
+        bottom: layer.bounds[3].value
+    };
+    var width = bounds.right - bounds.left;
+    var height = bounds.bottom - bounds.top;
+
     return {
-        bounds: {
-            left: layer.bounds[0].value,
-            top: layer.bounds[1].value,
-            right: layer.bounds[2].value,
-            bottom: layer.bounds[3].value
-        },
+        x: Math.floor(bounds.left + width / 2 - params.artboard.left),
+        y: Math.floor(bounds.top + height / 2 - params.artboard.top),
+        width: width,
+        height: height,
         time: getCurrentFrame()
     };
 }
@@ -597,4 +552,5 @@ function run() {
 }
 
 var data = run();
+// return value for generator
 JSON.stringify(data);

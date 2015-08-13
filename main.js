@@ -48,9 +48,14 @@ var fs = require('fs');
             var h5Document = transformPSDocumentToH5Scenes(document);
             var fileName = document.file.substring(0, document.file.lastIndexOf('.')) + '.json';
 
-            var keyFramesJSX = __dirname + '\\lib\\jsx\\GetTimelineKeyframes.jsx';
+            var keyFramesJSX = __dirname + '\\lib\\jsx\\GetKeyframes.jsx';
 
-            _generator.evaluateJSXFile(keyFramesJSX, {ids: h5Document.start_screen.animations}).then(function (result) {
+            var keyFramesParams = {
+                ids: h5Document.start_screen.animations,
+                artboard: h5Document.start_screen.screen
+            };
+
+            _generator.evaluateJSXFile(keyFramesJSX, keyFramesParams).then(function (result) {
                 h5Document.start_screen.animations = result;
                 writeJSONFile(fileName, h5Document);
 
