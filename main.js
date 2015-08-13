@@ -1,7 +1,7 @@
-var transformPSDocumentToH5Scenes = require('./lib/transformPSDocumentToH5Scenes');
+var transformToScenes = require('./lib/transformToScenes');
 var fs = require('fs');
 
-(function (transformPSDocumentToH5Scenes, fs) {
+(function (transformToScenes, fs) {
     "use strict";
 
     var PLUGIN_ID = require("./package.json").name;
@@ -44,28 +44,40 @@ var fs = require('fs');
     }
 
     function generateJSON() {
+        var jsonFileName;
+
         _generator.getDocumentInfo(undefined, {expandSmartObjects: true}).then(function (document) {
-            var h5Document = transformPSDocumentToH5Scenes(document);
-            var fileName = document.file.substring(0, document.file.lastIndexOf('.')) + '.json';
+            jsonFileName = document.file.substring(0, document.file.lastIndexOf('.')) + '.json';
+            return transformToScenes(document);
 
+        }).then(function (h5Document) {
             var keyFramesJSX = __dirname + '\\lib\\jsx\\GetKeyframes.jsx';
-
             var keyFramesParams = {
                 ids: h5Document.start_screen.animations,
                 artboard: h5Document.start_screen.screen
             };
 
-            _generator.evaluateJSXFile(keyFramesJSX, keyFramesParams).then(function (result) {
-                h5Document.start_screen.animations = result;
-                writeJSONFile(fileName, h5Document);
+            return _generator.evaluateJSXFile(keyFramesJSX, keyFramesParams);
 
-            }, function (error) {
-                console.error("Error in evaluate JSX file:", error);
-            });
+        }).then(function (result) {
+            var frames = Object.keys(result.transformFrames);
+            var frameData = {};
 
-        }, function (err) {
-            console.error("Error in getDocumentInfo:", err);
-        }).done();
+            function nextFrame(frameNumberKey) {
+                var toFrameJSX = __dirname + '\\lib\\jsx\\GoToFrame.jsx';
+                var toFrameParams = {
+                    frameNumber: parseInt(frameNumberKey)
+                };
+                _generator.evaluateJSXFile(toFrameJSX, toFrameParams).then(function () {
+                    return _generator.getDocumentInfo();
+
+                }).then(function (document) {
+                    return transformToScenes(document);
+                });
+            }
+
+            nextFrame(frames.pop());
+        });
     }
 
     function writeJSONFile(name, objectData) {
@@ -76,4 +88,4 @@ var fs = require('fs');
     }
 
     exports.init = init;
-})(transformPSDocumentToH5Scenes, fs);
+})(transformToScenes, fs);
