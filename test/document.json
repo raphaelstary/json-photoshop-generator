@@ -55,7 +55,7 @@
                     "id": 331,
                     "index": 53,
                     "type": "layerSection",
-                    "name": "just for generator",
+                    "name": "just for generator #ignore",
                     "bounds": {
                         "top": 1734,
                         "left": 1045,
@@ -215,7 +215,7 @@
                     "id": 246,
                     "index": 48,
                     "type": "layerSection",
-                    "name": "layer3",
+                    "name": "#zIndex:3",
                     "bounds": {
                         "top": 1734,
                         "left": 1045,
@@ -439,7 +439,7 @@
                     "id": 244,
                     "index": 39,
                     "type": "layerSection",
-                    "name": "layer2",
+                    "name": "#zIndex:2",
                     "bounds": {
                         "top": 1028,
                         "left": 946,
@@ -1100,7 +1100,7 @@
                     "id": 242,
                     "index": 22,
                     "type": "layerSection",
-                    "name": "layer1",
+                    "name": "#zIndex:1",
                     "bounds": {
                         "top": 2480,
                         "left": 1155,
@@ -1704,7 +1704,7 @@
                     "id": 240,
                     "index": 10,
                     "type": "layerSection",
-                    "name": "layer0",
+                    "name": "#zIndex:0",
                     "bounds": {
                         "top": 1066,
                         "left": 488,
