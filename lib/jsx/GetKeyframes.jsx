@@ -301,6 +301,8 @@ var JSON = {};
     }
 }());
 
+var currentArtboard;
+
 function getCurrentFrame() {
     var ref = new ActionReference();
     ref.putProperty(charIDToTypeID('Prpr'), stringIDToTypeID("currentFrame"));
@@ -438,10 +440,14 @@ function collectKeyframes(layer, nextKeyframe, equals, getData, maxFrames, trans
         }
 
         if (transformFrames) {
+            var idObject = {
+                id: layer.id,
+                artboard: currentArtboard
+            };
             if (transformFrames[next.time]) {
-                transformFrames[next.time].push(layer.id);
+                transformFrames[next.time].push(idObject);
             } else {
-                transformFrames[next.time] = [layer.id];
+                transformFrames[next.time] = [idObject];
             }
         }
         keyFrames.push(next);
@@ -453,7 +459,7 @@ function equalsTransformKeyframe(last, next) {
     return last && next.x == last.x && next.y == last.y && next.width == last.width && next.height == last.height;
 }
 
-function getBounds(artboard, layer) {
+function getBounds(layer) {
     var bounds = {
         left: layer.bounds[0].value,
         top: layer.bounds[1].value,
@@ -464,8 +470,8 @@ function getBounds(artboard, layer) {
     var height = bounds.bottom - bounds.top;
 
     return {
-        x: Math.floor(bounds.left + width / 2 - artboard.left),
-        y: Math.floor(bounds.top + height / 2 - artboard.top),
+        x: Math.floor(bounds.left + width / 2 - currentArtboard.left),
+        y: Math.floor(bounds.top + height / 2 - currentArtboard.top),
         width: width,
         height: height,
         time: getCurrentFrame()
@@ -494,14 +500,13 @@ function getStyle(layer) {
     };
 }
 
-function collectKeyframeData(layer, transformFrames, artboard) {
+function collectKeyframeData(layer, transformFrames) {
     var current = {};
     var frames;
 
     if (isSmartObject()) {
-
-        frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, equalsTransformKeyframe,
-            getBounds.bind(undefined, artboard), 50, transformFrames);
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, equalsTransformKeyframe, getBounds, 50,
+            transformFrames);
         if (frames.length > 1) {
             current.transform = frames;
         }
@@ -515,7 +520,6 @@ function collectKeyframeData(layer, transformFrames, artboard) {
         if (frames.length > 1) {
             current.style = frames;
         }
-
     }
 
     return current;
@@ -542,10 +546,10 @@ function run() {
 
     for (var i = 0; i < params.ids.length; i++) {
         var animId = params.ids[i].id;
-        var currentArtboard = params.ids[i].artboard;
+        currentArtboard = params.ids[i].artboard;
         var layer = selectLayer(animId);
 
-        animationData.animations[layer.id] = collectKeyframeData(layer, animationData.transformFrames, currentArtboard);
+        animationData.animations[layer.id] = collectKeyframeData(layer, animationData.transformFrames);
     }
     //saveFile(JSON.stringify(animationData, null, "    "));
 

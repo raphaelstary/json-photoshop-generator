@@ -59,24 +59,26 @@ var fs = require('fs');
             return _generator.evaluateJSXFile(keyFramesJSX, keyFramesParams);
 
         }).then(function (result) {
-            var frames = Object.keys(result.transformFrames);
-            var frameData = {};
+            writeJSONFile(jsonFileName, result);
 
-            function nextFrame(frameNumberKey) {
-                var toFrameJSX = __dirname + '\\lib\\jsx\\GoToFrame.jsx';
-                var toFrameParams = {
-                    frameNumber: parseInt(frameNumberKey)
-                };
-                var ids = frames[frameNumberKey];
-                _generator.evaluateJSXFile(toFrameJSX, toFrameParams).then(function () {
-                    return _generator.getDocumentInfo();
-
-                }).then(function (document) {
-                    return transformToScenes(document);
-                });
-            }
-
-            nextFrame(frames.pop());
+            //var frames = Object.keys(result.transformFrames);
+            //var frameData = {};
+            //
+            //function nextFrame(frameNumberKey) {
+            //    var toFrameJSX = __dirname + '\\lib\\jsx\\GoToFrame.jsx';
+            //    var toFrameParams = {
+            //        frameNumber: parseInt(frameNumberKey)
+            //    };
+            //    var ids = frames[frameNumberKey];
+            //    _generator.evaluateJSXFile(toFrameJSX, toFrameParams).then(function () {
+            //        return _generator.getDocumentInfo();
+            //
+            //    }).then(function (document) {
+            //        return transformToScenes(document);
+            //    });
+            //}
+            //
+            //nextFrame(frames.pop());
         });
     }
 
