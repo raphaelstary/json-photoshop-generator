@@ -10,4 +10,4 @@ function writeJSONFile(fileName, data) {
 
 var transformPSDocumentToH5Scenes = require('./../lib/transformToScenes');
 
-writeJSONFile('out.json', transformPSDocumentToH5Scenes(ps_document));
+writeJSONFile('out-transformScene.json', transformPSDocumentToH5Scenes(ps_document));
