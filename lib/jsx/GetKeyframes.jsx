@@ -453,7 +453,7 @@ function equalsTransformKeyframe(last, next) {
     return last && next.x == last.x && next.y == last.y && next.width == last.width && next.height == last.height;
 }
 
-function getBounds(layer) {
+function getBounds(artboard, layer) {
     var bounds = {
         left: layer.bounds[0].value,
         top: layer.bounds[1].value,
@@ -464,8 +464,8 @@ function getBounds(layer) {
     var height = bounds.bottom - bounds.top;
 
     return {
-        x: Math.floor(bounds.left + width / 2 - params.artboard.left),
-        y: Math.floor(bounds.top + height / 2 - params.artboard.top),
+        x: Math.floor(bounds.left + width / 2 - artboard.left),
+        y: Math.floor(bounds.top + height / 2 - artboard.top),
         width: width,
         height: height,
         time: getCurrentFrame()
@@ -494,14 +494,14 @@ function getStyle(layer) {
     };
 }
 
-function collectKeyframeData(layer, transformFrames) {
+function collectKeyframeData(layer, transformFrames, artboard) {
     var current = {};
     var frames;
 
     if (isSmartObject()) {
 
-        frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, equalsTransformKeyframe, getBounds, 50,
-            transformFrames);
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, equalsTransformKeyframe,
+            getBounds.bind(undefined, artboard), 50, transformFrames);
         if (frames.length > 1) {
             current.transform = frames;
         }
@@ -541,10 +541,11 @@ function run() {
     };
 
     for (var i = 0; i < params.ids.length; i++) {
-        var animId = params.ids[i];
+        var animId = params.ids[i].id;
+        var currentArtboard = params.ids[i].artboard;
         var layer = selectLayer(animId);
 
-        animationData.animations[layer.id] = collectKeyframeData(layer, animationData.transformFrames);
+        animationData.animations[layer.id] = collectKeyframeData(layer, animationData.transformFrames, currentArtboard);
     }
     //saveFile(JSON.stringify(animationData, null, "    "));
 

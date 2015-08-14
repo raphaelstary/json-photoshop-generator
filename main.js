@@ -53,8 +53,7 @@ var fs = require('fs');
         }).then(function (h5Document) {
             var keyFramesJSX = __dirname + '\\lib\\jsx\\GetKeyframes.jsx';
             var keyFramesParams = {
-                ids: h5Document.start_screen.animations,
-                artboard: h5Document.start_screen.screen
+                ids: h5Document.animations
             };
 
             return _generator.evaluateJSXFile(keyFramesJSX, keyFramesParams);
@@ -68,6 +67,7 @@ var fs = require('fs');
                 var toFrameParams = {
                     frameNumber: parseInt(frameNumberKey)
                 };
+                var ids = frames[frameNumberKey];
                 _generator.evaluateJSXFile(toFrameJSX, toFrameParams).then(function () {
                     return _generator.getDocumentInfo();
 
