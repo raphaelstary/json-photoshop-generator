@@ -78,7 +78,7 @@ var storeFrames = require('./lib/storeFrames');
                 var toFrameParams = {
                     frameNumber: parseInt(frameNumberKey)
                 };
-                var ids = frames[frameNumberKey];
+                var ids = keyFrameResult.transformFrames[frameNumberKey];
                 _generator.evaluateJSXFile(toFrameJSX, toFrameParams).then(function () {
                     return _generator.getDocumentInfo();
 
