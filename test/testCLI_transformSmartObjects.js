@@ -4,7 +4,7 @@ var fs = require('fs');
 function writeJSONFile(fileName, data) {
     fs.writeFile(fileName, JSON.stringify(data, null, 4), function (err) {
         if (err) throw err;
-        console.log('success task: write ' + fileName);
+        console.log('file saved to: ' + fileName);
     });
 }
 
@@ -61,4 +61,4 @@ var ids = [
     }
 ];
 
-writeJSONFile('out_transformSmart.json', transform(ids, ps_document, placedInfo));
+writeJSONFile('out_transformSmart.json', transform(ids, ps_document, placedInfo, 10));

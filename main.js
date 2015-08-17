@@ -1,7 +1,10 @@
 var transformToScenes = require('./lib/transformToScenes');
 var fs = require('fs');
+var transformSmartObjects = require('./lib/transformSmartObjects');
+var normalizeSceneData = require('./lib/normalizeSceneData');
+var storeFrames = require('./lib/storeFrames');
 
-(function (transformToScenes, fs) {
+(function (transformToScenes, fs, transformSmartObjects, normalizeSceneData, storeFrames) {
     "use strict";
 
     var PLUGIN_ID = require("./package.json").name;
@@ -45,12 +48,18 @@ var fs = require('fs');
 
     function generateJSON() {
         var jsonFileName;
+        var placedInfo;
+        var h5doc;
+        var once = true;
 
         _generator.getDocumentInfo(undefined, {expandSmartObjects: true}).then(function (document) {
             jsonFileName = document.file.substring(0, document.file.lastIndexOf('.')) + '.json';
+            placedInfo = document.placed;
+
             return transformToScenes(document);
 
         }).then(function (h5Document) {
+            h5doc = h5Document;
             var keyFramesJSX = __dirname + '\\lib\\jsx\\GetKeyframes.jsx';
             var keyFramesParams = {
                 ids: h5Document.animations
@@ -58,27 +67,41 @@ var fs = require('fs');
 
             return _generator.evaluateJSXFile(keyFramesJSX, keyFramesParams);
 
-        }).then(function (result) {
-            writeJSONFile(jsonFileName, result);
+        }).then(function (keyFrameResult) {
+            //writeJSONFile(jsonFileName, keyFrameResult);
 
-            //var frames = Object.keys(result.transformFrames);
-            //var frameData = {};
-            //
-            //function nextFrame(frameNumberKey) {
-            //    var toFrameJSX = __dirname + '\\lib\\jsx\\GoToFrame.jsx';
-            //    var toFrameParams = {
-            //        frameNumber: parseInt(frameNumberKey)
-            //    };
-            //    var ids = frames[frameNumberKey];
-            //    _generator.evaluateJSXFile(toFrameJSX, toFrameParams).then(function () {
-            //        return _generator.getDocumentInfo();
-            //
-            //    }).then(function (document) {
-            //        return transformToScenes(document);
-            //    });
-            //}
-            //
-            //nextFrame(frames.pop());
+            var frames = Object.keys(keyFrameResult.transformFrames);
+            var frameData = {};
+
+            function nextFrame(frameNumberKey) {
+                var toFrameJSX = __dirname + '\\lib\\jsx\\GoToFrame.jsx';
+                var toFrameParams = {
+                    frameNumber: parseInt(frameNumberKey)
+                };
+                var ids = frames[frameNumberKey];
+                _generator.evaluateJSXFile(toFrameJSX, toFrameParams).then(function () {
+                    return _generator.getDocumentInfo();
+
+                }).then(function (document) {
+                    return transformSmartObjects(ids, document, placedInfo, toFrameParams.frameNumber);
+
+                }).then(function (smartObjectFrames) {
+                    storeFrames(smartObjectFrames, frameData);
+
+                    nextFrame(frames.shift());
+
+                    return frames.length == 0;
+                }).then(function (ready) {
+                    if (ready && once) {
+                        once = false;
+
+                        var output = normalizeSceneData(h5doc, keyFrameResult, frameData);
+                        writeJSONFile(jsonFileName, output);
+                    }
+                });
+            }
+
+            nextFrame(frames.shift());
         });
     }
 
@@ -90,4 +113,4 @@ var fs = require('fs');
     }
 
     exports.init = init;
-})(transformToScenes, fs);
+})(transformToScenes, fs, transformSmartObjects, normalizeSceneData, storeFrames);

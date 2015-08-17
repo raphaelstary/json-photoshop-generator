@@ -1,0 +1,542 @@
+{
+    "start_screen": {
+        "screen": {
+            "top": 966,
+            "left": 876,
+            "bottom": 3174,
+            "right": 2118,
+            "width": 1242,
+            "height": 2208
+        },
+        "drawables": [
+            {
+                "type": "image",
+                "x": 515,
+                "y": 894,
+                "width": 252,
+                "height": 252,
+                "referenceId": 63,
+                "filename": "monkey_head.png",
+                "tags": [
+                    {
+                        "id": "monkey1"
+                    },
+                    {
+                        "position": "relativeToSize"
+                    },
+                    {
+                        "anchor": "widthHalf"
+                    },
+                    "animation",
+                    {
+                        "zIndex": "3"
+                    }
+                ],
+                "viewId": "monkey1",
+                "scale": 1,
+                "zIndex": 3
+            },
+            {
+                "type": "image",
+                "x": 295,
+                "y": 894,
+                "width": 252,
+                "height": 252,
+                "referenceId": 21,
+                "filename": "monkey.png",
+                "tags": [
+                    {
+                        "id": "monkey2"
+                    },
+                    {
+                        "position": "relativeToSize"
+                    },
+                    {
+                        "anchor": "widthHalf"
+                    },
+                    "animation",
+                    {
+                        "zIndex": "3"
+                    }
+                ],
+                "viewId": "monkey2",
+                "scale": 1,
+                "zIndex": 3
+            },
+            {
+                "type": "image",
+                "x": 295,
+                "y": 1114,
+                "width": 252,
+                "height": 252,
+                "referenceId": 61,
+                "filename": "monkey.png",
+                "tags": [
+                    {
+                        "id": "monkey3"
+                    },
+                    {
+                        "position": "relativeToSize"
+                    },
+                    {
+                        "anchor": "widthHalf"
+                    },
+                    "animation",
+                    {
+                        "zIndex": "3"
+                    }
+                ],
+                "viewId": "monkey3",
+                "scale": 1,
+                "zIndex": 3
+            },
+            {
+                "type": "image",
+                "x": 295,
+                "y": 1334,
+                "width": 252,
+                "height": 252,
+                "referenceId": 62,
+                "filename": "monkey.png",
+                "tags": [
+                    {
+                        "id": "monkey4"
+                    },
+                    {
+                        "position": "relativeToSize"
+                    },
+                    {
+                        "anchor": "widthHalf"
+                    },
+                    "animation",
+                    {
+                        "zIndex": "3"
+                    }
+                ],
+                "viewId": "monkey4",
+                "scale": 1,
+                "zIndex": 3
+            },
+            {
+                "type": "image",
+                "x": 295,
+                "y": 1555,
+                "width": 252,
+                "height": 252,
+                "referenceId": 64,
+                "filename": "monkey_head.png",
+                "tags": [
+                    {
+                        "id": "monkey5"
+                    },
+                    {
+                        "position": "relativeToSize"
+                    },
+                    {
+                        "anchor": "widthHalf"
+                    },
+                    "animation",
+                    {
+                        "zIndex": "3"
+                    }
+                ],
+                "viewId": "monkey5",
+                "scale": 1,
+                "zIndex": 3
+            },
+            {
+                "type": "image",
+                "x": 146,
+                "y": 138,
+                "width": 153,
+                "height": 153,
+                "referenceId": 328,
+                "filename": "settings.png",
+                "tags": [
+                    {
+                        "zIndex": "2"
+                    }
+                ],
+                "zIndex": 2
+            },
+            {
+                "type": "rectangle",
+                "x": 201,
+                "y": 192,
+                "width": 402,
+                "height": 385,
+                "referenceId": 330,
+                "tags": [
+                    "input",
+                    {
+                        "tap": "goSettings"
+                    },
+                    {
+                        "zIndex": "2"
+                    }
+                ],
+                "filled": false,
+                "color": "#000000",
+                "zIndex": 2
+            },
+            {
+                "type": "image",
+                "x": 618,
+                "y": 324,
+                "width": 952,
+                "height": 157,
+                "referenceId": 150,
+                "filename": "logo.png",
+                "tags": [
+                    {
+                        "zIndex": "2"
+                    }
+                ],
+                "zIndex": 2
+            },
+            {
+                "type": "image",
+                "x": 954,
+                "y": 893,
+                "width": 237,
+                "height": 235,
+                "referenceId": 59,
+                "filename": "leave.png",
+                "scale": 0.99,
+                "tags": [
+                    {
+                        "position": "relativeToSize"
+                    },
+                    {
+                        "anchor": "widthHalf"
+                    },
+                    {
+                        "zIndex": "2"
+                    }
+                ],
+                "zIndex": 2
+            },
+            {
+                "type": "image",
+                "x": 734,
+                "y": 674,
+                "width": 237,
+                "height": 235,
+                "referenceId": 58,
+                "filename": "leave.png",
+                "scale": 0.99,
+                "tags": [
+                    {
+                        "position": "relativeToSize"
+                    },
+                    {
+                        "anchor": "widthHalf"
+                    },
+                    {
+                        "zIndex": "2"
+                    }
+                ],
+                "zIndex": 2
+            },
+            {
+                "type": "image",
+                "x": 514,
+                "y": 1113,
+                "width": 237,
+                "height": 235,
+                "referenceId": 56,
+                "filename": "leave.png",
+                "scale": 0.99,
+                "tags": [
+                    {
+                        "position": "relativeToSize"
+                    },
+                    {
+                        "anchor": "widthHalf"
+                    },
+                    {
+                        "zIndex": "2"
+                    }
+                ],
+                "zIndex": 2
+            },
+            {
+                "type": "button",
+                "viewId": "playBtn",
+                "text": {
+                    "type": "text",
+                    "x": 621,
+                    "y": 1605,
+                    "width": 154,
+                    "height": 76,
+                    "referenceId": 24,
+                    "msg": "play",
+                    "font": "Janda Silly Monkey",
+                    "size": 85,
+                    "color": "#515349"
+                },
+                "input": {
+                    "type": "rectangle",
+                    "x": 621,
+                    "y": 1492,
+                    "width": 1191,
+                    "height": 453,
+                    "referenceId": 249,
+                    "tags": [
+                        "input",
+                        {
+                            "tap": "pressPlay"
+                        }
+                    ],
+                    "filled": false,
+                    "color": "#000000"
+                },
+                "background": {
+                    "type": "image",
+                    "x": 621,
+                    "y": 1604,
+                    "width": 666,
+                    "height": 169,
+                    "referenceId": 47,
+                    "filename": "button.png",
+                    "tags": [
+                        "background"
+                    ]
+                },
+                "tags": [
+                    {
+                        "zIndex": "1"
+                    }
+                ],
+                "zIndex": 1
+            },
+            {
+                "type": "button",
+                "viewId": "moreBtn",
+                "text": {
+                    "type": "text",
+                    "x": 620,
+                    "y": 1829,
+                    "width": 467,
+                    "height": 81,
+                    "referenceId": 36,
+                    "msg": "more games",
+                    "font": "Janda Silly Monkey",
+                    "size": 85,
+                    "color": "#515349"
+                },
+                "input": {
+                    "type": "rectangle",
+                    "x": 621,
+                    "y": 1875,
+                    "width": 1191,
+                    "height": 301,
+                    "referenceId": 251,
+                    "tags": [
+                        "input",
+                        {
+                            "tap": "pressMore"
+                        }
+                    ],
+                    "filled": false,
+                    "color": "#000000"
+                },
+                "background": {
+                    "type": "image",
+                    "x": 621,
+                    "y": 1830,
+                    "width": 666,
+                    "height": 169,
+                    "referenceId": 44,
+                    "filename": "button.png",
+                    "tags": [
+                        "background"
+                    ]
+                },
+                "tags": [
+                    {
+                        "zIndex": "1"
+                    }
+                ],
+                "zIndex": 1
+            },
+            {
+                "type": "image",
+                "x": -152,
+                "y": 2044,
+                "width": 329,
+                "height": 215,
+                "referenceId": 33,
+                "filename": "cloud_1.png",
+                "scale": 1,
+                "tags": [
+                    "animation",
+                    {
+                        "zIndex": "0"
+                    }
+                ],
+                "zIndex": 0
+            },
+            {
+                "type": "image",
+                "x": -112,
+                "y": 1423,
+                "width": 237,
+                "height": 144,
+                "referenceId": 32,
+                "filename": "cloud_4.png",
+                "scale": 1,
+                "tags": [
+                    "animation",
+                    {
+                        "zIndex": "0"
+                    }
+                ],
+                "zIndex": 0
+            },
+            {
+                "type": "image",
+                "x": -124,
+                "y": 1268,
+                "width": 251,
+                "height": 142,
+                "referenceId": 31,
+                "filename": "cloud_3.png",
+                "scale": 1,
+                "tags": [
+                    "animation",
+                    {
+                        "zIndex": "0"
+                    }
+                ],
+                "zIndex": 0
+            },
+            {
+                "type": "image",
+                "x": -193,
+                "y": 830,
+                "width": 390,
+                "height": 238,
+                "referenceId": 30,
+                "filename": "cloud_2.png",
+                "scale": 1,
+                "tags": [
+                    "animation",
+                    {
+                        "zIndex": "0"
+                    }
+                ],
+                "zIndex": 0
+            },
+            {
+                "type": "image",
+                "x": -162,
+                "y": 207,
+                "width": 329,
+                "height": 215,
+                "referenceId": 29,
+                "filename": "cloud_1.png",
+                "scale": 1,
+                "tags": [
+                    "animation",
+                    {
+                        "zIndex": "0"
+                    }
+                ],
+                "zIndex": 0
+            }
+        ]
+    },
+    "animations": [
+        {
+            "id": 63,
+            "artboard": {
+                "top": 966,
+                "left": 876,
+                "bottom": 3174,
+                "right": 2118
+            }
+        },
+        {
+            "id": 21,
+            "artboard": {
+                "top": 966,
+                "left": 876,
+                "bottom": 3174,
+                "right": 2118
+            }
+        },
+        {
+            "id": 61,
+            "artboard": {
+                "top": 966,
+                "left": 876,
+                "bottom": 3174,
+                "right": 2118
+            }
+        },
+        {
+            "id": 62,
+            "artboard": {
+                "top": 966,
+                "left": 876,
+                "bottom": 3174,
+                "right": 2118
+            }
+        },
+        {
+            "id": 64,
+            "artboard": {
+                "top": 966,
+                "left": 876,
+                "bottom": 3174,
+                "right": 2118
+            }
+        },
+        {
+            "id": 33,
+            "artboard": {
+                "top": 966,
+                "left": 876,
+                "bottom": 3174,
+                "right": 2118
+            }
+        },
+        {
+            "id": 32,
+            "artboard": {
+                "top": 966,
+                "left": 876,
+                "bottom": 3174,
+                "right": 2118
+            }
+        },
+        {
+            "id": 31,
+            "artboard": {
+                "top": 966,
+                "left": 876,
+                "bottom": 3174,
+                "right": 2118
+            }
+        },
+        {
+            "id": 30,
+            "artboard": {
+                "top": 966,
+                "left": 876,
+                "bottom": 3174,
+                "right": 2118
+            }
+        },
+        {
+            "id": 29,
+            "artboard": {
+                "top": 966,
+                "left": 876,
+                "bottom": 3174,
+                "right": 2118
+            }
+        }
+    ]
+}
