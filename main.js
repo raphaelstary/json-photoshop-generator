@@ -92,7 +92,7 @@ var storeFrames = require('./lib/storeFrames');
 
                     return frames.length == 0;
                 }).then(function (ready) {
-                    if (ready && once) {
+                    if (ready && once) { // maybe cleaner if extracted to a finally block
                         once = false;
 
                         var output = normalizeSceneData(h5doc, keyFrameResult, frameData);
