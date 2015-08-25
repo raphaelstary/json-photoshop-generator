@@ -353,34 +353,54 @@ function jumpToFrame0() {
     executeAction(charIDToTypeID("setd"), desc18, DialogModes.NO);
 }
 
-function __jumpToNextKeyframe(track) {
+function __jumpToNextKeyframe(track, navigateAction) {
     var transDesc = new ActionDescriptor();
     transDesc.putEnumerated(stringIDToTypeID("trackID"), stringIDToTypeID("stdTrackID"), stringIDToTypeID(track));
 
     var animDesc = new ActionDescriptor();
     animDesc.putObject(stringIDToTypeID("trackID"), stringIDToTypeID("animationTrack"), transDesc);
 
-    executeAction(stringIDToTypeID("nextKeyframe"), animDesc, DialogModes.NO);
+    executeAction(stringIDToTypeID(navigateAction + "Keyframe"), animDesc, DialogModes.NO);
 }
 
 function jumpToNextKeyframeOfTransformTrack() {
-    __jumpToNextKeyframe("sheetTransformTrack");
+    __jumpToNextKeyframe("sheetTransformTrack", "next");
+}
+
+function jumpToPreviousKeyframeOfTransformTrack() {
+    __jumpToNextKeyframe("sheetTransformTrack", "previous");
 }
 
 function jumpToNextKeyframeOfOpacityTrack() {
-    __jumpToNextKeyframe("opacityTrack");
+    __jumpToNextKeyframe("opacityTrack", "next");
+}
+
+function jumpToPreviousKeyframeOfOpacityTrack() {
+    __jumpToNextKeyframe("opacityTrack", "previous");
 }
 
 function jumpToNextKeyframeOfStyleTrack() {
-    __jumpToNextKeyframe("styleTrack");
+    __jumpToNextKeyframe("styleTrack", "next");
+}
+
+function jumpToPreviousKeyframeOfStyleTrack() {
+    __jumpToNextKeyframe("styleTrack", "previous");
 }
 
 function jumpToNextKeyframeOfPositionTrack() {
-    __jumpToNextKeyframe("sheetPositionTrack");
+    __jumpToNextKeyframe("sheetPositionTrack", "next");
+}
+
+function jumpToPreviousKeyframeOfPositionTrack() {
+    __jumpToNextKeyframe("sheetPositionTrack", "previous");
 }
 
 function jumpToNextKeyframeOfMaskTrack() {
-    __jumpToNextKeyframe("userMaskPositionTrack");
+    __jumpToNextKeyframe("userMaskPositionTrack", "next");
+}
+
+function jumpToPreviousKeyframeOfMaskTrack() {
+    __jumpToNextKeyframe("userMaskPositionTrack", "previous");
 }
 
 function selectLayer(id) {
@@ -415,43 +435,43 @@ function isText() {
     return layerDesc.hasKey(stringIDToTypeID('textKey'));
 }
 
-function collectKeyframes(layer, nextKeyframe, equals, getData, maxFrames, transformFrames) {
+function collectKeyframes(layer, nextKeyframe, previousKeyframe, getData, maxFrames, transformFrames) {
     var keyFrames = [];
 
     jumpToFrame0();
+    nextKeyframe();
+    var thereAreNoKeyframes = getCurrentFrame() == 0;
+    if (thereAreNoKeyframes) {
+        return keyFrames;
+    }
 
+    previousKeyframe();
     var last = getData(layer);
-    var next;
-    keyFrames.push(last);
+    addKeyframe(last);
 
     for (var i = 0; i < maxFrames; i++) {
         nextKeyframe();
-
-        next = getData(layer);
-        if (last.time == next.time) {
-            if (keyFrames.length == 1) {
-                // in case there are no keyframes remove the 1st
-                keyFrames.pop();
-            }
+        var keyframe = getData(layer);
+        if (last.time == keyframe.time) {
             return keyFrames;
         }
-        if (last.time == 0 && equals(last, next)) {
-            keyFrames.pop();
-        }
+        addKeyframe(keyframe);
+        last = keyframe;
+    }
 
+    function addKeyframe(keyframe) {
         if (transformFrames) {
             var idObject = {
                 id: layer.id,
                 artboard: currentArtboard
             };
-            if (transformFrames[next.time]) {
-                transformFrames[next.time].push(idObject);
+            if (transformFrames[keyframe.time]) {
+                transformFrames[keyframe.time].push(idObject);
             } else {
-                transformFrames[next.time] = [idObject];
+                transformFrames[keyframe.time] = [idObject];
             }
         }
-        keyFrames.push(next);
-        last = next;
+        keyFrames.push(keyframe);
     }
 }
 
@@ -505,18 +525,20 @@ function collectKeyframeData(layer, transformFrames) {
     var frames;
 
     if (isSmartObject()) {
-        frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, equalsTransformKeyframe, getBounds, 50,
-            transformFrames);
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, jumpToPreviousKeyframeOfTransformTrack,
+            getBounds, 50, transformFrames);
         if (frames.length > 1) {
             current.transform = frames;
         }
 
-        frames = collectKeyframes(layer, jumpToNextKeyframeOfOpacityTrack, equalsOpacityKeyframe, getOpacity, 50);
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfOpacityTrack, jumpToPreviousKeyframeOfOpacityTrack,
+            getOpacity, 50);
         if (frames.length > 1) {
             current.opacity = frames;
         }
 
-        frames = collectKeyframes(layer, jumpToNextKeyframeOfStyleTrack, equalsStyleKeyframe, getStyle, 50);
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfStyleTrack, jumpToPreviousKeyframeOfStyleTrack, getStyle,
+            50);
         if (frames.length > 1) {
             current.style = frames;
         }
