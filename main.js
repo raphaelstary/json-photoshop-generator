@@ -68,8 +68,6 @@ var storeFrames = require('./lib/storeFrames');
             return _generator.evaluateJSXFile(keyFramesJSX, keyFramesParams);
 
         }).then(function (keyFrameResult) {
-            //writeJSONFile(jsonFileName, keyFrameResult);
-
             var frames = Object.keys(keyFrameResult.transformFrames);
             var frameData = {};
 
@@ -88,13 +86,14 @@ var storeFrames = require('./lib/storeFrames');
                 }).then(function (smartObjectFrames) {
                     storeFrames(smartObjectFrames, frameData);
 
-                    nextFrame(frames.shift());
+                    if (frames.length > 0)
+                        nextFrame(frames.shift());
+                    else
+                        return true;
 
-                    return frames.length == 0;
                 }).then(function (ready) {
                     if (ready && once) { // maybe cleaner if extracted to a finally block
                         once = false;
-
                         var output = normalizeSceneData(h5doc, keyFrameResult, frameData);
                         writeJSONFile(jsonFileName, output);
                     }
