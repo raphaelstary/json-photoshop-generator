@@ -525,6 +525,8 @@ function collectKeyframeData(layer, transformFrames) {
     var frames;
 
     if (isSmartObject()) {
+        current.psType = 'smartObject';
+
         frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, jumpToPreviousKeyframeOfTransformTrack,
             getBounds, 50, transformFrames);
         if (frames.length > 1) {
