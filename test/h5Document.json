@@ -1,4 +1,313 @@
 {
+    "move_tutorial": {
+        "screen": {
+            "top": 966,
+            "left": 2470,
+            "bottom": 3174,
+            "right": 3712,
+            "width": 1242,
+            "height": 2208
+        },
+        "drawables": [
+            {
+                "type": "image",
+                "x": 913,
+                "y": 1056,
+                "width": 181,
+                "height": 282,
+                "referenceId": 466,
+                "filename": "finger.png",
+                "tags": [
+                    {
+                        "zIndex": "6"
+                    },
+                    "animation"
+                ],
+                "zIndex": 6,
+                "rotation": 1.956413391949548,
+                "scale": 1
+            },
+            {
+                "type": "image",
+                "x": 732,
+                "y": 579,
+                "width": 84,
+                "height": 122,
+                "referenceId": 507,
+                "filename": "arrow.png",
+                "rotation": -3.1333961158398806,
+                "scale": 1,
+                "alpha": 0.75,
+                "tags": [
+                    {
+                        "zIndex": "5"
+                    },
+                    "animation"
+                ],
+                "zIndex": 5
+            },
+            {
+                "type": "image",
+                "x": 246,
+                "y": 579,
+                "width": 84,
+                "height": 122,
+                "referenceId": 506,
+                "filename": "arrow.png",
+                "rotation": -3.1333961158398806,
+                "scale": 1,
+                "alpha": 0.75,
+                "tags": [
+                    {
+                        "zIndex": "5"
+                    },
+                    "animation"
+                ],
+                "zIndex": 5
+            },
+            {
+                "type": "image",
+                "x": 732,
+                "y": 904,
+                "width": 84,
+                "height": 122,
+                "referenceId": 505,
+                "filename": "arrow.png",
+                "rotation": -0.008196537749912585,
+                "scale": 1,
+                "alpha": 0.75,
+                "tags": [
+                    {
+                        "zIndex": "5"
+                    },
+                    "animation"
+                ],
+                "zIndex": 5
+            },
+            {
+                "type": "image",
+                "x": 246,
+                "y": 904,
+                "width": 84,
+                "height": 122,
+                "referenceId": 504,
+                "filename": "arrow.png",
+                "rotation": -0.008196537749912585,
+                "scale": 1,
+                "alpha": 0.75,
+                "tags": [
+                    {
+                        "zIndex": "5"
+                    },
+                    "animation"
+                ],
+                "zIndex": 5
+            },
+            {
+                "type": "image",
+                "x": 79,
+                "y": 734,
+                "width": 122,
+                "height": 84,
+                "referenceId": 503,
+                "filename": "arrow.png",
+                "rotation": -1.562599789044984,
+                "scale": 1,
+                "alpha": 0.75,
+                "tags": [
+                    {
+                        "zIndex": "5"
+                    },
+                    "animation"
+                ],
+                "zIndex": 5
+            },
+            {
+                "type": "image",
+                "x": 900,
+                "y": 731,
+                "width": 122,
+                "height": 84,
+                "referenceId": 502,
+                "filename": "arrow.png",
+                "scale": 1,
+                "alpha": 0.75,
+                "tags": [
+                    {
+                        "zIndex": "5"
+                    },
+                    "animation"
+                ],
+                "zIndex": 5
+            },
+            {
+                "type": "image",
+                "x": 732,
+                "y": 736,
+                "width": 173,
+                "height": 173,
+                "referenceId": 499,
+                "filename": "monkey_white.png",
+                "rotation": 1.5707963267948966,
+                "scale": 0.72,
+                "alpha": 0,
+                "tags": [
+                    {
+                        "zIndex": "6"
+                    },
+                    "animation"
+                ],
+                "zIndex": 6
+            },
+            {
+                "type": "image",
+                "x": 246,
+                "y": 736,
+                "width": 173,
+                "height": 173,
+                "referenceId": 497,
+                "filename": "monkey_white.png",
+                "rotation": 1.5707963267948966,
+                "scale": 0.72,
+                "alpha": 0,
+                "tags": [
+                    {
+                        "zIndex": "6"
+                    },
+                    "animation"
+                ],
+                "zIndex": 6
+            },
+            {
+                "type": "image",
+                "x": 732,
+                "y": 738,
+                "width": 181,
+                "height": 181,
+                "referenceId": 491,
+                "filename": "monkey_head.png",
+                "scale": 0.72,
+                "tags": [
+                    {
+                        "zIndex": "5"
+                    },
+                    "animation"
+                ],
+                "zIndex": 5
+            },
+            {
+                "type": "image",
+                "x": 250,
+                "y": 738,
+                "width": 181,
+                "height": 181,
+                "referenceId": 494,
+                "filename": "monkey_head.png",
+                "scale": 0.72,
+                "tags": [
+                    {
+                        "zIndex": "5"
+                    },
+                    "animation"
+                ],
+                "zIndex": 5
+            },
+            {
+                "type": "image",
+                "x": 571,
+                "y": 738,
+                "width": 181,
+                "height": 181,
+                "referenceId": 492,
+                "filename": "monkey.png",
+                "scale": 0.72,
+                "tags": [
+                    {
+                        "zIndex": "5"
+                    },
+                    "animation"
+                ],
+                "zIndex": 5
+            },
+            {
+                "type": "image",
+                "x": 411,
+                "y": 738,
+                "width": 181,
+                "height": 181,
+                "referenceId": 493,
+                "filename": "monkey.png",
+                "scale": 0.72,
+                "tags": [
+                    {
+                        "zIndex": "5"
+                    },
+                    "animation"
+                ],
+                "zIndex": 5
+            },
+            {
+                "type": "button",
+                "text": {
+                    "type": "text",
+                    "x": 621,
+                    "y": 1602,
+                    "width": 99,
+                    "height": 64,
+                    "referenceId": 464,
+                    "msg": "ok",
+                    "font": "Janda Silly Monkey",
+                    "size": 85,
+                    "color": "#515349"
+                },
+                "input": {
+                    "type": "rectangle",
+                    "x": 621,
+                    "y": 1492,
+                    "width": 1191,
+                    "height": 453,
+                    "referenceId": 463,
+                    "tags": [
+                        "input",
+                        {
+                            "up": "pressOk"
+                        }
+                    ],
+                    "filled": false,
+                    "color": "#000000"
+                },
+                "background": {
+                    "type": "image",
+                    "x": 621,
+                    "y": 1604,
+                    "width": 666,
+                    "height": 169,
+                    "referenceId": 462,
+                    "filename": "button.png",
+                    "tags": [
+                        "background"
+                    ]
+                }
+            },
+            {
+                "type": "rectangle",
+                "x": 621,
+                "y": 1104,
+                "width": 1242,
+                "height": 2208,
+                "referenceId": 489,
+                "tags": [
+                    {
+                        "zIndex": "4"
+                    }
+                ],
+                "zIndex": 4,
+                "alpha": 0.8,
+                "filled": true,
+                "color": "#000000"
+            }
+        ]
+    },
     "start_screen": {
         "screen": {
             "top": 966,
@@ -169,7 +478,7 @@
                 "tags": [
                     "input",
                     {
-                        "tap": "goSettings"
+                        "up": "goSettings"
                     },
                     {
                         "zIndex": "2"
@@ -285,7 +594,7 @@
                     "tags": [
                         "input",
                         {
-                            "tap": "pressPlay"
+                            "up": "pressPlay"
                         }
                     ],
                     "filled": false,
@@ -335,7 +644,7 @@
                     "tags": [
                         "input",
                         {
-                            "tap": "pressMore"
+                            "up": "pressMore"
                         }
                     ],
                     "filled": false,
@@ -448,6 +757,123 @@
         ]
     },
     "animations": [
+        {
+            "id": 466,
+            "artboard": {
+                "top": 966,
+                "left": 2470,
+                "bottom": 3174,
+                "right": 3712
+            }
+        },
+        {
+            "id": 507,
+            "artboard": {
+                "top": 966,
+                "left": 2470,
+                "bottom": 3174,
+                "right": 3712
+            }
+        },
+        {
+            "id": 506,
+            "artboard": {
+                "top": 966,
+                "left": 2470,
+                "bottom": 3174,
+                "right": 3712
+            }
+        },
+        {
+            "id": 505,
+            "artboard": {
+                "top": 966,
+                "left": 2470,
+                "bottom": 3174,
+                "right": 3712
+            }
+        },
+        {
+            "id": 504,
+            "artboard": {
+                "top": 966,
+                "left": 2470,
+                "bottom": 3174,
+                "right": 3712
+            }
+        },
+        {
+            "id": 503,
+            "artboard": {
+                "top": 966,
+                "left": 2470,
+                "bottom": 3174,
+                "right": 3712
+            }
+        },
+        {
+            "id": 502,
+            "artboard": {
+                "top": 966,
+                "left": 2470,
+                "bottom": 3174,
+                "right": 3712
+            }
+        },
+        {
+            "id": 499,
+            "artboard": {
+                "top": 966,
+                "left": 2470,
+                "bottom": 3174,
+                "right": 3712
+            }
+        },
+        {
+            "id": 497,
+            "artboard": {
+                "top": 966,
+                "left": 2470,
+                "bottom": 3174,
+                "right": 3712
+            }
+        },
+        {
+            "id": 491,
+            "artboard": {
+                "top": 966,
+                "left": 2470,
+                "bottom": 3174,
+                "right": 3712
+            }
+        },
+        {
+            "id": 494,
+            "artboard": {
+                "top": 966,
+                "left": 2470,
+                "bottom": 3174,
+                "right": 3712
+            }
+        },
+        {
+            "id": 492,
+            "artboard": {
+                "top": 966,
+                "left": 2470,
+                "bottom": 3174,
+                "right": 3712
+            }
+        },
+        {
+            "id": 493,
+            "artboard": {
+                "top": 966,
+                "left": 2470,
+                "bottom": 3174,
+                "right": 3712
+            }
+        },
         {
             "id": 63,
             "artboard": {

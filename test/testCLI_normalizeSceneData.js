@@ -1,6 +1,6 @@
 var h5Document = require('./h5Document');
 var keyFrameResult = require('./keyFrameResult');
-var smartObjectFrames = require('./smartObjectFrames');
+var frameData = require('./frameData');
 
 var fs = require('fs');
 
@@ -11,10 +11,6 @@ function writeJSONFile(fileName, data) {
     });
 }
 
-var storeFrames = require('./../lib/storeFrames');
 var normalize = require('./../lib/normalizeSceneData');
-
-var frameData = {};
-storeFrames(smartObjectFrames, frameData);
 
 writeJSONFile('out_normalizeSceneData.json', normalize(h5Document, keyFrameResult, frameData));
