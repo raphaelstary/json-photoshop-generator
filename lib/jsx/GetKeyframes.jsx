@@ -500,7 +500,7 @@ function getBounds(layer) {
 
 function getOpacity(layer) {
     return {
-        opacity: Math.round(layer.opacity),
+        opacity: Math.round(layer.opacity) / 100,
         time: getCurrentFrame()
     };
 }
