@@ -52,7 +52,10 @@ var storeFrames = require('./lib/storeFrames');
         var h5doc;
         var once = true;
 
-        _generator.getDocumentInfo(undefined, {expandSmartObjects: true}).then(function (document) {
+        _generator.getDocumentInfo(undefined, {
+            expandSmartObjects: true,
+            getPathData: true
+        }).then(function (document) {
             jsonFileName = document.file.substring(0, document.file.lastIndexOf('.')) + '.json';
             placedInfo = document.placed;
 
@@ -87,8 +90,7 @@ var storeFrames = require('./lib/storeFrames');
                     storeFrames(smartObjectFrames, frameData);
 
                     if (frames.length > 0)
-                        nextFrame(frames.shift());
-                    else
+                        nextFrame(frames.shift()); else
                         return true;
 
                 }).then(function (ready) {
