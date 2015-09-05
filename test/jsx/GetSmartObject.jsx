@@ -43,13 +43,29 @@ function getTextTransformData() {
     }
 }
 
-function angleFromMatrix(yy, xy) {
-    var toDegs = 180 / Math.PI;
-    return Math.atan2(yy, xy) * toDegs - 90;
+function sign(number) {
+    number = +number; // convert to a number
+    if (number === 0 || isNaN(number)) {
+        return number;
+    }
+    return number > 0 ? 1 : -1;
 }
 
-var soDesc = getSmartObject();
-var placedDesc = soDesc.getEnumerationValue(stringIDToTypeID('placed'));
-var theName = soDesc.getString(stringIDToTypeID("fileReference"));
+function angleFromMatrix(xy, yy) {
+    return Math.atan2(xy, yy);
+}
 
-alert("name: " + theName + " "  + typeIDToStringID(placedDesc));
+function getScale(transform) {
+    return Math.sqrt(transform.xx * transform.xx + transform.xy * transform.xy) * sign(transform.xx);
+}
+
+//var soDesc = getSmartObject();
+//var placedDesc = soDesc.getEnumerationValue(stringIDToTypeID('placed'));
+//var theName = soDesc.getString(stringIDToTypeID("fileReference"));
+//
+//alert("name: " + theName + " "  + typeIDToStringID(placedDesc));
+
+if (isText()) {
+    var transform = getTextTransformData();
+    alert(getScale(transform));
+}

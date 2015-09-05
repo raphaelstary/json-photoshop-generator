@@ -47,6 +47,8 @@ var storeFrames = require('./lib/storeFrames');
     }
 
     function generateJSON() {
+        console.log(Date() + " generate JSON started");
+
         var jsonFileName;
         var placedInfo;
         var h5doc;
@@ -110,6 +112,8 @@ var storeFrames = require('./lib/storeFrames');
         fs.writeFile(name, JSON.stringify(objectData), function (err) {
             if (err) throw err;
             console.log('file saved to: ' + name);
+
+            console.log(Date() + " generate JSON finished");
         });
     }
 

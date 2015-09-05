@@ -416,7 +416,7 @@ function selectLayer(id) {
     return app.activeDocument.activeLayer;
 }
 
-function isSmartObject() {
+function isSmartObject() { // todo change to js api
     var ref = new ActionReference();
     ref.putProperty(stringIDToTypeID("property"), stringIDToTypeID("smartObject"));
     ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
@@ -426,13 +426,48 @@ function isSmartObject() {
     return layerDesc.hasKey(stringIDToTypeID('smartObject'));
 }
 
-function isText() {
+function isText() { // todo change to js api
     var ref = new ActionReference();
     ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
-
     var layerDesc = executeActionGet(ref);
 
     return layerDesc.hasKey(stringIDToTypeID('textKey'));
+}
+
+function getTextTransformData() { // todo change to js api
+    var ref = new ActionReference();
+    ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
+    var desc = executeActionGet(ref).getObjectValue(stringIDToTypeID('textKey'));
+    if (desc.hasKey(stringIDToTypeID('transform'))) {
+        desc = desc.getObjectValue(stringIDToTypeID('transform'));
+        var xx = desc.getDouble(stringIDToTypeID('xx'));
+        var xy = desc.getDouble(stringIDToTypeID('xy'));
+        var yx = desc.getDouble(stringIDToTypeID('yx'));
+        var yy = desc.getDouble(stringIDToTypeID('yy'));
+
+        return {
+            xx: xx,
+            xy: xy,
+            yx: yx,
+            yy: yy
+        };
+    }
+}
+
+function getAngle(xy, yy) {
+    return Math.atan2(xy, yy);
+}
+
+function getScale(xx, xy) { // todo change to js api
+    return Math.sqrt(xx * xx + xy * xy) * sign(xx);
+}
+
+function sign(number) {
+    number = +number; // convert to a number
+    if (number === 0 || isNaN(number)) {
+        return number;
+    }
+    return number > 0 ? 1 : -1;
 }
 
 function collectKeyframes(layer, nextKeyframe, previousKeyframe, getData, maxFrames, transformFrames) {
@@ -479,7 +514,7 @@ function equalsTransformKeyframe(last, next) {
     return last && next.x == last.x && next.y == last.y && next.width == last.width && next.height == last.height;
 }
 
-function getBounds(layer) {
+function getPosition(layer) {
     var bounds = {
         left: layer.bounds[0].value,
         top: layer.bounds[1].value,
@@ -491,11 +526,39 @@ function getBounds(layer) {
 
     return {
         x: Math.floor(bounds.left + width / 2 - currentArtboard.left),
-        y: Math.floor(bounds.top + height / 2 - currentArtboard.top),
-        width: width,
-        height: height,
-        time: getCurrentFrame()
+        y: Math.floor(bounds.top + height / 2 - currentArtboard.top)
     };
+}
+
+function getTextRotation(transform) { // todo could get info out of layer with js api
+    if (transform)
+        return getAngle(transform.xy, transform.yy);
+    return 0;
+}
+
+function getTextScale(transform) { // todo could get info out of layer with js api
+    if (transform)
+        return getScale(transform.xy, transform.yy);
+    return 1;
+}
+
+function getTextData(layer) {
+    var data = getPosition(layer);
+    var transform = getTextTransformData();
+    if (transform) {
+        data.rotation = getTextRotation(transform);
+        data.scale = getTextScale(transform);
+    }
+    data.time = getCurrentFrame();
+
+    return data;
+}
+
+function getSmartObjectData(layer) {
+    var data = getPosition(layer);
+    data.time = getCurrentFrame();
+
+    return data;
 }
 
 function getOpacity(layer) {
@@ -528,7 +591,28 @@ function collectKeyframeData(layer, transformFrames) {
         current.psType = 'smartObject';
 
         frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, jumpToPreviousKeyframeOfTransformTrack,
-            getBounds, 50, transformFrames);
+            getSmartObjectData, 50, transformFrames);
+        if (frames.length > 1) {
+            current.transform = frames;
+        }
+
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfOpacityTrack, jumpToPreviousKeyframeOfOpacityTrack,
+            getOpacity, 50);
+        if (frames.length > 1) {
+            current.opacity = frames;
+        }
+
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfStyleTrack, jumpToPreviousKeyframeOfStyleTrack, getStyle,
+            50);
+        if (frames.length > 1) {
+            current.style = frames;
+        }
+
+    } else if (isText()) {
+        current.psType = 'text';
+
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, jumpToPreviousKeyframeOfTransformTrack,
+            getTextData, 50);
         if (frames.length > 1) {
             current.transform = frames;
         }
