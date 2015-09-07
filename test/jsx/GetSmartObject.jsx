@@ -59,13 +59,43 @@ function getScale(transform) {
     return Math.sqrt(transform.xx * transform.xx + transform.xy * transform.xy) * sign(transform.xx);
 }
 
+function hasLayerMask() {
+    var ref = new ActionReference();
+    ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
+    var desc = executeActionGet(ref);
+    return desc.hasKey(charIDToTypeID("UsrM"));
+}
+
+function hasVectorMask() {
+    var ref = new ActionReference();
+    var keyVectorMaskEnabled = app.stringIDToTypeID('vectorMask');
+    var keyKind = app.charIDToTypeID('Knd ');
+    ref.putEnumerated(app.charIDToTypeID('Path'), app.charIDToTypeID('Ordn'), keyVectorMaskEnabled);
+    var desc = executeActionGet(ref);
+    if (desc.hasKey(keyKind)) {
+        var kindValue = desc.getEnumerationValue(keyKind);
+        return kindValue == keyVectorMaskEnabled;
+    }
+    return false;
+}
+
+function hasFilterMask() {
+    var ref = new ActionReference();
+    var keyFilterMask = app.stringIDToTypeID("hasFilterMask");
+    ref.putProperty(app.charIDToTypeID('Prpr'), keyFilterMask);
+    ref.putEnumerated(app.charIDToTypeID('Lyr '), app.charIDToTypeID('Ordn'), app.charIDToTypeID('Trgt'));
+    var desc = executeActionGet(ref);
+    return desc.hasKey(keyFilterMask) && desc.getBoolean(keyFilterMask);
+}
+
 //var soDesc = getSmartObject();
 //var placedDesc = soDesc.getEnumerationValue(stringIDToTypeID('placed'));
 //var theName = soDesc.getString(stringIDToTypeID("fileReference"));
 //
 //alert("name: " + theName + " "  + typeIDToStringID(placedDesc));
-
-if (isText()) {
-    var transform = getTextTransformData();
-    alert(getScale(transform));
-}
+var layer = app.activeDocument.activeLayer;
+alert(hasLayerMask());
+//if (layer.kind == LayerKind.TEXT) {
+//    var transform = getTextTransformData();
+//    alert(getScale(transform));
+//}

@@ -1,4 +1,4 @@
-/*global stringIDToTypeID, charIDToTypeID, ActionDescriptor, ActionReference, executeAction, executeActionGet, DialogModes, params, app */
+/*global stringIDToTypeID, charIDToTypeID, ActionDescriptor, ActionReference, executeAction, executeActionGet, DialogModes, params, app, LayerKind */
 
 var JSON = {};
 /* cloned from https://github.com/douglascrockford/JSON-js */
@@ -303,6 +303,14 @@ var JSON = {};
 
 var currentArtboard;
 
+function sign(number) {
+    number = +number; // convert to a number
+    if (number === 0 || isNaN(number)) {
+        return number;
+    }
+    return number > 0 ? 1 : -1;
+}
+
 function getCurrentFrame() {
     var ref = new ActionReference();
     ref.putProperty(charIDToTypeID('Prpr'), stringIDToTypeID("currentFrame"));
@@ -395,12 +403,27 @@ function jumpToPreviousKeyframeOfPositionTrack() {
     __jumpToNextKeyframe("sheetPositionTrack", "previous");
 }
 
-function jumpToNextKeyframeOfMaskTrack() {
+function jumpToNextKeyframeOfLayerMaskPositionTrack() {
     __jumpToNextKeyframe("userMaskPositionTrack", "next");
 }
 
-function jumpToPreviousKeyframeOfMaskTrack() {
+function jumpToPreviousKeyframeOfLayerMaskPositionTrack() {
     __jumpToNextKeyframe("userMaskPositionTrack", "previous");
+}
+
+function jumpToNextKeyframeOfVectorMaskPositionTrack() {
+    __jumpToNextKeyframe("vectorMaskPositionTrack", "next");
+}
+
+function jumpToPreviousKeyframeOfVectorMaskPositionTrack() {
+    __jumpToNextKeyframe("vectorMaskPositionTrack", "previous");
+}
+
+function hasLayerMask() {
+    var ref = new ActionReference();
+    ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
+    var desc = executeActionGet(ref);
+    return desc.hasKey(charIDToTypeID("UsrM"));
 }
 
 function selectLayer(id) {
@@ -416,25 +439,7 @@ function selectLayer(id) {
     return app.activeDocument.activeLayer;
 }
 
-function isSmartObject() { // todo change to js api
-    var ref = new ActionReference();
-    ref.putProperty(stringIDToTypeID("property"), stringIDToTypeID("smartObject"));
-    ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
-
-    var layerDesc = executeActionGet(ref);
-
-    return layerDesc.hasKey(stringIDToTypeID('smartObject'));
-}
-
-function isText() { // todo change to js api
-    var ref = new ActionReference();
-    ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
-    var layerDesc = executeActionGet(ref);
-
-    return layerDesc.hasKey(stringIDToTypeID('textKey'));
-}
-
-function getTextTransformData() { // todo change to js api
+function getTextTransformData() {
     var ref = new ActionReference();
     ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
     var desc = executeActionGet(ref).getObjectValue(stringIDToTypeID('textKey'));
@@ -458,16 +463,8 @@ function getAngle(xy, yy) {
     return Math.atan2(xy, yy);
 }
 
-function getScale(xx, xy) { // todo change to js api
+function getScale(xx, xy) {
     return Math.sqrt(xx * xx + xy * xy) * sign(xx);
-}
-
-function sign(number) {
-    number = +number; // convert to a number
-    if (number === 0 || isNaN(number)) {
-        return number;
-    }
-    return number > 0 ? 1 : -1;
 }
 
 function collectKeyframes(layer, nextKeyframe, previousKeyframe, getData, maxFrames, transformFrames) {
@@ -510,10 +507,6 @@ function collectKeyframes(layer, nextKeyframe, previousKeyframe, getData, maxFra
     }
 }
 
-function equalsTransformKeyframe(last, next) {
-    return last && next.x == last.x && next.y == last.y && next.width == last.width && next.height == last.height;
-}
-
 function getPosition(layer) {
     var bounds = {
         left: layer.bounds[0].value,
@@ -530,13 +523,13 @@ function getPosition(layer) {
     };
 }
 
-function getTextRotation(transform) { // todo could get info out of layer with js api
+function getTextRotation(transform) {
     if (transform)
         return getAngle(transform.xy, transform.yy);
     return 0;
 }
 
-function getTextScale(transform) { // todo could get info out of layer with js api
+function getTextScale(transform) {
     if (transform)
         return getScale(transform.xy, transform.yy);
     return 1;
@@ -568,14 +561,6 @@ function getOpacity(layer) {
     };
 }
 
-function equalsOpacityKeyframe(last, next) {
-    return last && next.opacity == last.opacity;
-}
-
-function equalsStyleKeyframe(last, next) {
-    return last && next.blendMode == last.blendMode;
-}
-
 function getStyle(layer) {
     return {
         blendMode: layer.blendMode.toString(),
@@ -587,7 +572,26 @@ function collectKeyframeData(layer, transformFrames) {
     var current = {};
     var frames;
 
-    if (isSmartObject()) {
+    frames = collectKeyframes(layer, jumpToNextKeyframeOfOpacityTrack, jumpToPreviousKeyframeOfOpacityTrack, getOpacity,
+        50);
+    if (frames.length > 1) {
+        current.opacity = frames;
+    }
+
+    frames = collectKeyframes(layer, jumpToNextKeyframeOfStyleTrack, jumpToPreviousKeyframeOfStyleTrack, getStyle, 50);
+    if (frames.length > 1) {
+        current.style = frames;
+    }
+
+    if (hasLayerMask()) {
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfLayerMaskPositionTrack,
+            jumpToPreviousKeyframeOfLayerMaskPositionTrack, getSmartObjectData, 50);
+        if (frames.length > 1) {
+            current.mask = frames;
+        }
+    }
+
+    if (layer.kind == LayerKind.SMARTOBJECT) {
         current.psType = 'smartObject';
 
         frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, jumpToPreviousKeyframeOfTransformTrack,
@@ -596,19 +600,7 @@ function collectKeyframeData(layer, transformFrames) {
             current.transform = frames;
         }
 
-        frames = collectKeyframes(layer, jumpToNextKeyframeOfOpacityTrack, jumpToPreviousKeyframeOfOpacityTrack,
-            getOpacity, 50);
-        if (frames.length > 1) {
-            current.opacity = frames;
-        }
-
-        frames = collectKeyframes(layer, jumpToNextKeyframeOfStyleTrack, jumpToPreviousKeyframeOfStyleTrack, getStyle,
-            50);
-        if (frames.length > 1) {
-            current.style = frames;
-        }
-
-    } else if (isText()) {
+    } else if (layer.kind == LayerKind.TEXT) {
         current.psType = 'text';
 
         frames = collectKeyframes(layer, jumpToNextKeyframeOfTransformTrack, jumpToPreviousKeyframeOfTransformTrack,
@@ -617,31 +609,18 @@ function collectKeyframeData(layer, transformFrames) {
             current.transform = frames;
         }
 
-        frames = collectKeyframes(layer, jumpToNextKeyframeOfOpacityTrack, jumpToPreviousKeyframeOfOpacityTrack,
-            getOpacity, 50);
+    } else if (layer.kind == LayerKind.SOLIDFILL) {
+        current.psType = 'shape';
+
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfVectorMaskPositionTrack,
+            jumpToPreviousKeyframeOfVectorMaskPositionTrack, getSmartObjectData, 50);
         if (frames.length > 1) {
-            current.opacity = frames;
+            current.transform = frames;
         }
 
-        frames = collectKeyframes(layer, jumpToNextKeyframeOfStyleTrack, jumpToPreviousKeyframeOfStyleTrack, getStyle,
-            50);
-        if (frames.length > 1) {
-            current.style = frames;
-        }
     }
 
     return current;
-}
-
-function saveFile(str) {
-    var fileName = app.activeDocument.name.substring(0, app.activeDocument.name.lastIndexOf("."));
-    var path = app.activeDocument.path.fsName;
-    var fullPath = path + "/" + fileName + ".json";
-    var file = new File(fullPath);
-    file.open('w');
-    file.write(str);
-    file.close();
-    alert("file saved to " + fullPath);
 }
 
 function run() {
@@ -659,7 +638,6 @@ function run() {
 
         animationData.animations[layer.id] = collectKeyframeData(layer, animationData.transformFrames);
     }
-    //saveFile(JSON.stringify(animationData, null, "    "));
 
     return animationData;
 }
