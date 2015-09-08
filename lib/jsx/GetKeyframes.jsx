@@ -419,11 +419,12 @@ function jumpToPreviousKeyframeOfVectorMaskPositionTrack() {
     __jumpToNextKeyframe("vectorMaskPositionTrack", "previous");
 }
 
-function hasLayerMask() {
+function hasVectorMask() {
     var ref = new ActionReference();
-    ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
-    var desc = executeActionGet(ref);
-    return desc.hasKey(charIDToTypeID("UsrM"));
+    var keyVectorMask = app.stringIDToTypeID('hasVectorMask');
+    ref.putProperty(app.charIDToTypeID('Prpr'), keyVectorMask);
+    ref.putEnumerated(app.charIDToTypeID('Lyr '), app.charIDToTypeID('Ordn'), app.charIDToTypeID('Trgt'));
+    return executeActionGet(ref).getBoolean(keyVectorMask);
 }
 
 function selectLayer(id) {
@@ -583,9 +584,9 @@ function collectKeyframeData(layer, transformFrames) {
         current.style = frames;
     }
 
-    if (hasLayerMask()) {
-        frames = collectKeyframes(layer, jumpToNextKeyframeOfLayerMaskPositionTrack,
-            jumpToPreviousKeyframeOfLayerMaskPositionTrack, getSmartObjectData, 50);
+    if (layer.kind != LayerKind.SOLIDFILL && hasVectorMask()) {
+        frames = collectKeyframes(layer, jumpToNextKeyframeOfVectorMaskPositionTrack,
+            jumpToPreviousKeyframeOfVectorMaskPositionTrack, getSmartObjectData, 50);
         if (frames.length > 1) {
             current.mask = frames;
         }

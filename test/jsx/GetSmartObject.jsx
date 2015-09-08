@@ -62,21 +62,24 @@ function getScale(transform) {
 function hasLayerMask() {
     var ref = new ActionReference();
     ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
-    var desc = executeActionGet(ref);
-    return desc.hasKey(charIDToTypeID("UsrM"));
+    return executeActionGet(ref).hasKey(charIDToTypeID("UsrM"));
 }
 
 function hasVectorMask() {
-    var ref = new ActionReference();
-    var keyVectorMaskEnabled = app.stringIDToTypeID('vectorMask');
-    var keyKind = app.charIDToTypeID('Knd ');
-    ref.putEnumerated(app.charIDToTypeID('Path'), app.charIDToTypeID('Ordn'), keyVectorMaskEnabled);
-    var desc = executeActionGet(ref);
-    if (desc.hasKey(keyKind)) {
-        var kindValue = desc.getEnumerationValue(keyKind);
-        return kindValue == keyVectorMaskEnabled;
+    try {
+        var ref = new ActionReference();
+        var keyVectorMaskEnabled = app.stringIDToTypeID('vectorMask');
+        var keyKind = app.charIDToTypeID('Knd ');
+        ref.putEnumerated(app.charIDToTypeID('Path'), app.charIDToTypeID('Ordn'), keyVectorMaskEnabled);
+        var desc = executeActionGet(ref);
+        if (desc.hasKey(keyKind)) {
+            var kindValue = desc.getEnumerationValue(keyKind);
+            return kindValue == keyVectorMaskEnabled;
+        }
+    } catch (e) {
+        alert('exception');
+        return false;
     }
-    return false;
 }
 
 function hasFilterMask() {
@@ -88,13 +91,21 @@ function hasFilterMask() {
     return desc.hasKey(keyFilterMask) && desc.getBoolean(keyFilterMask);
 }
 
+function hasVectorMask2() {
+    var ref = new ActionReference();
+    var keyVectorMask = app.stringIDToTypeID('hasVectorMask');
+    ref.putProperty(app.charIDToTypeID('Prpr'), keyVectorMask);
+    ref.putEnumerated(app.charIDToTypeID('Lyr '), app.charIDToTypeID('Ordn'), app.charIDToTypeID('Trgt'));
+    return executeActionGet(ref).getBoolean(keyVectorMask);
+}
+
 //var soDesc = getSmartObject();
 //var placedDesc = soDesc.getEnumerationValue(stringIDToTypeID('placed'));
 //var theName = soDesc.getString(stringIDToTypeID("fileReference"));
 //
 //alert("name: " + theName + " "  + typeIDToStringID(placedDesc));
 var layer = app.activeDocument.activeLayer;
-alert(hasLayerMask());
+alert(hasVectorMask2());
 //if (layer.kind == LayerKind.TEXT) {
 //    var transform = getTextTransformData();
 //    alert(getScale(transform));

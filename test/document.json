@@ -1,7 +1,7 @@
 {
     "version": "1.3.0",
-    "timeStamp": 1441386897.223,
-    "count": 549,
+    "timeStamp": 1441713339.598,
+    "count": 26,
     "id": 1759,
     "file": "C:\\Users\\Raphael\\SkyDrive\\Documents\\affenbande\\affenbande_scenes.psd",
     "bounds": {
@@ -11,7 +11,7 @@
         "right": 5338
     },
     "selection": [
-        138
+        57
     ],
     "resolution": 72,
     "globalLight": {
@@ -27,7 +27,7 @@
     "layers": [
         {
             "id": 807,
-            "index": 149,
+            "index": 150,
             "type": "layerSection",
             "name": "finish_level",
             "bounds": {
@@ -53,7 +53,7 @@
             "layers": [
                 {
                     "id": 829,
-                    "index": 148,
+                    "index": 149,
                     "type": "layerSection",
                     "name": "generator #ignore",
                     "bounds": {
@@ -71,7 +71,7 @@
                     "layers": [
                         {
                             "id": 930,
-                            "index": 147,
+                            "index": 148,
                             "type": "layerSection",
                             "name": "coconut_white.png",
                             "bounds": {
@@ -89,7 +89,7 @@
                             "layers": [
                                 {
                                     "id": 929,
-                                    "index": 146,
+                                    "index": 147,
                                     "type": "layer",
                                     "name": "Layer 2 copy",
                                     "bounds": {
@@ -105,7 +105,7 @@
                                 },
                                 {
                                     "id": 928,
-                                    "index": 145,
+                                    "index": 146,
                                     "type": "layer",
                                     "name": "coconu",
                                     "bounds": {
@@ -118,8 +118,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1fbb86-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0aecabae-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043b9-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2e0439e-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -139,7 +139,7 @@
                         },
                         {
                             "id": 927,
-                            "index": 143,
+                            "index": 144,
                             "type": "layer",
                             "name": "shine.png",
                             "bounds": {
@@ -152,8 +152,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb85-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0aecabad-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b8-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2e04399-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -171,7 +171,7 @@
                         },
                         {
                             "id": 831,
-                            "index": 142,
+                            "index": 143,
                             "type": "layer",
                             "name": "star.png",
                             "bounds": {
@@ -184,8 +184,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "1f1f4663-530d-11e5-8e8e-e6ac394ea7dd",
+                                "ID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2e04394-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -205,7 +205,7 @@
                 },
                 {
                     "id": 822,
-                    "index": 140,
+                    "index": 141,
                     "type": "layerSection",
                     "name": "txt #animation",
                     "bounds": {
@@ -221,6 +221,198 @@
                     },
                     "generatorSettings": false,
                     "layers": [
+                        {
+                            "id": 1252,
+                            "index": 140,
+                            "type": "textLayer",
+                            "name": "well done white #zIndex:9 #mask",
+                            "bounds": {
+                                "top": 2045,
+                                "left": 4330,
+                                "bottom": 2211.16,
+                                "right": 4329.84
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "generatorSettings": false,
+                            "path": {
+                                "pathComponents": [
+                                    {
+                                        "shapeOperation": "add",
+                                        "subpathListKey": [
+                                            {
+                                                "closedSubpath": true,
+                                                "points": [
+                                                    {
+                                                        "anchor": {
+                                                            "x": 4297.31,
+                                                            "y": 1980.85
+                                                        }
+                                                    },
+                                                    {
+                                                        "anchor": {
+                                                            "x": 4329.84,
+                                                            "y": 1986.37
+                                                        }
+                                                    },
+                                                    {
+                                                        "anchor": {
+                                                            "x": 4291.69,
+                                                            "y": 2211.15
+                                                        }
+                                                    },
+                                                    {
+                                                        "anchor": {
+                                                            "x": 4259.16,
+                                                            "y": 2205.63
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "origin": {
+                                            "type": "rect",
+                                            "bounds": {
+                                                "top": 1980.84,
+                                                "left": 4259.16,
+                                                "bottom": 2211.16,
+                                                "right": 4329.84
+                                            }
+                                        }
+                                    }
+                                ],
+                                "bounds": {
+                                    "top": 1980.84,
+                                    "left": 4259.16,
+                                    "bottom": 2211.16,
+                                    "right": 4329.84
+                                },
+                                "defaultFill": false
+                            },
+                            "text": {
+                                "textKey": "well done",
+                                "transform": {
+                                    "xx": 1.49125,
+                                    "xy": 0.266713,
+                                    "yx": -0.266713,
+                                    "yy": 1.49125,
+                                    "tx": 0,
+                                    "ty": 0
+                                },
+                                "textClickPoint": {
+                                    "horizontal": {
+                                        "value": 80.7092,
+                                        "units": "percentUnit"
+                                    },
+                                    "vertical": {
+                                        "value": 67.0132,
+                                        "units": "percentUnit"
+                                    }
+                                },
+                                "boundingBox": {
+                                    "left": {
+                                        "value": 1.17188,
+                                        "units": "pointsUnit"
+                                    },
+                                    "top": {
+                                        "value": -93.0625,
+                                        "units": "pointsUnit"
+                                    },
+                                    "right": {
+                                        "value": 495.477,
+                                        "units": "pointsUnit"
+                                    },
+                                    "bottom": {
+                                        "value": 14,
+                                        "units": "pointsUnit"
+                                    }
+                                },
+                                "bounds": {
+                                    "left": {
+                                        "value": 0,
+                                        "units": "pointsUnit"
+                                    },
+                                    "top": {
+                                        "value": -101.016,
+                                        "units": "pointsUnit"
+                                    },
+                                    "right": {
+                                        "value": 497.227,
+                                        "units": "pointsUnit"
+                                    },
+                                    "bottom": {
+                                        "value": 51.4453,
+                                        "units": "pointsUnit"
+                                    }
+                                },
+                                "textShape": [
+                                    {
+                                        "char": "paint",
+                                        "orientation": "horizontal",
+                                        "transform": {
+                                            "xx": 1,
+                                            "xy": 0,
+                                            "yx": 0,
+                                            "yy": 1,
+                                            "tx": 0,
+                                            "ty": 0
+                                        },
+                                        "rowCount": 1,
+                                        "columnCount": 1,
+                                        "rowMajorOrder": true,
+                                        "rowGutter": {
+                                            "value": 0,
+                                            "units": "pointsUnit"
+                                        },
+                                        "columnGutter": {
+                                            "value": 0,
+                                            "units": "pointsUnit"
+                                        },
+                                        "spacing": {
+                                            "value": 0,
+                                            "units": "pointsUnit"
+                                        },
+                                        "frameBaselineAlignment": "alignByAscent",
+                                        "firstBaselineMinimum": {
+                                            "value": 0,
+                                            "units": "pointsUnit"
+                                        },
+                                        "base": {
+                                            "horizontal": 0,
+                                            "vertical": 0
+                                        }
+                                    }
+                                ],
+                                "textStyleRange": [
+                                    {
+                                        "from": 0,
+                                        "to": 10,
+                                        "textStyle": {
+                                            "fontName": "Janda Silly Monkey",
+                                            "fontStyleName": "Regular",
+                                            "size": {
+                                                "value": 120,
+                                                "units": "pointsUnit"
+                                            },
+                                            "color": {
+                                                "red": 255,
+                                                "green": 255,
+                                                "blue": 255
+                                            }
+                                        }
+                                    }
+                                ],
+                                "paragraphStyleRange": [
+                                    {
+                                        "from": 0,
+                                        "to": 10,
+                                        "paragraphStyle": {
+                                            "align": "left"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
                         {
                             "id": 926,
                             "index": 139,
@@ -561,8 +753,8 @@
                             },
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb86-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "feafd1ab-5327-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b9-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dde027-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -593,8 +785,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb86-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0aecabaa-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b9-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dde022-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -618,28 +810,28 @@
                     "type": "layer",
                     "name": "shine.png #animation #zIndex:6",
                     "bounds": {
-                        "top": 1469,
-                        "left": 4307,
-                        "bottom": 2225,
-                        "right": 5061
+                        "top": 1468,
+                        "left": 4305,
+                        "bottom": 2226,
+                        "right": 5063
                     },
                     "visible": true,
                     "clipped": false,
                     "generatorSettings": false,
                     "smartObject": {
-                        "ID": "1f1fbb85-530d-11e5-8e8e-e6ac394ea7dd",
-                        "placed": "0aea61a6-5328-11e5-b0c6-bdcfb526d9a0",
+                        "ID": "f2e043b8-561a-11e5-a364-8019ce8e2810",
+                        "placed": "f2dde01d-561a-11e5-a364-8019ce8e2810",
                         "antiAliasType": 16,
                         "type": 2,
                         "transform": [
-                            4307,
-                            1469,
-                            5061,
-                            1469,
-                            5061,
-                            2225,
-                            4307,
-                            2225
+                            5057.6,
+                            2228.36,
+                            4303.63,
+                            2221.61,
+                            4310.4,
+                            1465.64,
+                            5064.37,
+                            1472.39
                         ],
                         "comp": -1
                     }
@@ -677,8 +869,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0aea61a3-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dde018-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -709,8 +901,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0aea61a0-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dde013-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -741,8 +933,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0aea619d-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dde00e-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -773,8 +965,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ae99e51-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dde009-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -805,8 +997,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ae99e4e-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dde004-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -837,8 +1029,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ae99e4b-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dddfff-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -869,8 +1061,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ae8db00-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dddffa-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -901,8 +1093,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ae8dafd-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dd9320-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -933,8 +1125,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ae8dafa-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dd931b-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -965,8 +1157,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ae8daf7-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dd9316-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -997,8 +1189,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ae6b81f-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dd1dd7-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -1029,8 +1221,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ae6b81c-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dd1dd2-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -1081,8 +1273,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fe2b7-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ae6b819-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b6-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dcf601-561a-11e5-a364-8019ce8e2810",
                                 "frameStep": {
                                     "numerator": 20,
                                     "denominator": 600
@@ -1121,8 +1313,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fe2b6-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ae4bc3d-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b5-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dcf5fc-561a-11e5-a364-8019ce8e2810",
                                 "frameStep": {
                                     "numerator": 20,
                                     "denominator": 600
@@ -1161,8 +1353,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fe2b5-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ae2724e-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b4-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dcf5f7-561a-11e5-a364-8019ce8e2810",
                                 "frameStep": {
                                     "numerator": 20,
                                     "denominator": 600
@@ -1201,8 +1393,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fe2b4-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ae0eb95-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b3-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dcf5f2-561a-11e5-a364-8019ce8e2810",
                                 "frameStep": {
                                     "numerator": 20,
                                     "denominator": 600
@@ -1241,8 +1433,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb89-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0addb769-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b2-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dcf5ed-561a-11e5-a364-8019ce8e2810",
                                 "frameStep": {
                                     "numerator": 20,
                                     "denominator": 600
@@ -1281,8 +1473,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb88-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0adb946a-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b1-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dcf5e8-561a-11e5-a364-8019ce8e2810",
                                 "frameStep": {
                                     "numerator": 20,
                                     "denominator": 600
@@ -1321,8 +1513,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb87-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ad9988f-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043b0-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dccee0-561a-11e5-a364-8019ce8e2810",
                                 "frameStep": {
                                     "numerator": 20,
                                     "denominator": 600
@@ -1461,7 +1653,7 @@
                     "id": 849,
                     "index": 106,
                     "type": "textLayer",
-                    "name": "skip >",
+                    "name": "skip > #zIndex:5",
                     "bounds": {
                         "top": 2981,
                         "left": 5017,
@@ -1760,8 +1952,8 @@
                             },
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb82-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "1f1eaa14-530d-11e5-8e8e-e6ac394ea7dd",
+                                "ID": "f2e043ae-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dccedb-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -1792,8 +1984,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb83-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "1f1eaa0f-530d-11e5-8e8e-e6ac394ea7dd",
+                                "ID": "f2e043af-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dc0b8d-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -1844,8 +2036,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1fbb83-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ad94a6d-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043af-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2dc0b88-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -1900,8 +2092,8 @@
                                     },
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1fbb82-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ad94a6a-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043ae-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2dc0b83-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -1938,8 +2130,8 @@
                                     },
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1fbb82-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ad94a69-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043ae-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2dbbd69-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -1976,8 +2168,8 @@
                                     },
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1fbb82-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ad94a68-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043ae-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2dbbd64-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -2014,8 +2206,8 @@
                                     },
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1fbb82-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ad94a67-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043ae-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2db211c-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -2052,8 +2244,8 @@
                                     },
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1fbb82-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ad94a66-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043ae-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2db2117-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -2090,8 +2282,8 @@
                                     },
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1fbb82-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ad6b255-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043ae-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2daabfb-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -2148,8 +2340,8 @@
                                     },
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1fbb81-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0952c603-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043ad-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2daabf6-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -2186,8 +2378,8 @@
                                     },
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1fbb81-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0952c602-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043ad-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2da0fb6-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -2238,8 +2430,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1fbb80-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ad6b254-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043ac-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2da0fb1-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -2270,8 +2462,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1fbb7f-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ad6b251-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043ab-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d9c18e-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -2302,8 +2494,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1f947b-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ad6b24e-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043a9-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d9c189-561a-11e5-a364-8019ce8e2810",
                                         "frameStep": {
                                             "numerator": 20,
                                             "denominator": 600
@@ -2342,8 +2534,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1f947b-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ad4b67a-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043a9-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d9c184-561a-11e5-a364-8019ce8e2810",
                                         "frameStep": {
                                             "numerator": 20,
                                             "denominator": 600
@@ -2377,10 +2569,10 @@
                     "type": "layerSection",
                     "name": "ok_button #button #zIndex:5",
                     "bounds": {
-                        "top": 2483,
-                        "left": 2752,
-                        "bottom": 2665,
-                        "right": 3431
+                        "top": 2480,
+                        "left": 2749,
+                        "bottom": 2662,
+                        "right": 3428
                     },
                     "visible": true,
                     "clipped": false,
@@ -2637,10 +2829,10 @@
                                 "right": 3424
                             },
                             "boundsWithFX": {
-                                "top": 2483,
-                                "left": 2752,
-                                "bottom": 2665,
-                                "right": 3431
+                                "top": 2480,
+                                "left": 2749,
+                                "bottom": 2662,
+                                "right": 3428
                             },
                             "visible": true,
                             "clipped": false,
@@ -4059,12 +4251,12 @@
                     "id": 489,
                     "index": 57,
                     "type": "shapeLayer",
-                    "name": "overlay_back #zIndex:4",
+                    "name": "overlay_back #zIndex:4 #animation #loop:false",
                     "bounds": {
                         "top": 966,
-                        "left": 2470,
+                        "left": 1262,
                         "bottom": 3174,
-                        "right": 3712
+                        "right": 2504
                     },
                     "visible": true,
                     "clipped": false,
@@ -4125,25 +4317,25 @@
                                         "points": [
                                             {
                                                 "anchor": {
-                                                    "x": 2470,
+                                                    "x": 1262,
                                                     "y": 966
                                                 }
                                             },
                                             {
                                                 "anchor": {
-                                                    "x": 3712,
+                                                    "x": 2504,
                                                     "y": 966
                                                 }
                                             },
                                             {
                                                 "anchor": {
-                                                    "x": 3712,
+                                                    "x": 2504,
                                                     "y": 3174
                                                 }
                                             },
                                             {
                                                 "anchor": {
-                                                    "x": 2470,
+                                                    "x": 1262,
                                                     "y": 3174
                                                 }
                                             }
@@ -4154,18 +4346,18 @@
                                     "type": "rect",
                                     "bounds": {
                                         "top": 966,
-                                        "left": 2470,
+                                        "left": 1262,
                                         "bottom": 3174,
-                                        "right": 3712
+                                        "right": 2504
                                     }
                                 }
                             }
                         ],
                         "bounds": {
                             "top": 966,
-                            "left": 2470,
+                            "left": 1262,
                             "bottom": 3174,
-                            "right": 3712
+                            "right": 2504
                         },
                         "defaultFill": false
                     }
@@ -4222,8 +4414,8 @@
                     "bounds": {
                         "top": 1734,
                         "left": 1045,
-                        "bottom": 2665,
-                        "right": 1837
+                        "bottom": 2662,
+                        "right": 1834
                     },
                     "visible": false,
                     "clipped": false,
@@ -4247,8 +4439,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1f947c-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ad21e5a-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043aa-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2d94c64-561a-11e5-a364-8019ce8e2810",
                                 "antiAliasType": 16,
                                 "type": 2,
                                 "transform": [
@@ -4279,8 +4471,8 @@
                             "clipped": false,
                             "generatorSettings": false,
                             "smartObject": {
-                                "ID": "1f1f947b-530d-11e5-8e8e-e6ac394ea7dd",
-                                "placed": "0ad21e57-5328-11e5-b0c6-bdcfb526d9a0",
+                                "ID": "f2e043a9-561a-11e5-a364-8019ce8e2810",
+                                "placed": "f2d94c5f-561a-11e5-a364-8019ce8e2810",
                                 "frameStep": {
                                     "numerator": 20,
                                     "denominator": 600
@@ -4316,10 +4508,10 @@
                                 "right": 1830
                             },
                             "boundsWithFX": {
-                                "top": 2483,
-                                "left": 1158,
-                                "bottom": 2665,
-                                "right": 1837
+                                "top": 2480,
+                                "left": 1155,
+                                "bottom": 2662,
+                                "right": 1834
                             },
                             "visible": true,
                             "clipped": false,
@@ -4457,8 +4649,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1f947c-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0acffb71-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043aa-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d8fe3c-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -4489,8 +4681,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1f947b-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0acffb6e-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043a9-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d8fe37-561a-11e5-a364-8019ce8e2810",
                                         "frameStep": {
                                             "numerator": 20,
                                             "denominator": 600
@@ -4529,8 +4721,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1f947b-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0acd8a6c-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043a9-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d8d733-561a-11e5-a364-8019ce8e2810",
                                         "frameStep": {
                                             "numerator": 20,
                                             "denominator": 600
@@ -4569,8 +4761,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1f947b-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0acb6788-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043a9-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d8d72e-561a-11e5-a364-8019ce8e2810",
                                         "frameStep": {
                                             "numerator": 20,
                                             "denominator": 600
@@ -4609,8 +4801,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1f947a-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0acaa430-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043a8-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d8b021-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -4636,10 +4828,10 @@
                     "type": "layerSection",
                     "name": "#zIndex:2",
                     "bounds": {
-                        "top": 1031,
-                        "left": 949,
+                        "top": 1028,
+                        "left": 946,
                         "bottom": 2197,
-                        "right": 1973
+                        "right": 1970
                     },
                     "visible": true,
                     "clipped": false,
@@ -4654,10 +4846,10 @@
                             "type": "layerSection",
                             "name": "settings.png",
                             "bounds": {
-                                "top": 1031,
-                                "left": 949,
-                                "bottom": 1184,
-                                "right": 1102
+                                "top": 1028,
+                                "left": 946,
+                                "bottom": 1181,
+                                "right": 1099
                             },
                             "visible": true,
                             "clipped": false,
@@ -4697,8 +4889,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1f9479-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "1f1d4abf-530d-11e5-8e8e-e6ac394ea7dd",
+                                        "ID": "f2e043a7-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d8b01c-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -4726,10 +4918,10 @@
                                         "right": 1095
                                     },
                                     "boundsWithFX": {
-                                        "top": 1031,
-                                        "left": 949,
-                                        "bottom": 1184,
-                                        "right": 1102
+                                        "top": 1028,
+                                        "left": 946,
+                                        "bottom": 1181,
+                                        "right": 1099
                                     },
                                     "visible": true,
                                     "clipped": false,
@@ -4926,15 +5118,205 @@
                             }
                         },
                         {
-                            "id": 150,
+                            "id": 171,
                             "index": 32,
+                            "type": "textLayer",
+                            "name": "Monkey Gang highlight #animation #mask",
+                            "bounds": {
+                                "top": 1218,
+                                "left": 1027,
+                                "bottom": 1361,
+                                "right": 1019
+                            },
+                            "boundsWithFX": {
+                                "top": 1218,
+                                "left": 1027,
+                                "bottom": 1361,
+                                "right": 1019
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "generatorSettings": false,
+                            "path": {
+                                "pathComponents": [
+                                    {
+                                        "shapeOperation": "add",
+                                        "subpathListKey": [
+                                            {
+                                                "closedSubpath": true,
+                                                "points": [
+                                                    {
+                                                        "anchor": {
+                                                            "x": 997,
+                                                            "y": 1188
+                                                        }
+                                                    },
+                                                    {
+                                                        "anchor": {
+                                                            "x": 1019,
+                                                            "y": 1188
+                                                        }
+                                                    },
+                                                    {
+                                                        "anchor": {
+                                                            "x": 1019,
+                                                            "y": 1361
+                                                        }
+                                                    },
+                                                    {
+                                                        "anchor": {
+                                                            "x": 997,
+                                                            "y": 1361
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "origin": {
+                                            "type": "rect",
+                                            "bounds": {
+                                                "top": 1188,
+                                                "left": 997,
+                                                "bottom": 1361,
+                                                "right": 1019
+                                            }
+                                        }
+                                    }
+                                ],
+                                "bounds": {
+                                    "top": 1188,
+                                    "left": 997,
+                                    "bottom": 1361,
+                                    "right": 1019
+                                },
+                                "defaultFill": false
+                            },
+                            "text": {
+                                "textKey": "Monkey Gang",
+                                "textClickPoint": {
+                                    "horizontal": {
+                                        "value": 19.2019,
+                                        "units": "percentUnit"
+                                    },
+                                    "vertical": {
+                                        "value": 41.1859,
+                                        "units": "percentUnit"
+                                    }
+                                },
+                                "boundingBox": {
+                                    "left": {
+                                        "value": 2.64063,
+                                        "units": "pointsUnit"
+                                    },
+                                    "top": {
+                                        "value": -112.141,
+                                        "units": "pointsUnit"
+                                    },
+                                    "right": {
+                                        "value": 941.48,
+                                        "units": "pointsUnit"
+                                    },
+                                    "bottom": {
+                                        "value": 29.875,
+                                        "units": "pointsUnit"
+                                    }
+                                },
+                                "bounds": {
+                                    "left": {
+                                        "value": 0,
+                                        "units": "pointsUnit"
+                                    },
+                                    "top": {
+                                        "value": -126.27,
+                                        "units": "pointsUnit"
+                                    },
+                                    "right": {
+                                        "value": 945.41,
+                                        "units": "pointsUnit"
+                                    },
+                                    "bottom": {
+                                        "value": 64.3066,
+                                        "units": "pointsUnit"
+                                    }
+                                },
+                                "textShape": [
+                                    {
+                                        "char": "paint",
+                                        "orientation": "horizontal",
+                                        "transform": {
+                                            "xx": 1,
+                                            "xy": 0,
+                                            "yx": 0,
+                                            "yy": 1,
+                                            "tx": 0,
+                                            "ty": 0
+                                        },
+                                        "rowCount": 1,
+                                        "columnCount": 1,
+                                        "rowMajorOrder": true,
+                                        "rowGutter": {
+                                            "value": 0,
+                                            "units": "pointsUnit"
+                                        },
+                                        "columnGutter": {
+                                            "value": 0,
+                                            "units": "pointsUnit"
+                                        },
+                                        "spacing": {
+                                            "value": 0,
+                                            "units": "pointsUnit"
+                                        },
+                                        "frameBaselineAlignment": "alignByAscent",
+                                        "firstBaselineMinimum": {
+                                            "value": 0,
+                                            "units": "pointsUnit"
+                                        },
+                                        "base": {
+                                            "horizontal": 0,
+                                            "vertical": 0
+                                        }
+                                    }
+                                ],
+                                "textStyleRange": [
+                                    {
+                                        "from": 0,
+                                        "to": 12,
+                                        "textStyle": {
+                                            "fontName": "Janda Silly Monkey",
+                                            "fontStyleName": "Regular",
+                                            "size": {
+                                                "value": 150,
+                                                "units": "pointsUnit"
+                                            },
+                                            "color": {
+                                                "red": 254.832,
+                                                "green": 255,
+                                                "blue": 254
+                                            }
+                                        }
+                                    }
+                                ],
+                                "paragraphStyleRange": [
+                                    {
+                                        "from": 0,
+                                        "to": 12,
+                                        "paragraphStyle": {
+                                            "align": "left"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": 150,
+                            "index": 31,
                             "type": "layerSection",
                             "name": "logo.png",
                             "bounds": {
-                                "top": 1215,
-                                "left": 1021,
-                                "bottom": 1372,
-                                "right": 1973
+                                "top": 1212,
+                                "left": 1018,
+                                "bottom": 1369,
+                                "right": 1970
                             },
                             "visible": true,
                             "clipped": false,
@@ -4943,151 +5325,6 @@
                             },
                             "generatorSettings": false,
                             "layers": [
-                                {
-                                    "id": 171,
-                                    "index": 31,
-                                    "type": "textLayer",
-                                    "name": "Monkey Gang highlight",
-                                    "bounds": {
-                                        "top": 1313,
-                                        "left": 1027,
-                                        "bottom": 1333,
-                                        "right": 1034
-                                    },
-                                    "boundsWithFX": {
-                                        "top": 1313,
-                                        "left": 1027,
-                                        "bottom": 1333,
-                                        "right": 1034
-                                    },
-                                    "visible": true,
-                                    "clipped": false,
-                                    "mask": {
-                                        "bounds": {
-                                            "top": 0,
-                                            "left": -227,
-                                            "bottom": 3232,
-                                            "right": 5338
-                                        },
-                                        "extendWithWhite": true
-                                    },
-                                    "generatorSettings": false,
-                                    "text": {
-                                        "textKey": "Monkey Gang",
-                                        "textClickPoint": {
-                                            "horizontal": {
-                                                "value": 19.2019,
-                                                "units": "percentUnit"
-                                            },
-                                            "vertical": {
-                                                "value": 41.1859,
-                                                "units": "percentUnit"
-                                            }
-                                        },
-                                        "boundingBox": {
-                                            "left": {
-                                                "value": 2.64063,
-                                                "units": "pointsUnit"
-                                            },
-                                            "top": {
-                                                "value": -112.141,
-                                                "units": "pointsUnit"
-                                            },
-                                            "right": {
-                                                "value": 941.48,
-                                                "units": "pointsUnit"
-                                            },
-                                            "bottom": {
-                                                "value": 29.875,
-                                                "units": "pointsUnit"
-                                            }
-                                        },
-                                        "bounds": {
-                                            "left": {
-                                                "value": 0,
-                                                "units": "pointsUnit"
-                                            },
-                                            "top": {
-                                                "value": -126.27,
-                                                "units": "pointsUnit"
-                                            },
-                                            "right": {
-                                                "value": 945.41,
-                                                "units": "pointsUnit"
-                                            },
-                                            "bottom": {
-                                                "value": 64.3066,
-                                                "units": "pointsUnit"
-                                            }
-                                        },
-                                        "textShape": [
-                                            {
-                                                "char": "paint",
-                                                "orientation": "horizontal",
-                                                "transform": {
-                                                    "xx": 1,
-                                                    "xy": 0,
-                                                    "yx": 0,
-                                                    "yy": 1,
-                                                    "tx": 0,
-                                                    "ty": 0
-                                                },
-                                                "rowCount": 1,
-                                                "columnCount": 1,
-                                                "rowMajorOrder": true,
-                                                "rowGutter": {
-                                                    "value": 0,
-                                                    "units": "pointsUnit"
-                                                },
-                                                "columnGutter": {
-                                                    "value": 0,
-                                                    "units": "pointsUnit"
-                                                },
-                                                "spacing": {
-                                                    "value": 0,
-                                                    "units": "pointsUnit"
-                                                },
-                                                "frameBaselineAlignment": "alignByAscent",
-                                                "firstBaselineMinimum": {
-                                                    "value": 0,
-                                                    "units": "pointsUnit"
-                                                },
-                                                "base": {
-                                                    "horizontal": 0,
-                                                    "vertical": 0
-                                                }
-                                            }
-                                        ],
-                                        "textStyleRange": [
-                                            {
-                                                "from": 0,
-                                                "to": 12,
-                                                "textStyle": {
-                                                    "fontName": "Janda Silly Monkey",
-                                                    "fontStyleName": "Regular",
-                                                    "size": {
-                                                        "value": 150,
-                                                        "units": "pointsUnit"
-                                                    },
-                                                    "color": {
-                                                        "red": 254.832,
-                                                        "green": 255,
-                                                        "blue": 254
-                                                    }
-                                                }
-                                            }
-                                        ],
-                                        "paragraphStyleRange": [
-                                            {
-                                                "from": 0,
-                                                "to": 12,
-                                                "paragraphStyle": {
-                                                    "align": "left"
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
                                 {
                                     "id": 23,
                                     "index": 30,
@@ -5100,10 +5337,10 @@
                                         "right": 1966
                                     },
                                     "boundsWithFX": {
-                                        "top": 1215,
-                                        "left": 1021,
-                                        "bottom": 1372,
-                                        "right": 1973
+                                        "top": 1212,
+                                        "left": 1018,
+                                        "bottom": 1369,
+                                        "right": 1970
                                     },
                                     "visible": true,
                                     "clipped": false,
@@ -5270,8 +5507,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1f9478-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "1f1cfcb5-530d-11e5-8e8e-e6ac394ea7dd",
+                                        "ID": "f2e043a6-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d86209-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -5302,8 +5539,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1f9477-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "1f1cfcb0-530d-11e5-8e8e-e6ac394ea7dd",
+                                        "ID": "f2e043a5-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d86204-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -5334,8 +5571,8 @@
                                     "clipped": false,
                                     "generatorSettings": false,
                                     "smartObject": {
-                                        "ID": "1f1f9476-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "1f1cfcab-530d-11e5-8e8e-e6ac394ea7dd",
+                                        "ID": "f2e043a4-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d861ff-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -5361,10 +5598,10 @@
                     "type": "layerSection",
                     "name": "#zIndex:1",
                     "bounds": {
-                        "top": 2483,
-                        "left": 1158,
-                        "bottom": 2891,
-                        "right": 1837
+                        "top": 2480,
+                        "left": 1155,
+                        "bottom": 2888,
+                        "right": 1834
                     },
                     "visible": true,
                     "clipped": false,
@@ -5379,10 +5616,10 @@
                             "type": "layerSection",
                             "name": "play_button #button #id:playBtn",
                             "bounds": {
-                                "top": 2483,
-                                "left": 1158,
-                                "bottom": 2665,
-                                "right": 1837
+                                "top": 2480,
+                                "left": 1155,
+                                "bottom": 2662,
+                                "right": 1834
                             },
                             "visible": true,
                             "clipped": false,
@@ -5639,10 +5876,10 @@
                                         "right": 1830
                                     },
                                     "boundsWithFX": {
-                                        "top": 2483,
-                                        "left": 1158,
-                                        "bottom": 2665,
-                                        "right": 1837
+                                        "top": 2480,
+                                        "left": 1155,
+                                        "bottom": 2662,
+                                        "right": 1834
                                     },
                                     "visible": true,
                                     "clipped": false,
@@ -5735,10 +5972,10 @@
                             "type": "layerSection",
                             "name": "more_games_button #button #id:moreBtn",
                             "bounds": {
-                                "top": 2709,
-                                "left": 1158,
-                                "bottom": 2891,
-                                "right": 1837
+                                "top": 2706,
+                                "left": 1155,
+                                "bottom": 2888,
+                                "right": 1834
                             },
                             "visible": true,
                             "clipped": false,
@@ -5995,10 +6232,10 @@
                                         "right": 1830
                                     },
                                     "boundsWithFX": {
-                                        "top": 2709,
-                                        "left": 1158,
-                                        "bottom": 2891,
-                                        "right": 1837
+                                        "top": 2706,
+                                        "left": 1155,
+                                        "bottom": 2888,
+                                        "right": 1834
                                     },
                                     "visible": true,
                                     "clipped": false,
@@ -6149,8 +6386,8 @@
                                         }
                                     },
                                     "smartObject": {
-                                        "ID": "1f1f9475-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0acaa42d-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043a3-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d6b498-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -6192,8 +6429,8 @@
                                         }
                                     },
                                     "smartObject": {
-                                        "ID": "1f1f9474-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ac9ba25-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043a2-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d6b493-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -6235,8 +6472,8 @@
                                         }
                                     },
                                     "smartObject": {
-                                        "ID": "1f1f9473-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ac9ba22-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043a1-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d57bec-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -6278,8 +6515,8 @@
                                         }
                                     },
                                     "smartObject": {
-                                        "ID": "1f1f9472-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ac9ba1f-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e043a0-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d57be7-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -6321,8 +6558,8 @@
                                         }
                                     },
                                     "smartObject": {
-                                        "ID": "1f1f9471-530d-11e5-8e8e-e6ac394ea7dd",
-                                        "placed": "0ac9ba1c-5328-11e5-b0c6-bdcfb526d9a0",
+                                        "ID": "f2e0439f-561a-11e5-a364-8019ce8e2810",
+                                        "placed": "f2d57be2-561a-11e5-a364-8019ce8e2810",
                                         "antiAliasType": 16,
                                         "type": 2,
                                         "transform": [
@@ -6363,12 +6600,12 @@
     ],
     "placed": [
         {
-            "placedID": "1f1f9471-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e0439f-561a-11e5-a364-8019ce8e2810",
             "name": "cloud_1.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25338,
+            "id": 2228,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\f5a1c7d0-a111-4e4e-93f0-df2304819757.psd",
             "bounds": {
                 "top": 0,
@@ -6410,12 +6647,12 @@
             ]
         },
         {
-            "placedID": "1f1f9472-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043a0-561a-11e5-a364-8019ce8e2810",
             "name": "cloud_2.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25335,
+            "id": 2225,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\a258b1b1-4e1f-4399-8043-7e9c45c72395.psd",
             "bounds": {
                 "top": 0,
@@ -6457,12 +6694,12 @@
             ]
         },
         {
-            "placedID": "1f1f9473-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043a1-561a-11e5-a364-8019ce8e2810",
             "name": "cloud_3.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25332,
+            "id": 2222,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\2f2448b6-ba0f-4acb-9d61-c283f368afc1.psd",
             "bounds": {
                 "top": 0,
@@ -6504,12 +6741,12 @@
             ]
         },
         {
-            "placedID": "1f1f9474-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043a2-561a-11e5-a364-8019ce8e2810",
             "name": "cloud_4.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25329,
+            "id": 2219,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\8fc75de9-9daf-4ae4-88cf-a955008c164e.psd",
             "bounds": {
                 "top": 0,
@@ -6551,12 +6788,12 @@
             ]
         },
         {
-            "placedID": "1f1f9475-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043a3-561a-11e5-a364-8019ce8e2810",
             "name": "cloud_1.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25326,
+            "id": 2216,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\f5a1c7d0-a111-4e4e-93f0-df2304819757.psd",
             "bounds": {
                 "top": 0,
@@ -6598,12 +6835,12 @@
             ]
         },
         {
-            "placedID": "1f1f9476-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043a4-561a-11e5-a364-8019ce8e2810",
             "name": "leave.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25319,
+            "id": 2209,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\6c70545e-62a3-4a8f-93c2-38f6e7c69697.psd",
             "bounds": {
                 "top": 0,
@@ -6662,12 +6899,12 @@
             ]
         },
         {
-            "placedID": "1f1f9477-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043a5-561a-11e5-a364-8019ce8e2810",
             "name": "leave.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25312,
+            "id": 2202,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\6c70545e-62a3-4a8f-93c2-38f6e7c69697.psd",
             "bounds": {
                 "top": 0,
@@ -6726,12 +6963,12 @@
             ]
         },
         {
-            "placedID": "1f1f9478-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043a6-561a-11e5-a364-8019ce8e2810",
             "name": "leave.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25305,
+            "id": 2195,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\6c70545e-62a3-4a8f-93c2-38f6e7c69697.psd",
             "bounds": {
                 "top": 0,
@@ -6790,12 +7027,12 @@
             ]
         },
         {
-            "placedID": "1f1f9479-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043a7-561a-11e5-a364-8019ce8e2810",
             "name": "Layer 0.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25302,
+            "id": 2192,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\fb572e7b-3f5b-4ac8-93b6-f0cf4c49aec2.psd",
             "bounds": {
                 "top": 0,
@@ -6832,12 +7069,12 @@
             ]
         },
         {
-            "placedID": "1f1f947a-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043a8-561a-11e5-a364-8019ce8e2810",
             "name": "monkey_head.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25295,
+            "id": 2185,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\0c16179b-c939-489d-b001-da08f92a1de5.psd",
             "bounds": {
                 "top": 0,
@@ -7192,12 +7429,12 @@
             ]
         },
         {
-            "placedID": "1f1f947b-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043a9-561a-11e5-a364-8019ce8e2810",
             "name": "monkey.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 1785,
+            "id": 1788,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
             "bounds": {
                 "top": 0,
@@ -7372,12 +7609,12 @@
             ]
         },
         {
-            "placedID": "1f1f947c-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043aa-561a-11e5-a364-8019ce8e2810",
             "name": "monkey_head.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25288,
+            "id": 2178,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\0c16179b-c939-489d-b001-da08f92a1de5.psd",
             "bounds": {
                 "top": 0,
@@ -7732,12 +7969,12 @@
             ]
         },
         {
-            "placedID": "1f1fbb7f-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043ab-561a-11e5-a364-8019ce8e2810",
             "name": "monkey_head.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25281,
+            "id": 2171,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\0c16179b-c939-489d-b001-da08f92a1de5.psd",
             "bounds": {
                 "top": 0,
@@ -8092,12 +8329,12 @@
             ]
         },
         {
-            "placedID": "1f1fbb80-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043ac-561a-11e5-a364-8019ce8e2810",
             "name": "monkey_head.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25274,
+            "id": 2164,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\0c16179b-c939-489d-b001-da08f92a1de5.psd",
             "bounds": {
                 "top": 0,
@@ -8452,12 +8689,12 @@
             ]
         },
         {
-            "placedID": "1f1fbb81-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043ad-561a-11e5-a364-8019ce8e2810",
             "name": "monkey_white.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25267,
+            "id": 2157,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\031bbc23-846c-457c-880d-1346d29cef1c.psd",
             "bounds": {
                 "top": 0,
@@ -8819,12 +9056,12 @@
             ]
         },
         {
-            "placedID": "1f1fbb82-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043ae-561a-11e5-a364-8019ce8e2810",
             "name": "arrow.png.psb",
             "fileType": 943870018,
             "fileCreator": 943868237,
             "size": 1048576,
-            "id": 25241,
+            "id": 2131,
             "file": "arrow.png.psb",
             "bounds": {
                 "top": 0,
@@ -8866,12 +9103,12 @@
             ]
         },
         {
-            "placedID": "1f1fbb83-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043af-561a-11e5-a364-8019ce8e2810",
             "name": "Layer 2.psb",
             "fileType": 943870018,
             "fileCreator": 943868237,
             "size": 1048576,
-            "id": 25244,
+            "id": 2134,
             "file": "Layer 2.psb",
             "bounds": {
                 "top": 0,
@@ -8913,12 +9150,1272 @@
             ]
         },
         {
-            "placedID": "1f1fbb84-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043b0-561a-11e5-a364-8019ce8e2810",
+            "name": "monkey.png.psd",
+            "fileType": 943870035,
+            "fileCreator": 538976288,
+            "size": 0,
+            "id": 1795,
+            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "bottom": 259,
+                "right": 253
+            },
+            "selection": [
+                6
+            ],
+            "resolution": 72,
+            "globalLight": {
+                "angle": 120,
+                "altitude": 30
+            },
+            "generatorSettings": {
+                "generator_45_assets": {
+                    "json": "{\"enabled\":true}"
+                },
+                "layerTime": 1433430000
+            },
+            "layers": [
+                {
+                    "id": 148,
+                    "index": 8,
+                    "type": "layerSection",
+                    "name": "monkey.png",
+                    "bounds": {
+                        "top": 4,
+                        "left": 4,
+                        "bottom": 244,
+                        "right": 244
+                    },
+                    "boundsWithFX": {
+                        "top": -2,
+                        "left": -5,
+                        "bottom": 251,
+                        "right": 248
+                    },
+                    "visible": true,
+                    "clipped": false,
+                    "blendOptions": {
+                        "mode": "passThrough"
+                    },
+                    "generatorSettings": false,
+                    "layerEffects": {
+                        "dropShadow": {
+                            "enabled": true
+                        },
+                        "innerGlow": {
+                            "enabled": true
+                        },
+                        "bevelEmboss": {
+                            "enabled": true
+                        }
+                    },
+                    "layers": [
+                        {
+                            "id": 162,
+                            "index": 7,
+                            "type": "layer",
+                            "name": "Layer 13",
+                            "bounds": {
+                                "top": 18,
+                                "left": 29,
+                                "bottom": 126,
+                                "right": 218
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 134,
+                            "index": 6,
+                            "type": "layer",
+                            "name": "hands line",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 133,
+                            "index": 5,
+                            "type": "layer",
+                            "name": "hands tone",
+                            "bounds": {
+                                "top": 5,
+                                "left": 5,
+                                "bottom": 243,
+                                "right": 243
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 132,
+                            "index": 4,
+                            "type": "layer",
+                            "name": "body line",
+                            "bounds": {
+                                "top": 40,
+                                "left": 12,
+                                "bottom": 236,
+                                "right": 237
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 131,
+                            "index": 3,
+                            "type": "layer",
+                            "name": "Layer 12",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": false,
+                            "clipped": true,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 130,
+                            "index": 2,
+                            "type": "layer",
+                            "name": "body tone",
+                            "bounds": {
+                                "top": 40,
+                                "left": 14,
+                                "bottom": 235,
+                                "right": 235
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 129,
+                            "index": 1,
+                            "type": "layer",
+                            "name": "Layer 5",
+                            "bounds": {
+                                "top": 125,
+                                "left": 21,
+                                "bottom": 228,
+                                "right": 132
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "placedID": "f2e043b1-561a-11e5-a364-8019ce8e2810",
+            "name": "monkey.png.psd",
+            "fileType": 943870035,
+            "fileCreator": 538976288,
+            "size": 0,
+            "id": 1802,
+            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "bottom": 259,
+                "right": 253
+            },
+            "selection": [
+                6
+            ],
+            "resolution": 72,
+            "globalLight": {
+                "angle": 120,
+                "altitude": 30
+            },
+            "generatorSettings": {
+                "generator_45_assets": {
+                    "json": "{\"enabled\":true}"
+                },
+                "layerTime": 1433430000
+            },
+            "layers": [
+                {
+                    "id": 148,
+                    "index": 8,
+                    "type": "layerSection",
+                    "name": "monkey.png",
+                    "bounds": {
+                        "top": 4,
+                        "left": 4,
+                        "bottom": 244,
+                        "right": 244
+                    },
+                    "boundsWithFX": {
+                        "top": -2,
+                        "left": -5,
+                        "bottom": 251,
+                        "right": 248
+                    },
+                    "visible": true,
+                    "clipped": false,
+                    "blendOptions": {
+                        "mode": "passThrough"
+                    },
+                    "generatorSettings": false,
+                    "layerEffects": {
+                        "dropShadow": {
+                            "enabled": true
+                        },
+                        "innerGlow": {
+                            "enabled": true
+                        },
+                        "bevelEmboss": {
+                            "enabled": true
+                        }
+                    },
+                    "layers": [
+                        {
+                            "id": 162,
+                            "index": 7,
+                            "type": "layer",
+                            "name": "Layer 13",
+                            "bounds": {
+                                "top": 18,
+                                "left": 29,
+                                "bottom": 126,
+                                "right": 218
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 134,
+                            "index": 6,
+                            "type": "layer",
+                            "name": "hands line",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 133,
+                            "index": 5,
+                            "type": "layer",
+                            "name": "hands tone",
+                            "bounds": {
+                                "top": 5,
+                                "left": 5,
+                                "bottom": 243,
+                                "right": 243
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 132,
+                            "index": 4,
+                            "type": "layer",
+                            "name": "body line",
+                            "bounds": {
+                                "top": 40,
+                                "left": 12,
+                                "bottom": 236,
+                                "right": 237
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 131,
+                            "index": 3,
+                            "type": "layer",
+                            "name": "Layer 12",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": false,
+                            "clipped": true,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 130,
+                            "index": 2,
+                            "type": "layer",
+                            "name": "body tone",
+                            "bounds": {
+                                "top": 40,
+                                "left": 14,
+                                "bottom": 235,
+                                "right": 235
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 129,
+                            "index": 1,
+                            "type": "layer",
+                            "name": "Layer 5",
+                            "bounds": {
+                                "top": 125,
+                                "left": 21,
+                                "bottom": 228,
+                                "right": 132
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "placedID": "f2e043b2-561a-11e5-a364-8019ce8e2810",
+            "name": "monkey.png.psd",
+            "fileType": 943870035,
+            "fileCreator": 538976288,
+            "size": 0,
+            "id": 1809,
+            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "bottom": 259,
+                "right": 253
+            },
+            "selection": [
+                6
+            ],
+            "resolution": 72,
+            "globalLight": {
+                "angle": 120,
+                "altitude": 30
+            },
+            "generatorSettings": {
+                "generator_45_assets": {
+                    "json": "{\"enabled\":true}"
+                },
+                "layerTime": 1433430000
+            },
+            "layers": [
+                {
+                    "id": 148,
+                    "index": 8,
+                    "type": "layerSection",
+                    "name": "monkey.png",
+                    "bounds": {
+                        "top": 4,
+                        "left": 4,
+                        "bottom": 244,
+                        "right": 244
+                    },
+                    "boundsWithFX": {
+                        "top": -2,
+                        "left": -5,
+                        "bottom": 251,
+                        "right": 248
+                    },
+                    "visible": true,
+                    "clipped": false,
+                    "blendOptions": {
+                        "mode": "passThrough"
+                    },
+                    "generatorSettings": false,
+                    "layerEffects": {
+                        "dropShadow": {
+                            "enabled": true
+                        },
+                        "innerGlow": {
+                            "enabled": true
+                        },
+                        "bevelEmboss": {
+                            "enabled": true
+                        }
+                    },
+                    "layers": [
+                        {
+                            "id": 162,
+                            "index": 7,
+                            "type": "layer",
+                            "name": "Layer 13",
+                            "bounds": {
+                                "top": 18,
+                                "left": 29,
+                                "bottom": 126,
+                                "right": 218
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 134,
+                            "index": 6,
+                            "type": "layer",
+                            "name": "hands line",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 133,
+                            "index": 5,
+                            "type": "layer",
+                            "name": "hands tone",
+                            "bounds": {
+                                "top": 5,
+                                "left": 5,
+                                "bottom": 243,
+                                "right": 243
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 132,
+                            "index": 4,
+                            "type": "layer",
+                            "name": "body line",
+                            "bounds": {
+                                "top": 40,
+                                "left": 12,
+                                "bottom": 236,
+                                "right": 237
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 131,
+                            "index": 3,
+                            "type": "layer",
+                            "name": "Layer 12",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": false,
+                            "clipped": true,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 130,
+                            "index": 2,
+                            "type": "layer",
+                            "name": "body tone",
+                            "bounds": {
+                                "top": 40,
+                                "left": 14,
+                                "bottom": 235,
+                                "right": 235
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 129,
+                            "index": 1,
+                            "type": "layer",
+                            "name": "Layer 5",
+                            "bounds": {
+                                "top": 125,
+                                "left": 21,
+                                "bottom": 228,
+                                "right": 132
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "placedID": "f2e043b3-561a-11e5-a364-8019ce8e2810",
+            "name": "monkey.png.psd",
+            "fileType": 943870035,
+            "fileCreator": 538976288,
+            "size": 0,
+            "id": 1816,
+            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "bottom": 259,
+                "right": 253
+            },
+            "selection": [
+                6
+            ],
+            "resolution": 72,
+            "globalLight": {
+                "angle": 120,
+                "altitude": 30
+            },
+            "generatorSettings": {
+                "generator_45_assets": {
+                    "json": "{\"enabled\":true}"
+                },
+                "layerTime": 1433430000
+            },
+            "layers": [
+                {
+                    "id": 148,
+                    "index": 8,
+                    "type": "layerSection",
+                    "name": "monkey.png",
+                    "bounds": {
+                        "top": 4,
+                        "left": 4,
+                        "bottom": 244,
+                        "right": 244
+                    },
+                    "boundsWithFX": {
+                        "top": -2,
+                        "left": -5,
+                        "bottom": 251,
+                        "right": 248
+                    },
+                    "visible": true,
+                    "clipped": false,
+                    "blendOptions": {
+                        "mode": "passThrough"
+                    },
+                    "generatorSettings": false,
+                    "layerEffects": {
+                        "dropShadow": {
+                            "enabled": true
+                        },
+                        "innerGlow": {
+                            "enabled": true
+                        },
+                        "bevelEmboss": {
+                            "enabled": true
+                        }
+                    },
+                    "layers": [
+                        {
+                            "id": 162,
+                            "index": 7,
+                            "type": "layer",
+                            "name": "Layer 13",
+                            "bounds": {
+                                "top": 18,
+                                "left": 29,
+                                "bottom": 126,
+                                "right": 218
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 134,
+                            "index": 6,
+                            "type": "layer",
+                            "name": "hands line",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 133,
+                            "index": 5,
+                            "type": "layer",
+                            "name": "hands tone",
+                            "bounds": {
+                                "top": 5,
+                                "left": 5,
+                                "bottom": 243,
+                                "right": 243
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 132,
+                            "index": 4,
+                            "type": "layer",
+                            "name": "body line",
+                            "bounds": {
+                                "top": 40,
+                                "left": 12,
+                                "bottom": 236,
+                                "right": 237
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 131,
+                            "index": 3,
+                            "type": "layer",
+                            "name": "Layer 12",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": false,
+                            "clipped": true,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 130,
+                            "index": 2,
+                            "type": "layer",
+                            "name": "body tone",
+                            "bounds": {
+                                "top": 40,
+                                "left": 14,
+                                "bottom": 235,
+                                "right": 235
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 129,
+                            "index": 1,
+                            "type": "layer",
+                            "name": "Layer 5",
+                            "bounds": {
+                                "top": 125,
+                                "left": 21,
+                                "bottom": 228,
+                                "right": 132
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "placedID": "f2e043b4-561a-11e5-a364-8019ce8e2810",
+            "name": "monkey.png.psd",
+            "fileType": 943870035,
+            "fileCreator": 538976288,
+            "size": 0,
+            "id": 1823,
+            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "bottom": 259,
+                "right": 253
+            },
+            "selection": [
+                6
+            ],
+            "resolution": 72,
+            "globalLight": {
+                "angle": 120,
+                "altitude": 30
+            },
+            "generatorSettings": {
+                "generator_45_assets": {
+                    "json": "{\"enabled\":true}"
+                },
+                "layerTime": 1433430000
+            },
+            "layers": [
+                {
+                    "id": 148,
+                    "index": 8,
+                    "type": "layerSection",
+                    "name": "monkey.png",
+                    "bounds": {
+                        "top": 4,
+                        "left": 4,
+                        "bottom": 244,
+                        "right": 244
+                    },
+                    "boundsWithFX": {
+                        "top": -2,
+                        "left": -5,
+                        "bottom": 251,
+                        "right": 248
+                    },
+                    "visible": true,
+                    "clipped": false,
+                    "blendOptions": {
+                        "mode": "passThrough"
+                    },
+                    "generatorSettings": false,
+                    "layerEffects": {
+                        "dropShadow": {
+                            "enabled": true
+                        },
+                        "innerGlow": {
+                            "enabled": true
+                        },
+                        "bevelEmboss": {
+                            "enabled": true
+                        }
+                    },
+                    "layers": [
+                        {
+                            "id": 162,
+                            "index": 7,
+                            "type": "layer",
+                            "name": "Layer 13",
+                            "bounds": {
+                                "top": 18,
+                                "left": 29,
+                                "bottom": 126,
+                                "right": 218
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 134,
+                            "index": 6,
+                            "type": "layer",
+                            "name": "hands line",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 133,
+                            "index": 5,
+                            "type": "layer",
+                            "name": "hands tone",
+                            "bounds": {
+                                "top": 5,
+                                "left": 5,
+                                "bottom": 243,
+                                "right": 243
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 132,
+                            "index": 4,
+                            "type": "layer",
+                            "name": "body line",
+                            "bounds": {
+                                "top": 40,
+                                "left": 12,
+                                "bottom": 236,
+                                "right": 237
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 131,
+                            "index": 3,
+                            "type": "layer",
+                            "name": "Layer 12",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": false,
+                            "clipped": true,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 130,
+                            "index": 2,
+                            "type": "layer",
+                            "name": "body tone",
+                            "bounds": {
+                                "top": 40,
+                                "left": 14,
+                                "bottom": 235,
+                                "right": 235
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 129,
+                            "index": 1,
+                            "type": "layer",
+                            "name": "Layer 5",
+                            "bounds": {
+                                "top": 125,
+                                "left": 21,
+                                "bottom": 228,
+                                "right": 132
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "placedID": "f2e043b5-561a-11e5-a364-8019ce8e2810",
+            "name": "monkey.png.psd",
+            "fileType": 943870035,
+            "fileCreator": 538976288,
+            "size": 0,
+            "id": 1830,
+            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "bottom": 259,
+                "right": 253
+            },
+            "selection": [
+                6
+            ],
+            "resolution": 72,
+            "globalLight": {
+                "angle": 120,
+                "altitude": 30
+            },
+            "generatorSettings": {
+                "generator_45_assets": {
+                    "json": "{\"enabled\":true}"
+                },
+                "layerTime": 1433430000
+            },
+            "layers": [
+                {
+                    "id": 148,
+                    "index": 8,
+                    "type": "layerSection",
+                    "name": "monkey.png",
+                    "bounds": {
+                        "top": 4,
+                        "left": 4,
+                        "bottom": 244,
+                        "right": 244
+                    },
+                    "boundsWithFX": {
+                        "top": -2,
+                        "left": -5,
+                        "bottom": 251,
+                        "right": 248
+                    },
+                    "visible": true,
+                    "clipped": false,
+                    "blendOptions": {
+                        "mode": "passThrough"
+                    },
+                    "generatorSettings": false,
+                    "layerEffects": {
+                        "dropShadow": {
+                            "enabled": true
+                        },
+                        "innerGlow": {
+                            "enabled": true
+                        },
+                        "bevelEmboss": {
+                            "enabled": true
+                        }
+                    },
+                    "layers": [
+                        {
+                            "id": 162,
+                            "index": 7,
+                            "type": "layer",
+                            "name": "Layer 13",
+                            "bounds": {
+                                "top": 18,
+                                "left": 29,
+                                "bottom": 126,
+                                "right": 218
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 134,
+                            "index": 6,
+                            "type": "layer",
+                            "name": "hands line",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 133,
+                            "index": 5,
+                            "type": "layer",
+                            "name": "hands tone",
+                            "bounds": {
+                                "top": 5,
+                                "left": 5,
+                                "bottom": 243,
+                                "right": 243
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 132,
+                            "index": 4,
+                            "type": "layer",
+                            "name": "body line",
+                            "bounds": {
+                                "top": 40,
+                                "left": 12,
+                                "bottom": 236,
+                                "right": 237
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 131,
+                            "index": 3,
+                            "type": "layer",
+                            "name": "Layer 12",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": false,
+                            "clipped": true,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 130,
+                            "index": 2,
+                            "type": "layer",
+                            "name": "body tone",
+                            "bounds": {
+                                "top": 40,
+                                "left": 14,
+                                "bottom": 235,
+                                "right": 235
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 129,
+                            "index": 1,
+                            "type": "layer",
+                            "name": "Layer 5",
+                            "bounds": {
+                                "top": 125,
+                                "left": 21,
+                                "bottom": 228,
+                                "right": 132
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "placedID": "f2e043b6-561a-11e5-a364-8019ce8e2810",
+            "name": "monkey.png.psd",
+            "fileType": 943870035,
+            "fileCreator": 538976288,
+            "size": 0,
+            "id": 1837,
+            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "bottom": 259,
+                "right": 253
+            },
+            "selection": [
+                6
+            ],
+            "resolution": 72,
+            "globalLight": {
+                "angle": 120,
+                "altitude": 30
+            },
+            "generatorSettings": {
+                "generator_45_assets": {
+                    "json": "{\"enabled\":true}"
+                },
+                "layerTime": 1433430000
+            },
+            "layers": [
+                {
+                    "id": 148,
+                    "index": 8,
+                    "type": "layerSection",
+                    "name": "monkey.png",
+                    "bounds": {
+                        "top": 4,
+                        "left": 4,
+                        "bottom": 244,
+                        "right": 244
+                    },
+                    "boundsWithFX": {
+                        "top": -2,
+                        "left": -5,
+                        "bottom": 251,
+                        "right": 248
+                    },
+                    "visible": true,
+                    "clipped": false,
+                    "blendOptions": {
+                        "mode": "passThrough"
+                    },
+                    "generatorSettings": false,
+                    "layerEffects": {
+                        "dropShadow": {
+                            "enabled": true
+                        },
+                        "innerGlow": {
+                            "enabled": true
+                        },
+                        "bevelEmboss": {
+                            "enabled": true
+                        }
+                    },
+                    "layers": [
+                        {
+                            "id": 162,
+                            "index": 7,
+                            "type": "layer",
+                            "name": "Layer 13",
+                            "bounds": {
+                                "top": 18,
+                                "left": 29,
+                                "bottom": 126,
+                                "right": 218
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 134,
+                            "index": 6,
+                            "type": "layer",
+                            "name": "hands line",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 133,
+                            "index": 5,
+                            "type": "layer",
+                            "name": "hands tone",
+                            "bounds": {
+                                "top": 5,
+                                "left": 5,
+                                "bottom": 243,
+                                "right": 243
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 132,
+                            "index": 4,
+                            "type": "layer",
+                            "name": "body line",
+                            "bounds": {
+                                "top": 40,
+                                "left": 12,
+                                "bottom": 236,
+                                "right": 237
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 131,
+                            "index": 3,
+                            "type": "layer",
+                            "name": "Layer 12",
+                            "bounds": {
+                                "top": 4,
+                                "left": 4,
+                                "bottom": 244,
+                                "right": 244
+                            },
+                            "visible": false,
+                            "clipped": true,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 130,
+                            "index": 2,
+                            "type": "layer",
+                            "name": "body tone",
+                            "bounds": {
+                                "top": 40,
+                                "left": 14,
+                                "bottom": 235,
+                                "right": 235
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        },
+                        {
+                            "id": 129,
+                            "index": 1,
+                            "type": "layer",
+                            "name": "Layer 5",
+                            "bounds": {
+                                "top": 125,
+                                "left": 21,
+                                "bottom": 228,
+                                "right": 132
+                            },
+                            "visible": true,
+                            "clipped": false,
+                            "pixels": true,
+                            "generatorSettings": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "placedID": "f2e043b7-561a-11e5-a364-8019ce8e2810",
             "name": "star.png.psb",
             "fileType": 943870018,
             "fileCreator": 943868237,
             "size": 1048576,
-            "id": 25237,
+            "id": 2127,
             "file": "star.png.psb",
             "bounds": {
                 "top": 0,
@@ -9066,12 +10563,12 @@
             ]
         },
         {
-            "placedID": "1f1fbb85-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043b8-561a-11e5-a364-8019ce8e2810",
             "name": "shine.png.psb",
             "fileType": 943870018,
             "fileCreator": 943868237,
             "size": 1048576,
-            "id": 25234,
+            "id": 2124,
             "file": "shine.png.psb",
             "bounds": {
                 "top": 0,
@@ -9113,12 +10610,12 @@
             ]
         },
         {
-            "placedID": "1f1fbb86-530d-11e5-8e8e-e6ac394ea7dd",
+            "placedID": "f2e043b9-561a-11e5-a364-8019ce8e2810",
             "name": "coconut.png.psd",
             "fileType": 943870035,
             "fileCreator": 538976288,
             "size": 0,
-            "id": 25227,
+            "id": 2117,
             "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\990843bf-4c55-4f04-8816-1ce0ee0a81fa.psd",
             "bounds": {
                 "top": 0,
@@ -9300,1266 +10797,6 @@
                                 "right": 224
                             },
                             "visible": false,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "placedID": "1f1fbb87-530d-11e5-8e8e-e6ac394ea7dd",
-            "name": "monkey.png.psd",
-            "fileType": 943870035,
-            "fileCreator": 538976288,
-            "size": 0,
-            "id": 1792,
-            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
-            "bounds": {
-                "top": 0,
-                "left": 0,
-                "bottom": 259,
-                "right": 253
-            },
-            "selection": [
-                6
-            ],
-            "resolution": 72,
-            "globalLight": {
-                "angle": 120,
-                "altitude": 30
-            },
-            "generatorSettings": {
-                "generator_45_assets": {
-                    "json": "{\"enabled\":true}"
-                },
-                "layerTime": 1433430000
-            },
-            "layers": [
-                {
-                    "id": 148,
-                    "index": 8,
-                    "type": "layerSection",
-                    "name": "monkey.png",
-                    "bounds": {
-                        "top": 4,
-                        "left": 4,
-                        "bottom": 244,
-                        "right": 244
-                    },
-                    "boundsWithFX": {
-                        "top": -2,
-                        "left": -5,
-                        "bottom": 251,
-                        "right": 248
-                    },
-                    "visible": true,
-                    "clipped": false,
-                    "blendOptions": {
-                        "mode": "passThrough"
-                    },
-                    "generatorSettings": false,
-                    "layerEffects": {
-                        "dropShadow": {
-                            "enabled": true
-                        },
-                        "innerGlow": {
-                            "enabled": true
-                        },
-                        "bevelEmboss": {
-                            "enabled": true
-                        }
-                    },
-                    "layers": [
-                        {
-                            "id": 162,
-                            "index": 7,
-                            "type": "layer",
-                            "name": "Layer 13",
-                            "bounds": {
-                                "top": 18,
-                                "left": 29,
-                                "bottom": 126,
-                                "right": 218
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 134,
-                            "index": 6,
-                            "type": "layer",
-                            "name": "hands line",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 133,
-                            "index": 5,
-                            "type": "layer",
-                            "name": "hands tone",
-                            "bounds": {
-                                "top": 5,
-                                "left": 5,
-                                "bottom": 243,
-                                "right": 243
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 132,
-                            "index": 4,
-                            "type": "layer",
-                            "name": "body line",
-                            "bounds": {
-                                "top": 40,
-                                "left": 12,
-                                "bottom": 236,
-                                "right": 237
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 131,
-                            "index": 3,
-                            "type": "layer",
-                            "name": "Layer 12",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": false,
-                            "clipped": true,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 130,
-                            "index": 2,
-                            "type": "layer",
-                            "name": "body tone",
-                            "bounds": {
-                                "top": 40,
-                                "left": 14,
-                                "bottom": 235,
-                                "right": 235
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 129,
-                            "index": 1,
-                            "type": "layer",
-                            "name": "Layer 5",
-                            "bounds": {
-                                "top": 125,
-                                "left": 21,
-                                "bottom": 228,
-                                "right": 132
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "placedID": "1f1fbb88-530d-11e5-8e8e-e6ac394ea7dd",
-            "name": "monkey.png.psd",
-            "fileType": 943870035,
-            "fileCreator": 538976288,
-            "size": 0,
-            "id": 1799,
-            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
-            "bounds": {
-                "top": 0,
-                "left": 0,
-                "bottom": 259,
-                "right": 253
-            },
-            "selection": [
-                6
-            ],
-            "resolution": 72,
-            "globalLight": {
-                "angle": 120,
-                "altitude": 30
-            },
-            "generatorSettings": {
-                "generator_45_assets": {
-                    "json": "{\"enabled\":true}"
-                },
-                "layerTime": 1433430000
-            },
-            "layers": [
-                {
-                    "id": 148,
-                    "index": 8,
-                    "type": "layerSection",
-                    "name": "monkey.png",
-                    "bounds": {
-                        "top": 4,
-                        "left": 4,
-                        "bottom": 244,
-                        "right": 244
-                    },
-                    "boundsWithFX": {
-                        "top": -2,
-                        "left": -5,
-                        "bottom": 251,
-                        "right": 248
-                    },
-                    "visible": true,
-                    "clipped": false,
-                    "blendOptions": {
-                        "mode": "passThrough"
-                    },
-                    "generatorSettings": false,
-                    "layerEffects": {
-                        "dropShadow": {
-                            "enabled": true
-                        },
-                        "innerGlow": {
-                            "enabled": true
-                        },
-                        "bevelEmboss": {
-                            "enabled": true
-                        }
-                    },
-                    "layers": [
-                        {
-                            "id": 162,
-                            "index": 7,
-                            "type": "layer",
-                            "name": "Layer 13",
-                            "bounds": {
-                                "top": 18,
-                                "left": 29,
-                                "bottom": 126,
-                                "right": 218
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 134,
-                            "index": 6,
-                            "type": "layer",
-                            "name": "hands line",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 133,
-                            "index": 5,
-                            "type": "layer",
-                            "name": "hands tone",
-                            "bounds": {
-                                "top": 5,
-                                "left": 5,
-                                "bottom": 243,
-                                "right": 243
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 132,
-                            "index": 4,
-                            "type": "layer",
-                            "name": "body line",
-                            "bounds": {
-                                "top": 40,
-                                "left": 12,
-                                "bottom": 236,
-                                "right": 237
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 131,
-                            "index": 3,
-                            "type": "layer",
-                            "name": "Layer 12",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": false,
-                            "clipped": true,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 130,
-                            "index": 2,
-                            "type": "layer",
-                            "name": "body tone",
-                            "bounds": {
-                                "top": 40,
-                                "left": 14,
-                                "bottom": 235,
-                                "right": 235
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 129,
-                            "index": 1,
-                            "type": "layer",
-                            "name": "Layer 5",
-                            "bounds": {
-                                "top": 125,
-                                "left": 21,
-                                "bottom": 228,
-                                "right": 132
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "placedID": "1f1fbb89-530d-11e5-8e8e-e6ac394ea7dd",
-            "name": "monkey.png.psd",
-            "fileType": 943870035,
-            "fileCreator": 538976288,
-            "size": 0,
-            "id": 1806,
-            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
-            "bounds": {
-                "top": 0,
-                "left": 0,
-                "bottom": 259,
-                "right": 253
-            },
-            "selection": [
-                6
-            ],
-            "resolution": 72,
-            "globalLight": {
-                "angle": 120,
-                "altitude": 30
-            },
-            "generatorSettings": {
-                "generator_45_assets": {
-                    "json": "{\"enabled\":true}"
-                },
-                "layerTime": 1433430000
-            },
-            "layers": [
-                {
-                    "id": 148,
-                    "index": 8,
-                    "type": "layerSection",
-                    "name": "monkey.png",
-                    "bounds": {
-                        "top": 4,
-                        "left": 4,
-                        "bottom": 244,
-                        "right": 244
-                    },
-                    "boundsWithFX": {
-                        "top": -2,
-                        "left": -5,
-                        "bottom": 251,
-                        "right": 248
-                    },
-                    "visible": true,
-                    "clipped": false,
-                    "blendOptions": {
-                        "mode": "passThrough"
-                    },
-                    "generatorSettings": false,
-                    "layerEffects": {
-                        "dropShadow": {
-                            "enabled": true
-                        },
-                        "innerGlow": {
-                            "enabled": true
-                        },
-                        "bevelEmboss": {
-                            "enabled": true
-                        }
-                    },
-                    "layers": [
-                        {
-                            "id": 162,
-                            "index": 7,
-                            "type": "layer",
-                            "name": "Layer 13",
-                            "bounds": {
-                                "top": 18,
-                                "left": 29,
-                                "bottom": 126,
-                                "right": 218
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 134,
-                            "index": 6,
-                            "type": "layer",
-                            "name": "hands line",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 133,
-                            "index": 5,
-                            "type": "layer",
-                            "name": "hands tone",
-                            "bounds": {
-                                "top": 5,
-                                "left": 5,
-                                "bottom": 243,
-                                "right": 243
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 132,
-                            "index": 4,
-                            "type": "layer",
-                            "name": "body line",
-                            "bounds": {
-                                "top": 40,
-                                "left": 12,
-                                "bottom": 236,
-                                "right": 237
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 131,
-                            "index": 3,
-                            "type": "layer",
-                            "name": "Layer 12",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": false,
-                            "clipped": true,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 130,
-                            "index": 2,
-                            "type": "layer",
-                            "name": "body tone",
-                            "bounds": {
-                                "top": 40,
-                                "left": 14,
-                                "bottom": 235,
-                                "right": 235
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 129,
-                            "index": 1,
-                            "type": "layer",
-                            "name": "Layer 5",
-                            "bounds": {
-                                "top": 125,
-                                "left": 21,
-                                "bottom": 228,
-                                "right": 132
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "placedID": "1f1fe2b4-530d-11e5-8e8e-e6ac394ea7dd",
-            "name": "monkey.png.psd",
-            "fileType": 943870035,
-            "fileCreator": 538976288,
-            "size": 0,
-            "id": 1813,
-            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
-            "bounds": {
-                "top": 0,
-                "left": 0,
-                "bottom": 259,
-                "right": 253
-            },
-            "selection": [
-                6
-            ],
-            "resolution": 72,
-            "globalLight": {
-                "angle": 120,
-                "altitude": 30
-            },
-            "generatorSettings": {
-                "generator_45_assets": {
-                    "json": "{\"enabled\":true}"
-                },
-                "layerTime": 1433430000
-            },
-            "layers": [
-                {
-                    "id": 148,
-                    "index": 8,
-                    "type": "layerSection",
-                    "name": "monkey.png",
-                    "bounds": {
-                        "top": 4,
-                        "left": 4,
-                        "bottom": 244,
-                        "right": 244
-                    },
-                    "boundsWithFX": {
-                        "top": -2,
-                        "left": -5,
-                        "bottom": 251,
-                        "right": 248
-                    },
-                    "visible": true,
-                    "clipped": false,
-                    "blendOptions": {
-                        "mode": "passThrough"
-                    },
-                    "generatorSettings": false,
-                    "layerEffects": {
-                        "dropShadow": {
-                            "enabled": true
-                        },
-                        "innerGlow": {
-                            "enabled": true
-                        },
-                        "bevelEmboss": {
-                            "enabled": true
-                        }
-                    },
-                    "layers": [
-                        {
-                            "id": 162,
-                            "index": 7,
-                            "type": "layer",
-                            "name": "Layer 13",
-                            "bounds": {
-                                "top": 18,
-                                "left": 29,
-                                "bottom": 126,
-                                "right": 218
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 134,
-                            "index": 6,
-                            "type": "layer",
-                            "name": "hands line",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 133,
-                            "index": 5,
-                            "type": "layer",
-                            "name": "hands tone",
-                            "bounds": {
-                                "top": 5,
-                                "left": 5,
-                                "bottom": 243,
-                                "right": 243
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 132,
-                            "index": 4,
-                            "type": "layer",
-                            "name": "body line",
-                            "bounds": {
-                                "top": 40,
-                                "left": 12,
-                                "bottom": 236,
-                                "right": 237
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 131,
-                            "index": 3,
-                            "type": "layer",
-                            "name": "Layer 12",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": false,
-                            "clipped": true,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 130,
-                            "index": 2,
-                            "type": "layer",
-                            "name": "body tone",
-                            "bounds": {
-                                "top": 40,
-                                "left": 14,
-                                "bottom": 235,
-                                "right": 235
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 129,
-                            "index": 1,
-                            "type": "layer",
-                            "name": "Layer 5",
-                            "bounds": {
-                                "top": 125,
-                                "left": 21,
-                                "bottom": 228,
-                                "right": 132
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "placedID": "1f1fe2b5-530d-11e5-8e8e-e6ac394ea7dd",
-            "name": "monkey.png.psd",
-            "fileType": 943870035,
-            "fileCreator": 538976288,
-            "size": 0,
-            "id": 1820,
-            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
-            "bounds": {
-                "top": 0,
-                "left": 0,
-                "bottom": 259,
-                "right": 253
-            },
-            "selection": [
-                6
-            ],
-            "resolution": 72,
-            "globalLight": {
-                "angle": 120,
-                "altitude": 30
-            },
-            "generatorSettings": {
-                "generator_45_assets": {
-                    "json": "{\"enabled\":true}"
-                },
-                "layerTime": 1433430000
-            },
-            "layers": [
-                {
-                    "id": 148,
-                    "index": 8,
-                    "type": "layerSection",
-                    "name": "monkey.png",
-                    "bounds": {
-                        "top": 4,
-                        "left": 4,
-                        "bottom": 244,
-                        "right": 244
-                    },
-                    "boundsWithFX": {
-                        "top": -2,
-                        "left": -5,
-                        "bottom": 251,
-                        "right": 248
-                    },
-                    "visible": true,
-                    "clipped": false,
-                    "blendOptions": {
-                        "mode": "passThrough"
-                    },
-                    "generatorSettings": false,
-                    "layerEffects": {
-                        "dropShadow": {
-                            "enabled": true
-                        },
-                        "innerGlow": {
-                            "enabled": true
-                        },
-                        "bevelEmboss": {
-                            "enabled": true
-                        }
-                    },
-                    "layers": [
-                        {
-                            "id": 162,
-                            "index": 7,
-                            "type": "layer",
-                            "name": "Layer 13",
-                            "bounds": {
-                                "top": 18,
-                                "left": 29,
-                                "bottom": 126,
-                                "right": 218
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 134,
-                            "index": 6,
-                            "type": "layer",
-                            "name": "hands line",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 133,
-                            "index": 5,
-                            "type": "layer",
-                            "name": "hands tone",
-                            "bounds": {
-                                "top": 5,
-                                "left": 5,
-                                "bottom": 243,
-                                "right": 243
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 132,
-                            "index": 4,
-                            "type": "layer",
-                            "name": "body line",
-                            "bounds": {
-                                "top": 40,
-                                "left": 12,
-                                "bottom": 236,
-                                "right": 237
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 131,
-                            "index": 3,
-                            "type": "layer",
-                            "name": "Layer 12",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": false,
-                            "clipped": true,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 130,
-                            "index": 2,
-                            "type": "layer",
-                            "name": "body tone",
-                            "bounds": {
-                                "top": 40,
-                                "left": 14,
-                                "bottom": 235,
-                                "right": 235
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 129,
-                            "index": 1,
-                            "type": "layer",
-                            "name": "Layer 5",
-                            "bounds": {
-                                "top": 125,
-                                "left": 21,
-                                "bottom": 228,
-                                "right": 132
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "placedID": "1f1fe2b6-530d-11e5-8e8e-e6ac394ea7dd",
-            "name": "monkey.png.psd",
-            "fileType": 943870035,
-            "fileCreator": 538976288,
-            "size": 0,
-            "id": 1827,
-            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
-            "bounds": {
-                "top": 0,
-                "left": 0,
-                "bottom": 259,
-                "right": 253
-            },
-            "selection": [
-                6
-            ],
-            "resolution": 72,
-            "globalLight": {
-                "angle": 120,
-                "altitude": 30
-            },
-            "generatorSettings": {
-                "generator_45_assets": {
-                    "json": "{\"enabled\":true}"
-                },
-                "layerTime": 1433430000
-            },
-            "layers": [
-                {
-                    "id": 148,
-                    "index": 8,
-                    "type": "layerSection",
-                    "name": "monkey.png",
-                    "bounds": {
-                        "top": 4,
-                        "left": 4,
-                        "bottom": 244,
-                        "right": 244
-                    },
-                    "boundsWithFX": {
-                        "top": -2,
-                        "left": -5,
-                        "bottom": 251,
-                        "right": 248
-                    },
-                    "visible": true,
-                    "clipped": false,
-                    "blendOptions": {
-                        "mode": "passThrough"
-                    },
-                    "generatorSettings": false,
-                    "layerEffects": {
-                        "dropShadow": {
-                            "enabled": true
-                        },
-                        "innerGlow": {
-                            "enabled": true
-                        },
-                        "bevelEmboss": {
-                            "enabled": true
-                        }
-                    },
-                    "layers": [
-                        {
-                            "id": 162,
-                            "index": 7,
-                            "type": "layer",
-                            "name": "Layer 13",
-                            "bounds": {
-                                "top": 18,
-                                "left": 29,
-                                "bottom": 126,
-                                "right": 218
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 134,
-                            "index": 6,
-                            "type": "layer",
-                            "name": "hands line",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 133,
-                            "index": 5,
-                            "type": "layer",
-                            "name": "hands tone",
-                            "bounds": {
-                                "top": 5,
-                                "left": 5,
-                                "bottom": 243,
-                                "right": 243
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 132,
-                            "index": 4,
-                            "type": "layer",
-                            "name": "body line",
-                            "bounds": {
-                                "top": 40,
-                                "left": 12,
-                                "bottom": 236,
-                                "right": 237
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 131,
-                            "index": 3,
-                            "type": "layer",
-                            "name": "Layer 12",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": false,
-                            "clipped": true,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 130,
-                            "index": 2,
-                            "type": "layer",
-                            "name": "body tone",
-                            "bounds": {
-                                "top": 40,
-                                "left": 14,
-                                "bottom": 235,
-                                "right": 235
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 129,
-                            "index": 1,
-                            "type": "layer",
-                            "name": "Layer 5",
-                            "bounds": {
-                                "top": 125,
-                                "left": 21,
-                                "bottom": 228,
-                                "right": 132
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "placedID": "1f1fe2b7-530d-11e5-8e8e-e6ac394ea7dd",
-            "name": "monkey.png.psd",
-            "fileType": 943870035,
-            "fileCreator": 538976288,
-            "size": 0,
-            "id": 1834,
-            "file": "C:\\Users\\Raphael\\AppData\\Roaming\\Adobe\\Creative Cloud Libraries\\LIBS\\B6922A5E52FBCEF10A490D45_AdobeID\\creative_cloud\\dcx\\a3d8fdc1-f18c-42a9-82c5-b380adb80b2f\\components\\01ad785c-aba2-4307-b59b-a290839c6d18.psd",
-            "bounds": {
-                "top": 0,
-                "left": 0,
-                "bottom": 259,
-                "right": 253
-            },
-            "selection": [
-                6
-            ],
-            "resolution": 72,
-            "globalLight": {
-                "angle": 120,
-                "altitude": 30
-            },
-            "generatorSettings": {
-                "generator_45_assets": {
-                    "json": "{\"enabled\":true}"
-                },
-                "layerTime": 1433430000
-            },
-            "layers": [
-                {
-                    "id": 148,
-                    "index": 8,
-                    "type": "layerSection",
-                    "name": "monkey.png",
-                    "bounds": {
-                        "top": 4,
-                        "left": 4,
-                        "bottom": 244,
-                        "right": 244
-                    },
-                    "boundsWithFX": {
-                        "top": -2,
-                        "left": -5,
-                        "bottom": 251,
-                        "right": 248
-                    },
-                    "visible": true,
-                    "clipped": false,
-                    "blendOptions": {
-                        "mode": "passThrough"
-                    },
-                    "generatorSettings": false,
-                    "layerEffects": {
-                        "dropShadow": {
-                            "enabled": true
-                        },
-                        "innerGlow": {
-                            "enabled": true
-                        },
-                        "bevelEmboss": {
-                            "enabled": true
-                        }
-                    },
-                    "layers": [
-                        {
-                            "id": 162,
-                            "index": 7,
-                            "type": "layer",
-                            "name": "Layer 13",
-                            "bounds": {
-                                "top": 18,
-                                "left": 29,
-                                "bottom": 126,
-                                "right": 218
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 134,
-                            "index": 6,
-                            "type": "layer",
-                            "name": "hands line",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 133,
-                            "index": 5,
-                            "type": "layer",
-                            "name": "hands tone",
-                            "bounds": {
-                                "top": 5,
-                                "left": 5,
-                                "bottom": 243,
-                                "right": 243
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 132,
-                            "index": 4,
-                            "type": "layer",
-                            "name": "body line",
-                            "bounds": {
-                                "top": 40,
-                                "left": 12,
-                                "bottom": 236,
-                                "right": 237
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 131,
-                            "index": 3,
-                            "type": "layer",
-                            "name": "Layer 12",
-                            "bounds": {
-                                "top": 4,
-                                "left": 4,
-                                "bottom": 244,
-                                "right": 244
-                            },
-                            "visible": false,
-                            "clipped": true,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 130,
-                            "index": 2,
-                            "type": "layer",
-                            "name": "body tone",
-                            "bounds": {
-                                "top": 40,
-                                "left": 14,
-                                "bottom": 235,
-                                "right": 235
-                            },
-                            "visible": true,
-                            "clipped": false,
-                            "pixels": true,
-                            "generatorSettings": false
-                        },
-                        {
-                            "id": 129,
-                            "index": 1,
-                            "type": "layer",
-                            "name": "Layer 5",
-                            "bounds": {
-                                "top": 125,
-                                "left": 21,
-                                "bottom": 228,
-                                "right": 132
-                            },
-                            "visible": true,
                             "clipped": false,
                             "pixels": true,
                             "generatorSettings": false
