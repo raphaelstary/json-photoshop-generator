@@ -300,6 +300,82 @@ var JSON = {};
         };
     }
 }());
+var Vectors = (function (Math) {
+    "use strict";
+
+    return {
+        get: function (pointA_X, pointA_Y, pointB_X, pointB_Y) {
+            return {
+                x: pointB_X - pointA_X,
+                y: pointB_Y - pointA_Y
+            };
+        },
+
+        magnitude: function (x, y) {
+            return Math.sqrt(x * x + y * y);
+        },
+
+        squaredMagnitude: function (x, y) {
+            return x * x + y * y;
+        },
+
+        normalize: function (x, y) {
+            var magnitude = this.magnitude(x, y);
+
+            return this.normalizeWithMagnitude(x, y, magnitude);
+        },
+
+        normalizeWithMagnitude: function (x, y, magnitude) {
+            return {
+                x: x / magnitude,
+                y: y / magnitude
+            };
+        },
+
+        normalRight: function (x, y) {
+            return {
+                x: -y,
+                y: x
+            };
+        },
+
+        normalLeft: function (x, y) {
+            return {
+                x: y,
+                y: -x
+            };
+        },
+
+        dotProduct: function (vectorA_X, vectorA_Y, vectorB_X, vectorB_Y) {
+            return vectorA_X * vectorB_X + vectorA_Y * vectorB_Y;
+        },
+
+        toRadians: function (degrees) {
+            return degrees * Math.PI / 180;
+        },
+
+        getX: function (pointX, magnitude, angle) {
+            return pointX + magnitude * Math.cos(angle);
+        },
+
+        getY: function (pointY, magnitude, angle) {
+            return pointY + magnitude * Math.sin(angle);
+        },
+
+        getAngle: function (x, y) {
+            return Math.atan2(y, x);
+        },
+
+        getIntersectionPoint: function (a1_x, a1_y, a2_x, a2_y, b1_x, b1_y, b2_x, b2_y) {
+            var denominator = ( b2_y - b1_y) * (a2_x - a1_x) - (b2_x - b1_x) * (a2_y - a1_y);
+            var ua = ((b2_x - b1_x) * (a1_y - b1_y) - (b2_y - b1_y) * (a1_x - b1_x)) / denominator;
+            return {
+                x: a1_x + ua * (a2_x - a1_x),
+                y: a1_y + ua * (a2_y - a1_y)
+            }
+        }
+    };
+})(Math);
 
 var currentArtboard;
 
@@ -546,6 +622,55 @@ function getTextData(layer) {
     data.time = getCurrentFrame();
 
     return data;
+}
+
+function getVectorMaskData() {
+    var mask = {};
+
+    var paths = app.activeDocument.pathItems;
+    var myPath = paths[0];
+    var mySubPath = myPath.subPathItems[0];
+    var a = mySubPath.pathPoints[0].anchor;
+    var b = mySubPath.pathPoints[1].anchor;
+    var c = mySubPath.pathPoints[2].anchor;
+
+    var bounds = {
+        left: a[0],
+        top: a[1],
+        right: a[0],
+        bottom: a[1]
+    };
+    for (var i = 0; i < mySubPath.pathPoints.length; i++) {
+        var pathPoint = mySubPath.pathPoints[i].anchor;
+        if (pathPoint[0] < bounds.left) {
+            bounds.left = pathPoint[0];
+        }
+        if (pathPoint[0] > bounds.right) {
+            bounds.right = pathPoint[0];
+        }
+        if (pathPoint[1] < bounds.top) {
+            bounds.top = pathPoint[1];
+        }
+        if (pathPoint[1] > bounds.bottom) {
+            bounds.bottom = pathPoint[1];
+        }
+    }
+    var widthHalf = (bounds.right - bounds.left) / 2;
+    var heightHalf = (bounds.bottom - bounds.top) / 2;
+
+    mask.x = Math.floor(bounds.left + widthHalf - currentArtboard.left);
+    mask.y = Math.floor(bounds.top + heightHalf - currentArtboard.top);
+
+    var a_b = Vectors.get(a[0], a[1], b[0], b[1]);
+    mask.width = Math.floor(Vectors.magnitude(a_b.x, a_b.y));
+
+    var b_c = Vectors.get(b[0], b[1], c[0], c[1]);
+    mask.height = Math.floor(Vectors.magnitude(b_c.x, b_c.y));
+
+    mask.rotation = Vectors.getAngle(a_b.x, a_b.y);
+
+    mask.time = getCurrentFrame();
+    return mask;
 }
 
 function getSmartObjectData(layer) {
