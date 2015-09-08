@@ -25,7 +25,14 @@
                 ],
                 "zIndex": 6,
                 "rotation": 1.956413391949548,
-                "scale": 1
+                "scale": 1,
+                "mask": {
+                    "width": 22,
+                    "height": 173,
+                    "rotation": 0,
+                    "x": 117,
+                    "y": 293
+                }
             },
             {
                 "type": "image",

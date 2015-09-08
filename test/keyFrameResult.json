@@ -1778,6 +1778,24 @@
         },
         "466": {
             "psType": "smartObject",
+            "mask": [
+                {
+                    "x": 131,
+                    "y": 308,
+                    "width": 22,
+                    "height": 173,
+                    "rotation": 0,
+                    "time": 120
+                },
+                {
+                    "x": 1131,
+                    "y": 308,
+                    "width": 22,
+                    "height": 173,
+                    "rotation": 0,
+                    "time": 180
+                }
+            ],
             "transform": [
                 {
                     "x": 913,

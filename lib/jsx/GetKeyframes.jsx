@@ -711,7 +711,7 @@ function collectKeyframeData(layer, transformFrames) {
 
     if (layer.kind != LayerKind.SOLIDFILL && hasVectorMask()) {
         frames = collectKeyframes(layer, jumpToNextKeyframeOfVectorMaskPositionTrack,
-            jumpToPreviousKeyframeOfVectorMaskPositionTrack, getSmartObjectData, 50);
+            jumpToPreviousKeyframeOfVectorMaskPositionTrack, getVectorMaskData, 50);
         if (frames.length > 1) {
             current.mask = frames;
         }
