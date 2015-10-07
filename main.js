@@ -47,23 +47,29 @@ var storeFrames = require('./lib/storeFrames');
     }
 
     function generateJSON() {
+        var veryStart = Date.now();
         console.log(Date() + " generate JSON started");
 
         var jsonFileName;
         var placedInfo;
         var h5doc;
         var once = true;
-
+        var start = Date.now();
         _generator.getDocumentInfo(undefined, {
             expandSmartObjects: true,
             getPathData: true
         }).then(function (document) {
+            console.log('initial document info ' + (Date.now() - start) + ' ms');
+            start = Date.now();
             jsonFileName = document.file.substring(0, document.file.lastIndexOf('.')) + '.json';
             placedInfo = document.placed;
 
             return transformToScenes(document);
 
         }).then(function (h5Document) {
+            console.log('scene transform ' + (Date.now() - start) + ' ms');
+            start = Date.now();
+
             h5doc = h5Document;
             var keyFramesJSX = __dirname + '\\lib\\jsx\\GetKeyframes.jsx';
             var keyFramesParams = {
@@ -73,6 +79,9 @@ var storeFrames = require('./lib/storeFrames');
             return _generator.evaluateJSXFile(keyFramesJSX, keyFramesParams);
 
         }).then(function (keyFrameResult) {
+            console.log('get keyframes ' + (Date.now() - start) + ' ms');
+            start = Date.now();
+
             var frames = Object.keys(keyFrameResult.transformFrames);
             var frameData = {};
 
@@ -98,8 +107,21 @@ var storeFrames = require('./lib/storeFrames');
                 }).then(function (ready) {
                     if (ready && once) { // maybe cleaner if extracted to a finally block
                         once = false;
+
+                        console.log('get smart object keyframes ' + (Date.now() - start) + ' ms');
+                        start = Date.now();
+
                         var output = normalizeSceneData(h5doc, keyFrameResult, frameData);
-                        writeJSONFile(jsonFileName, output);
+
+                        console.log('normalize data ' + (Date.now() - start) + ' ms');
+                        start = Date.now();
+
+                        writeJSONFile(jsonFileName, output, function () {
+                            console.log('write file ' + (Date.now() - start) + ' ms');
+
+                            var totalTime = Date.now() - veryStart;
+                            console.log('generate JSON successful ' + Math.floor(totalTime/60000) + ' min (' + totalTime + ' ms)');
+                        });
                     }
                 });
             }
@@ -108,11 +130,12 @@ var storeFrames = require('./lib/storeFrames');
         });
     }
 
-    function writeJSONFile(name, objectData) {
+    function writeJSONFile(name, objectData, callback) {
         fs.writeFile(name, JSON.stringify(objectData), function (err) {
             if (err) throw err;
             console.log('file saved to: ' + name);
-
+            if (callback)
+                callback();
             console.log(Date() + " generate JSON finished");
         });
     }
