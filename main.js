@@ -71,62 +71,75 @@ var storeFrames = require('./lib/storeFrames');
             start = Date.now();
 
             h5doc = h5Document;
+
+            if (!h5Document.animations) {
+                writeJSONFile(jsonFileName, h5doc, function () {
+                    console.log('write file ' + (Date.now() - start) + ' ms');
+
+                    var totalTime = Date.now() - veryStart;
+                    console.log('generate JSON successful ' + Math.floor(totalTime / 60000) + ' min (' + totalTime +
+                        ' ms)');
+                });
+                return;
+            }
+
             var keyFramesJSX = __dirname + '\\lib\\jsx\\GetKeyframes.jsx';
             var keyFramesParams = {
                 ids: h5Document.animations
             };
 
-            return _generator.evaluateJSXFile(keyFramesJSX, keyFramesParams);
+            _generator.evaluateJSXFile(keyFramesJSX, keyFramesParams).then(function (keyFrameResult) {
+                console.log('get keyframes ' + (Date.now() - start) + ' ms');
+                start = Date.now();
 
-        }).then(function (keyFrameResult) {
-            console.log('get keyframes ' + (Date.now() - start) + ' ms');
-            start = Date.now();
+                var frames = Object.keys(keyFrameResult.transformFrames);
+                var frameData = {};
 
-            var frames = Object.keys(keyFrameResult.transformFrames);
-            var frameData = {};
+                function nextFrame(frameNumberKey) {
+                    var toFrameJSX = __dirname + '\\lib\\jsx\\GoToFrame.jsx';
+                    var toFrameParams = {
+                        frameNumber: parseInt(frameNumberKey)
+                    };
+                    var ids = keyFrameResult.transformFrames[frameNumberKey];
+                    _generator.evaluateJSXFile(toFrameJSX, toFrameParams).then(function () {
+                        return _generator.getDocumentInfo();
 
-            function nextFrame(frameNumberKey) {
-                var toFrameJSX = __dirname + '\\lib\\jsx\\GoToFrame.jsx';
-                var toFrameParams = {
-                    frameNumber: parseInt(frameNumberKey)
-                };
-                var ids = keyFrameResult.transformFrames[frameNumberKey];
-                _generator.evaluateJSXFile(toFrameJSX, toFrameParams).then(function () {
-                    return _generator.getDocumentInfo();
+                    }).then(function (document) {
+                        return transformSmartObjects(ids, document, placedInfo, toFrameParams.frameNumber);
 
-                }).then(function (document) {
-                    return transformSmartObjects(ids, document, placedInfo, toFrameParams.frameNumber);
+                    }).then(function (smartObjectFrames) {
+                        storeFrames(smartObjectFrames, frameData);
 
-                }).then(function (smartObjectFrames) {
-                    storeFrames(smartObjectFrames, frameData);
+                        if (frames.length > 0)
+                            nextFrame(frames.shift()); else
+                            return true;
 
-                    if (frames.length > 0)
-                        nextFrame(frames.shift()); else
-                        return true;
+                    }).then(function (ready) {
+                        if (ready && once) { // maybe cleaner if extracted to a finally block
+                            once = false;
 
-                }).then(function (ready) {
-                    if (ready && once) { // maybe cleaner if extracted to a finally block
-                        once = false;
+                            console.log('get smart object keyframes ' + (Date.now() - start) + ' ms');
+                            start = Date.now();
 
-                        console.log('get smart object keyframes ' + (Date.now() - start) + ' ms');
-                        start = Date.now();
+                            var output = normalizeSceneData(h5doc, keyFrameResult, frameData);
 
-                        var output = normalizeSceneData(h5doc, keyFrameResult, frameData);
+                            console.log('normalize data ' + (Date.now() - start) + ' ms');
+                            start = Date.now();
 
-                        console.log('normalize data ' + (Date.now() - start) + ' ms');
-                        start = Date.now();
+                            writeJSONFile(jsonFileName, output, function () {
+                                console.log('write file ' + (Date.now() - start) + ' ms');
 
-                        writeJSONFile(jsonFileName, output, function () {
-                            console.log('write file ' + (Date.now() - start) + ' ms');
+                                var totalTime = Date.now() - veryStart;
+                                console.log('generate JSON successful ' + Math.floor(totalTime / 60000) + ' min (' +
+                                    totalTime + ' ms)');
+                            });
+                        }
+                    });
+                }
 
-                            var totalTime = Date.now() - veryStart;
-                            console.log('generate JSON successful ' + Math.floor(totalTime/60000) + ' min (' + totalTime + ' ms)');
-                        });
-                    }
-                });
-            }
+                nextFrame(frames.shift());
+            });
 
-            nextFrame(frames.shift());
         });
     }
 
