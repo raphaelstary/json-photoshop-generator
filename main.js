@@ -4,12 +4,13 @@ var transformSmartObjects = require('./lib/transformSmartObjects');
 var normalizeSceneData = require('./lib/normalizeSceneData');
 var storeFrames = require('./lib/storeFrames');
 
-(function (transformToScenes, fs, transformSmartObjects, normalizeSceneData, storeFrames) {
+(function (transformToScenes, fs, transformSmartObjects, normalizeSceneData, storeFrames, JSON, Math) {
     "use strict";
 
     var PLUGIN_ID = require("./package.json").name;
     var MENU_ID = "json";
     var MENU_LABEL = "export JSON once";
+    var OUTPUT_PATH = '/www/data';
 
     var _generator = null, _currentDocumentId = null, _config = null;
 
@@ -61,7 +62,8 @@ var storeFrames = require('./lib/storeFrames');
         }).then(function (document) {
             console.log('initial document info ' + (Date.now() - start) + ' ms');
             start = Date.now();
-            jsonFileName = document.file.substring(0, document.file.lastIndexOf('.')) + '.json';
+            jsonFileName = document.file.substring(0, document.file.lastIndexOf('\\')) + OUTPUT_PATH +
+                document.file.substring(document.file.lastIndexOf('\\'), document.file.lastIndexOf('.')) + '.json';
             placedInfo = document.placed;
 
             return transformToScenes(document);
@@ -154,4 +156,4 @@ var storeFrames = require('./lib/storeFrames');
     }
 
     exports.init = init;
-})(transformToScenes, fs, transformSmartObjects, normalizeSceneData, storeFrames);
+})(transformToScenes, fs, transformSmartObjects, normalizeSceneData, storeFrames, JSON, Math);
