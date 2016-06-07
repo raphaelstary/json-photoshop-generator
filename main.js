@@ -10,7 +10,10 @@ var storeFrames = require('./lib/storeFrames');
     var PLUGIN_ID = require("./package.json").name;
     var MENU_ID = "json";
     var MENU_LABEL = "export JSON once";
+
+    var SRC_PATH_POSTFIX = '-code';
     var OUTPUT_PATH = '/www/data';
+    var OUTPUT_FILE_NAME = '/scenes.json';
 
     var _generator = null, _currentDocumentId = null, _config = null;
 
@@ -62,8 +65,12 @@ var storeFrames = require('./lib/storeFrames');
         }).then(function (document) {
             console.log('initial document info ' + (Date.now() - start) + ' ms');
             start = Date.now();
-            jsonFileName = document.file.substring(0, document.file.lastIndexOf('\\')) + OUTPUT_PATH +
-                document.file.substring(document.file.lastIndexOf('\\'), document.file.lastIndexOf('.')) + '.json';
+
+            var assetsSubFolder = document.file.substring(0, document.file.lastIndexOf('\\'));
+            var parentProjectFolder = assetsSubFolder.substring(0, assetsSubFolder.lastIndexOf('\\'));
+            var folderName = parentProjectFolder.substring(parentProjectFolder.lastIndexOf('\\'));
+
+            jsonFileName = parentProjectFolder + folderName + SRC_PATH_POSTFIX + OUTPUT_PATH + OUTPUT_FILE_NAME;
             placedInfo = document.placed;
 
             return transformToScenes(document);
@@ -79,8 +86,8 @@ var storeFrames = require('./lib/storeFrames');
                     console.log('write file ' + (Date.now() - start) + ' ms');
 
                     var totalTime = Date.now() - veryStart;
-                    console.log('generate JSON successful ' + Math.floor(totalTime / 60000) + ' min (' + totalTime +
-                        ' ms)');
+                    console.log(
+                        'generate JSON successful ' + Math.floor(totalTime / 60000) + ' min (' + totalTime + ' ms)');
                 });
                 return;
             }
@@ -132,8 +139,9 @@ var storeFrames = require('./lib/storeFrames');
                                 console.log('write file ' + (Date.now() - start) + ' ms');
 
                                 var totalTime = Date.now() - veryStart;
-                                console.log('generate JSON successful ' + Math.floor(totalTime / 60000) + ' min (' +
-                                    totalTime + ' ms)');
+                                console.log(
+                                    'generate JSON successful ' + Math.floor(totalTime / 60000) + ' min (' + totalTime +
+                                    ' ms)');
                             });
                         }
                     });
