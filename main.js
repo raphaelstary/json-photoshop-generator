@@ -12,7 +12,7 @@ var storeFrames = require('./lib/storeFrames');
     var MENU_LABEL = "export JSON once";
 
     var SRC_PATH_POSTFIX = '-code';
-    var OUTPUT_PATH = '/src/resources-gen/data';
+    var OUTPUT_PATH = '/src/resources/data-gen';
     var OUTPUT_FILE_NAME = '/scenes.json';
 
     var _generator = null, _currentDocumentId = null, _config = null;
