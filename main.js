@@ -12,7 +12,7 @@ var storeFrames = require('./lib/storeFrames');
     var MENU_LABEL = "export JSON once";
 
     var SRC_PATH_POSTFIX = '-code';
-    var OUTPUT_PATH = '/www/data';
+    var OUTPUT_PATH = '/src/resources-gen/data';
     var OUTPUT_FILE_NAME = '/scenes.json';
 
     var _generator = null, _currentDocumentId = null, _config = null;
@@ -71,6 +71,11 @@ var storeFrames = require('./lib/storeFrames');
             var folderName = parentProjectFolder.substring(parentProjectFolder.lastIndexOf('\\'));
 
             jsonFileName = parentProjectFolder + folderName + SRC_PATH_POSTFIX + OUTPUT_PATH + OUTPUT_FILE_NAME;
+
+            // needed for cellular automata puzzle
+            // jsonFileName = document.file.substring(0, document.file.lastIndexOf('\\')) + OUTPUT_PATH +
+            //     document.file.substring(document.file.lastIndexOf('\\'), document.file.lastIndexOf('.')) + '.json';
+
             placedInfo = document.placed;
 
             return transformToScenes(document);
