@@ -5,15 +5,16 @@ var normalizeSceneData = require('./lib/normalizeSceneData');
 var storeFrames = require('./lib/storeFrames');
 
 (function (transformToScenes, fs, transformSmartObjects, normalizeSceneData, storeFrames, JSON, Math) {
-    "use strict";
+    'use strict';
 
-    var PLUGIN_ID = require("./package.json").name;
-    var MENU_ID = "json";
-    var MENU_LABEL = "export JSON once";
+    // var PLUGIN_ID = require('./package.json').name;
+    var MENU_ID = 'json';
+    var MENU_LABEL = 'export JSON once';
 
     var SRC_PATH_POSTFIX = '-code';
     var OUTPUT_PATH = '/src/resources/data-gen';
-    var OUTPUT_FILE_NAME = '/scenes.json';
+    var OUTPUT_FILE_NAME = '/scenes';
+    var OUTPUT_EXTENSION = '.json';
 
     var _generator = null, _currentDocumentId = null, _config = null;
 
@@ -21,16 +22,16 @@ var storeFrames = require('./lib/storeFrames');
         _generator = generator;
         _config = config;
 
-        console.log("initializing generator highfive.js JSON with config %j", _config);
+        console.log('initializing generator highfive.js JSON with config %j', _config);
 
         _generator.addMenuItem(MENU_ID, MENU_LABEL, true, false).then(function () {
-            console.log("Menu created", MENU_ID);
+            console.log('Menu created', MENU_ID);
         }, function () {
-            console.error("Menu creation failed", MENU_ID);
+            console.error('Menu creation failed', MENU_ID);
         });
 
-        _generator.onPhotoshopEvent("generatorMenuChanged", handleGeneratorMenuClicked);
-        _generator.onPhotoshopEvent("currentDocumentChanged", handleCurrentDocumentChanged);
+        _generator.onPhotoshopEvent('generatorMenuChanged', handleGeneratorMenuClicked);
+        _generator.onPhotoshopEvent('currentDocumentChanged', handleCurrentDocumentChanged);
     }
 
     function handleCurrentDocumentChanged(id) {
@@ -52,7 +53,8 @@ var storeFrames = require('./lib/storeFrames');
 
     function generateJSON() {
         var veryStart = Date.now();
-        console.log(Date() + " generate JSON started");
+        //noinspection JSPotentiallyInvalidConstructorUsage
+        console.log(Date() + ' generate JSON started');
 
         var jsonFileName;
         var placedInfo;
@@ -66,11 +68,20 @@ var storeFrames = require('./lib/storeFrames');
             console.log('initial document info ' + (Date.now() - start) + ' ms');
             start = Date.now();
 
+            var fileNamePlusExtension = document.file.substring(document.file.lastIndexOf('\\'));
+            var fileName = fileNamePlusExtension.substring(0, fileNamePlusExtension.lastIndexOf('.'));
+
             var assetsSubFolder = document.file.substring(0, document.file.lastIndexOf('\\'));
             var parentProjectFolder = assetsSubFolder.substring(0, assetsSubFolder.lastIndexOf('\\'));
             var folderName = parentProjectFolder.substring(parentProjectFolder.lastIndexOf('\\'));
 
             jsonFileName = parentProjectFolder + folderName + SRC_PATH_POSTFIX + OUTPUT_PATH + OUTPUT_FILE_NAME;
+
+            if (fileName.includes('-')) {
+                jsonFileName += fileName.substring(fileName.lastIndexOf('-'));
+            }
+
+            jsonFileName += OUTPUT_EXTENSION;
 
             // needed for cellular automata puzzle
             // jsonFileName = document.file.substring(0, document.file.lastIndexOf('\\')) + OUTPUT_PATH +
@@ -124,9 +135,11 @@ var storeFrames = require('./lib/storeFrames');
                     }).then(function (smartObjectFrames) {
                         storeFrames(smartObjectFrames, frameData);
 
-                        if (frames.length > 0)
-                            nextFrame(frames.shift()); else
+                        if (frames.length > 0) {
+                            nextFrame(frames.shift());
+                        } else {
                             return true;
+                        }
 
                     }).then(function (ready) {
                         if (ready && once) { // maybe cleaner if extracted to a finally block
@@ -160,11 +173,15 @@ var storeFrames = require('./lib/storeFrames');
 
     function writeJSONFile(name, objectData, callback) {
         fs.writeFile(name, JSON.stringify(objectData), function (err) {
-            if (err) throw err;
+            if (err) {
+                throw err;
+            }
             console.log('file saved to: ' + name);
-            if (callback)
+            if (callback) {
                 callback();
-            console.log(Date() + " generate JSON finished");
+            }
+            //noinspection JSPotentiallyInvalidConstructorUsage
+            console.log(Date() + ' generate JSON finished');
         });
     }
 
