@@ -11,11 +11,6 @@ var storeFrames = require('./lib/storeFrames');
     var MENU_ID = 'json';
     var MENU_LABEL = 'export JSON once';
 
-    var SRC_PATH_POSTFIX = '-code';
-    var OUTPUT_PATH = '/src/resources/data-gen';
-    var OUTPUT_FILE_NAME = '/scenes';
-    var OUTPUT_EXTENSION = '.json';
-
     var _generator = null, _currentDocumentId = null, _config = null;
 
     function init(generator, config) {
@@ -68,20 +63,31 @@ var storeFrames = require('./lib/storeFrames');
             console.log('initial document info ' + (Date.now() - start) + ' ms');
             start = Date.now();
 
-            var fileNamePlusExtension = document.file.substring(document.file.lastIndexOf('\\'));
-            var fileName = fileNamePlusExtension.substring(0, fileNamePlusExtension.lastIndexOf('.'));
+            jsonFileName = document.layers.filter(function (t) {
+                return t.name == 'config';
+            })[0].layers[0].name;
 
-            var assetsSubFolder = document.file.substring(0, document.file.lastIndexOf('\\'));
-            var parentProjectFolder = assetsSubFolder.substring(0, assetsSubFolder.lastIndexOf('\\'));
-            var folderName = parentProjectFolder.substring(parentProjectFolder.lastIndexOf('\\'));
-
-            jsonFileName = parentProjectFolder + folderName + SRC_PATH_POSTFIX + OUTPUT_PATH + OUTPUT_FILE_NAME;
-
-            if (fileName.includes('-')) {
-                jsonFileName += fileName.substring(fileName.lastIndexOf('-'));
-            }
-
-            jsonFileName += OUTPUT_EXTENSION;
+            // needed for everything between cellular automata & couch commander
+            //
+            // var SRC_PATH_POSTFIX = '-code';
+            // var OUTPUT_PATH = '/src/resources/data-gen';
+            // var OUTPUT_FILE_NAME = '/scenes';
+            // var OUTPUT_EXTENSION = '.json';
+            //
+            // var fileNamePlusExtension = document.file.substring(document.file.lastIndexOf('\\'));
+            // var fileName = fileNamePlusExtension.substring(0, fileNamePlusExtension.lastIndexOf('.'));
+            //
+            // var assetsSubFolder = document.file.substring(0, document.file.lastIndexOf('\\'));
+            // var parentProjectFolder = assetsSubFolder.substring(0, assetsSubFolder.lastIndexOf('\\'));
+            // var folderName = parentProjectFolder.substring(parentProjectFolder.lastIndexOf('\\'));
+            //
+            // jsonFileName = parentProjectFolder + folderName + SRC_PATH_POSTFIX + OUTPUT_PATH + OUTPUT_FILE_NAME;
+            //
+            // if (fileName.includes('-')) {
+            //     jsonFileName += fileName.substring(fileName.lastIndexOf('-'));
+            // }
+            //
+            // jsonFileName += OUTPUT_EXTENSION;
 
             // needed for cellular automata puzzle
             // jsonFileName = document.file.substring(0, document.file.lastIndexOf('\\')) + OUTPUT_PATH +
