@@ -64,7 +64,7 @@ var storeFrames = require('./lib/storeFrames');
             start = Date.now();
 
             jsonFileName =
-                document.file.substring(0, document.file.lastIndexOf('\\')) + document.layers.filter(function (t) {
+                document.file.substring(0, document.file.lastIndexOf('\\') + 1) + document.layers.filter(function (t) {
                     return t.name == 'config';
                 })[0].layers[0].name;
 
