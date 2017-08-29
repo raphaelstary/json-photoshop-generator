@@ -63,9 +63,10 @@ var storeFrames = require('./lib/storeFrames');
             console.log('initial document info ' + (Date.now() - start) + ' ms');
             start = Date.now();
 
-            jsonFileName = document.layers.filter(function (t) {
-                return t.name == 'config';
-            })[0].layers[0].name;
+            jsonFileName =
+                document.file.substring(0, document.file.lastIndexOf('\\')) + document.layers.filter(function (t) {
+                    return t.name == 'config';
+                })[0].layers[0].name;
 
             // needed for everything between cellular automata & couch commander
             //
