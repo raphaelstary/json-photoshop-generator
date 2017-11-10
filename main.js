@@ -63,8 +63,8 @@ var storeFrames = require('./lib/storeFrames');
             console.log('initial document info ' + (Date.now() - start) + ' ms');
             start = Date.now();
 
-            jsonFileName =
-                document.file.substring(0, document.file.lastIndexOf('\\') + 1) + document.layers.filter(function (t) {
+            jsonFileName = document.file.substring(0, document.file.lastIndexOf('\\') + 1) +
+                document.layers.filter(function (t) {
                     return t.name == 'config';
                 })[0].layers[0].name;
             placedInfo = document.placed;
@@ -82,8 +82,8 @@ var storeFrames = require('./lib/storeFrames');
                     console.log('write file ' + (Date.now() - start) + ' ms');
 
                     var totalTime = Date.now() - veryStart;
-                    console.log(
-                        'generate JSON successful ' + Math.floor(totalTime / 60000) + ' min (' + totalTime + ' ms)');
+                    console.log('generate JSON successful ' + Math.floor(totalTime / 60000) + ' min (' + totalTime +
+                        ' ms)');
                 });
                 return;
             }
@@ -137,9 +137,8 @@ var storeFrames = require('./lib/storeFrames');
                                 console.log('write file ' + (Date.now() - start) + ' ms');
 
                                 var totalTime = Date.now() - veryStart;
-                                console.log(
-                                    'generate JSON successful ' + Math.floor(totalTime / 60000) + ' min (' + totalTime +
-                                    ' ms)');
+                                console.log('generate JSON successful ' + Math.floor(totalTime / 60000) + ' min (' +
+                                    totalTime + ' ms)');
                             });
                         }
                     });
@@ -148,7 +147,9 @@ var storeFrames = require('./lib/storeFrames');
                 nextFrame(frames.shift());
             });
 
-        });
+        }).catch(function (err) {
+            console.log(err);
+        }).done();
     }
 
     function writeJSONFile(name, objectData, callback) {

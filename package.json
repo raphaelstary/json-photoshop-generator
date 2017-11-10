@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "export JSON in highfive.js format",
   "main": "main.js",
-  "generator-core-version": "3.8.4",
+  "generator-core-version": "3.11.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/raphaelstary/json-photoshop-generator"
